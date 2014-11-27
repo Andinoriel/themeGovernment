@@ -11151,6 +11151,45 @@ hr.half {
     transform: rotate(360deg);
   }
 }
+.ff {
+  background: url("../../images/404.jpg") center no-repeat;
+  text-align: center;
+}
+
+.ff__inner {
+  width: 250px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+}
+
+.ff__title {
+  position: relative;
+  margin-bottom: 50px;
+  font-family: "roboto_condensedbold", Arial, sans-serif;
+  font-size: 125px;
+  line-height: 1;
+  color: #9a0000;
+}
+
+.ff__descr {
+  font-family: "roboto_condensedlight", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  color: #000;
+}
+
+.ff__descr b {
+  font-family: "roboto_condensedbold", Arial, sans-serif;
+}
+
+.ff__link {
+  font-family: "roboto_condensedbold", Arial, sans-serif;
+  color: #002465;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
 header {
   height: 62px;
   position: relative;
@@ -15225,6 +15264,36 @@ figure.full-figure figcaption {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .ff__inner {
+    width: 630px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+  }
+
+  .ff__title {
+    margin-bottom: 60px;
+    font-size: 150px;
+  }
+
+  .ff__title:after {
+    display: block;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    content: 'nonexistent page';
+    font-family: "roboto_condensedlight", Arial, sans-serif;
+    font-size: 26px;
+    color: #000;
+    opacity: .5;
+  }
+
+  .ff__descr {
+    padding: 45px 0;
+    border-top: 1px solid #bdbbac;
+    border-bottom: 1px solid #bdbbac;
+    font-size: 36px;
+  }
+
   header {
     height: 80px;
   }
@@ -16883,6 +16952,36 @@ figure.full-figure figcaption {
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .ff__inner {
+    width: 630px;
+    padding-top: 180px;
+    padding-bottom: 210px;
+  }
+
+  .ff__title {
+    margin-bottom: 60px;
+    font-size: 150px;
+  }
+
+  .ff__title:after {
+    display: block;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    content: 'nonexistent page';
+    font-family: "roboto_condensedlight", Arial, sans-serif;
+    font-size: 26px;
+    color: #000;
+    opacity: .5;
+  }
+
+  .ff__descr {
+    padding: 45px 0;
+    border-top: 1px solid #bdbbac;
+    border-bottom: 1px solid #bdbbac;
+    font-size: 36px;
+  }
+
   header {
     height: 80px;
   }
@@ -18561,6 +18660,41 @@ figure.full-figure figcaption {
   .col-lg-15 {
     width: 20%;
     float: left;
+  }
+
+  .ff__inner {
+    width: 630px;
+    padding-top: 180px;
+    padding-bottom: 200px;
+  }
+
+  .ff__title {
+    margin-bottom: 60px;
+    font-size: 150px;
+  }
+
+  .ff__title:after {
+    display: block;
+    position: absolute;
+    top: 85px;
+    right: 25px;
+    content: 'nonexistent page';
+    font-family: "roboto_condensedlight", Arial, sans-serif;
+    font-size: 26px;
+    color: #000;
+    opacity: .5;
+  }
+
+  .ff__descr {
+    padding: 45px 0;
+    border-top: 1px solid #bdbbac;
+    border-bottom: 1px solid #bdbbac;
+    font-size: 36px;
+  }
+
+  .ff__link:hover {
+    text-decoration: none;
+    color: #002465;
   }
 
   .home-btn {

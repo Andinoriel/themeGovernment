@@ -12,6 +12,14 @@ new-background:#;
 new-link-hover:#002266;;
 -------------------------------*/
 
+/* 404
+-------------------------------*/
+.ff__title {color: #f49717;}
+.ff__link {color: #0066cc;}
+
+@media screen and (min-width: 1200px) {
+	.ff__link:hover {color: #0066cc;}
+}
 
 /* Globals
 -------------------------------*/
