@@ -1,0 +1,10 @@
+config.core.php
+.idea
+nbproject
+.svn
+.sass-cache
+
+/_packages/*
+/node_modules
+/.sass-cache
+
