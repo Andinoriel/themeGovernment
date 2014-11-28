@@ -30,7 +30,7 @@ header {}
 .line {background-color: #900021;}
 .subview .subviewopen>.dl-submenu {background-color: #000;}
 .subview li.subview .dl-submenu {background-color: #000;}
-footer {background-color: #510004;}
+footer {background-color: #2e000b;}
 .label-default {background-color: #900021;}
 .label-default__arr path {fill: #900021;}
 .btn-read {color: #242424;}
@@ -84,7 +84,7 @@ footer {background-color: #510004;}
 
 /* Main
 -------------------------------*/
-.slider__title span {background-color: rgba(144,0,33,.8);}
+.slider__title span {background-color: rgba(36,36,36,.8);}
 .slider__container .label-time .label-default__arr-left path {fill: #e9e8dc;}
 .slider__container .btn-read-primary__inverse {background-color: #000;}
 
@@ -107,7 +107,9 @@ ul.nav.nav-tabs>li.tablist__all>a {background-color: #900021;}
 @media screen and (min-width: 1200px) {
 
 	.slider__container .btn-read-primary__inverse:hover {background-color:#900021;}
-	.tw-item p a:hover {color: #900021;}
+	.news .fullW-news-item__text h3 a:hover {color: #900021;}
+	section.video h3 a:hover {color: #900021;}
+	.tw-item p a:hover {color: #242424;}
 	.event-bl:hover .btn-read-primary {background-color: #900021;}
 	ul.nav.nav-tabs>li>a:hover>.tablist__descr, ul.nav.nav-tabs>li>a:hover>.tablist__title {color: #900021;}
 
@@ -138,7 +140,12 @@ ul.nav.nav-tabs>li.tablist__all>a {background-color: #900021;}
 /* Projects
 -------------------------------*/
 .red-chart-diagramm .sm-diagramm .diagramm-number {color: #242424;}
-.project-item-ln-wrap {border-color: #242424;}
+.project-item-ln-wrap {border-color: #900021;}
+.project-item-ln-wrap .red-chart {color: #900021;}
+.project-item-ln-wrap .red-chart-diagramm .sm-diagramm .diagramm-number {color: #900021;}
+.project-item .blue-chart {color: #242424;}
+.project-item .project-item__diagramm .sm-diagramm .diagramm-number {color: #242424;}
+
 
 @media screen and (min-width: 1200px) {
 

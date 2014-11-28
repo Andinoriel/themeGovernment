@@ -107,6 +107,8 @@ ul.nav.nav-tabs>li.tablist__all>a {background-color: #026;}
 @media screen and (min-width: 1200px) {
 
 	.slider__container .btn-read-primary__inverse:hover {background-color:#026;}
+	.news .fullW-news-item__text h3 a:hover {color: #026;}
+	section.video h3 a:hover {color: #026;} 
 	.tw-item p a:hover {color: #026;}
 	.event-bl:hover .btn-read-primary {background-color: #026;}
 	ul.nav.nav-tabs>li>a:hover>.tablist__descr, ul.nav.nav-tabs>li>a:hover>.tablist__title {color: #026;}

@@ -56,6 +56,7 @@ appMakeBeCool.gateway.addClass('ScrollPlugin', function(properties, $, $window, 
                     $('html, body').animate({
                         scrollTop: nodeToScrollOffsetTop
                     }, 700);
+                    console.log('scroll plugin');
                 });
             }
         },

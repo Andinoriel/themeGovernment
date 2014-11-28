@@ -245,7 +245,7 @@ appMakeBeCool.gateway.addClass('StuffSlider', function(properties, $, $window, $
           }, {
             breakpoint: 1025,
             settings: {
-              slidesToShow: 5,
+              slidesToShow: 3,
               slidesToScroll: 1,
               infinite: false,
             }
