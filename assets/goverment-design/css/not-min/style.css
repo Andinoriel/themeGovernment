@@ -11324,8 +11324,6 @@ nav > .nav.navbar-nav > li > a:hover, nav > .nav.navbar-nav > li > span:hover {
 
 nav > .nav.navbar-nav > li.active > a {
   color: #bdbbac;
-  border-bottom: 2px solid #bdbbac;
-  cursor: pointer;
 }
 
 nav > .nav.navbar-nav > li.active > span {
@@ -18808,6 +18806,11 @@ figure.full-figure figcaption {
 
   nav > .nav.navbar-nav > li.active:after {
     display: none;
+  }
+
+  nav > .nav.navbar-nav > li.active > a {
+    border-bottom: 2px solid #bdbbac;
+    cursor: pointer;
   }
 
   .line.active, .line {

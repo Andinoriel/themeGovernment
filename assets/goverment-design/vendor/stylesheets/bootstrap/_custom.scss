@@ -90,7 +90,7 @@ nav>.nav.navbar-nav>li {border-bottom: 1px solid rgba(255,255,255,.2);}
 nav>.nav.navbar-nav>li:last-child {border-bottom-image: none;border-bottom: 0;}
 nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {display: block;float: right;font-family: $roboto-condensed-l;font-size: 18px;line-height: 18px;color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-align: right;}
 nav>.nav.navbar-nav>li>a:hover, nav>.nav.navbar-nav>li>span:hover {background-color: transparent;}
-nav>.nav.navbar-nav>li.active>a {color: #bdbbac;border-bottom: 2px solid #bdbbac;cursor: pointer;}
+nav>.nav.navbar-nav>li.active>a {color: #bdbbac;}
 nav>.nav.navbar-nav>li.active>span {color: #bdbbac;}
 // nav>.nav.navbar-nav>li.active:after {display: block;position: absolute;content: '';height: 100%;width: 2px;top: 0;right: -15px;background-color: #bdbbac;}
 .line {display: none;height: 2px;background-color: #900;overflow: hidden;clear: both;}
@@ -1673,6 +1673,7 @@ nav>.nav.navbar-nav>li>a:hover {border-bottom: 2px solid #990000;color: #e9e8dc;
 nav>.nav.navbar-nav>li.active>span {cursor: pointer;}
 nav>.nav.navbar-nav>li.active>span:hover, nav>.nav.navbar-nav>li.active>span {border-bottom: 2px solid #bdbbac;}
 nav>.nav.navbar-nav>li.active:after {display: none;}
+nav>.nav.navbar-nav>li.active>a {border-bottom: 2px solid #bdbbac;cursor: pointer;}
 .line.active, .line {display: none;}
 .colors>a>span {padding-right: 10px;padding-left: 10px;}
 .colors li {border-bottom: none !important;}
