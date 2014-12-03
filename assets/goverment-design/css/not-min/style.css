@@ -12214,6 +12214,8 @@ section.soc .section-hdr__icon-tw:before {
 
 .tw-item__image {
   display: block;
+  width: 100%;
+  height: auto;
   float: right;
   margin-right: 5px;
 }
@@ -19970,6 +19972,22 @@ figure.full-figure figcaption {
   .recommend .recommend__title, .comments .comments__title {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .fw-news__inner .line-abt:hover .label-default {
+    background-color: #000;
+  }
+
+  .fw-news__inner .line-abt:hover .label-default .label-default__arr path {
+    fill: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .fw-news__inner .line-abt:hover .label-time .label-default__arr-left path {
+    fill: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .projects h1 {

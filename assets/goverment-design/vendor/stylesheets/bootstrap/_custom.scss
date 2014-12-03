@@ -290,7 +290,7 @@ section.soc .section-hdr__icon-tw:before {position: absolute;left: 0;top: 50px;c
 .tw-item {margin-bottom: 22px;}
 .tw .tw-item__follow {margin-top: 18px;}
 .tw .tw-item__follow:active {margin-top: 20px;} 
-.tw-item__image {display: block;float: right;margin-right: 5px;}
+.tw-item__image {display: block;width: 100%;height: auto;float: right;margin-right: 5px;}
 .tw-item__content {padding-left: 0;}
 .tw-item__title {display: block;position: relative;font-family: $roboto-condensed-b;font-size: 16px;line-height: 16px;color: #000;padding-right: 40px;margin-bottom: 3px;}
 .tw-item__date {display: block;position: absolute;right: 0;top: 1px;font-family: $roboto-condensed-b;font-size: 16px;line-height: 16px;color: #000;}
@@ -1916,6 +1916,9 @@ footer {padding-top: 50px;}
 .recommend__news .news-item__title {padding-right: 30px;}
 .recommend__news .news-item__title:hover, .recommend__news .news-item__title:focus {color: #026;text-decoration: none;}
 .recommend .recommend__title, .comments .comments__title {padding-left: 0;padding-right: 0;}
+.fw-news__inner .line-abt:hover .label-default {background-color: #000;}
+.fw-news__inner .line-abt:hover .label-default .label-default__arr path {fill:#000;@include transitions(.3s);}
+.fw-news__inner .line-abt:hover .label-time .label-default__arr-left path {fill:#000;@include transitions(.3s);}
 
 // Projects
 // -------------------------

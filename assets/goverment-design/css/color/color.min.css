@@ -122,6 +122,8 @@ ul.nav.nav-tabs>li.tablist__all>a {background-color: #026;}
 @media screen and (min-width: 1200px) {
 
 	.news-item h3 a:hover {color: #026;}
+	.fw-news__inner .line-abt:hover .label-default .label-default__arr path {fill:#000;}
+	.fw-news__inner .line-abt:hover .label-time .label-default__arr-left path {fill:#000;}
 
 }
 

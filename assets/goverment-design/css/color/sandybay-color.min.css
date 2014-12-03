@@ -52,6 +52,7 @@ footer {background-color: #00172e;}
 	nav>.nav.navbar-nav>li>a:hover {border-bottom-color: #ab6a0f;}
 	nav>.nav.navbar-nav>li.dropdown:hover>a {border-bottom-color:#ab6a0f;}
 	.btn-read-more:hover {color: #ab6a0f;}
+	.btn-read:hover {color: #ab6a0f;}
 	.btn-read-primary__inverse:hover {background-color: #01478e;}
 	.content__text a:hover {color: #002266;}
 
@@ -117,6 +118,8 @@ ul.nav.nav-tabs>li.tablist__all>a {background-color: #01478e;}
 @media screen and (min-width: 1200px) {
 
 	.news-item h3 a:hover {color: #01478e;}
+	.fw-news__inner .line-abt:hover .label-default .label-default__arr path {fill:#000;}
+	.fw-news__inner .line-abt:hover .label-time .label-default__arr-left path {fill:#000;}
 
 }
 
