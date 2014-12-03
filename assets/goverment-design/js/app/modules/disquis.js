@@ -9,8 +9,8 @@ appMakeBeCool.gateway.addClass('Disquis', function(properties, $, $window, $docu
 
             // prop
             leadBlockHeight: 0
-            // data
-            // classes ans styles
+                // data
+                // classes ans styles
         },
         _properties = $.extend(_defaults, properties),
         _globals = {
@@ -53,6 +53,10 @@ appMakeBeCool.gateway.addClass('Disquis', function(properties, $, $window, $docu
                 dsq.async = true;
                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            }
+            if ($window.width() > 767) {
+                _properties.leadBlockHeight = _globals.leadBlock.height();
+                _globals.socialsLead.height(_properties.leadBlockHeight);
             }
         },
 
