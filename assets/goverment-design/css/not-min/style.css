@@ -9263,7 +9263,7 @@ textarea {
   float: left;
   height: 100%;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   margin-right: 3px;
 }
 
@@ -10348,6 +10348,7 @@ nav > .nav.navbar-nav > li > a > i, nav > .nav.navbar-nav > li > span > i {
   font-family: "roboto_condensedbold", Arial, sans-serif;
   font-size: 18px;
   line-height: 14px;
+  color: #bdbbac;
   font-style: normal;
 }
 
@@ -10367,7 +10368,7 @@ nav > .nav.navbar-nav > li > a > i {
   top: 0;
   right: 0;
   line-height: 48px;
-  text-align: center;
+  text-align: right;
 }
 
 nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .dropdown-menu > .active > a:hover {
@@ -10402,7 +10403,7 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
 
 .subview .subviewopen > .dl-submenu > li {
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .subview .subviewopen > .dl-submenu > li:last-child {
@@ -10468,7 +10469,7 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   }
 
   nav > .nav.navbar-nav > li > a > i {
-    line-height: 55px;
+    line-height: 48px;
   }
 
   .subview .subviewopen > .dl-submenu > li > a, .subview .subviewopen > .dl-submenu > li > span {
@@ -11312,9 +11313,9 @@ nav > .nav.navbar-nav > li > a, nav > .nav.navbar-nav > li > span {
   font-size: 18px;
   line-height: 18px;
   color: #fff;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-right: 55px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   text-align: right;
 }
 
@@ -11369,9 +11370,9 @@ nav > .nav.navbar-nav > li.colors li > a, nav > .nav.navbar-nav > li.colors li >
 }
 
 .dropdown-menu .divider {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav > .nav.navbar-nav > li.colors .dt-back > a {
@@ -15401,9 +15402,13 @@ figure.full-figure figcaption {
     bottom: 5px;
   }
 
+  nav > .nav.navbar-nav {
+    padding: 8px 75px;
+  }
+
   nav > .nav.navbar-nav > li > a, nav > .nav.navbar-nav > li > span {
-    line-height: 28px;
-    padding-right: 31px;
+    line-height: 18px;
+    padding-right: 30px;
   }
 
   nav > .nav.navbar-nav > li.active:after {
@@ -17103,9 +17108,13 @@ figure.full-figure figcaption {
     bottom: 5px;
   }
 
+  nav > .nav.navbar-nav {
+    padding: 8px 75px;
+  }
+
   nav > .nav.navbar-nav > li > a, nav > .nav.navbar-nav > li > span {
-    line-height: 28px;
-    padding-right: 42px;
+    line-height: 18px;
+    padding-right: 40px;
   }
 
   nav > .nav.navbar-nav > li.active:after {
@@ -18840,6 +18849,11 @@ figure.full-figure figcaption {
     cursor: pointer;
   }
 
+  nav > .nav.navbar-nav > li.dropdown.colors > .dropdown-menu {
+    padding-top: 9px !important;
+    padding-bottom: 5px !important;
+  }
+
   .line.active, .line {
     display: none;
   }
@@ -18874,10 +18888,10 @@ figure.full-figure figcaption {
   }
 
   .dropdown-menu .divider {
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .slider {

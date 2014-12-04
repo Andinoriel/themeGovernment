@@ -58,7 +58,7 @@ textarea {resize:none;}
 .label-default__arr-left path {fill:#e9e8dc;@include transitions(.3s);}
 .label-default__arr-lefts {left: -7px;}
 .lbl-default__lns {display: block;float: left;width: 15px;height: 14px;}
-.lbl-default__lns>span {display: block;float: left;height: 100%;width: 1px;background-color: rgba(255,255,255,.2);margin-right: 3px;}
+.lbl-default__lns>span {display: block;float: left;height: 100%;width: 1px;background-color: rgba(255,255,255,.1);margin-right: 3px;}
 .lbl-default__lns>span:last-child {margin-right: 0;}
 .label-default>span {display: block;float: left;margin-left: 10px;font-family: $roboto-condensed;font-size: 14px;line-height: 13px;color: #fff;font-weight: normal;text-transform: uppercase;}
 .label-default.disabled {background-color: #bdbbac;}
@@ -288,7 +288,7 @@ footer .form-group.has-error label.control-label {color: #fff;font-weight: norma
 .navbar-nav .dropdown-menu {border-radius: 0;border:none;@include box-shadow(none);}
 .navbar-nav .dropdown>.dropdown-menu a, .navbar-nav .dropdown>.dropdown-menu span {font-family: $roboto-condensed-l;text-transform: uppercase;}
 nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {position: relative;}
-nav>.nav.navbar-nav>li>a>i, nav>.nav.navbar-nav>li>span>i {position: absolute;top: 11px;right: 40px;height: 18px;font-family: $roboto-condensed-b;font-size: 18px;line-height: 14px;font-style: normal;}
+nav>.nav.navbar-nav>li>a>i, nav>.nav.navbar-nav>li>span>i {position: absolute;top: 11px;right: 40px;height: 18px;font-family: $roboto-condensed-b;font-size: 18px;line-height: 14px;color: #bdbbac;font-style: normal;}
 
 
 
@@ -299,14 +299,14 @@ nav>.nav.navbar-nav>li>a>i, nav>.nav.navbar-nav>li>span>i {position: absolute;to
 
 // Dt plugin
 // -------------------------
-nav>.nav.navbar-nav>li>a>i {height: 100%;width: 40px;top: 0;right: 0;line-height: 48px;text-align: center;}
+nav>.nav.navbar-nav>li>a>i {height: 100%;width: 40px;top: 0;right: 0;line-height: 48px;text-align: right;}
 nav .dropdown-menu>.active>a, nav .dropdown-menu>.active>a:focus, nav .dropdown-menu>.active>a:hover {background-color: transparent;}
 .nav>li>a:focus, .nav>li>a:hover {background-color: transparent;}
 .subview li {display: none;}
 .subview .subviewopen {display: block;border-bottom: none !important;}
 .subview .subviewopen>a {display: none !important;}
 .subview .subviewopen>.dl-submenu {display: block;position: relative;width: 100%;padding-top: 8px;padding-bottom: 8px;background-color: #990000;}
-.subview .subviewopen>.dl-submenu>li {display: block;border-bottom: 1px solid rgba(255,255,255,.2);}
+.subview .subviewopen>.dl-submenu>li {display: block;border-bottom: 1px solid rgba(255,255,255,.1);}
 .subview .subviewopen>.dl-submenu>li:last-child {border-bottom: none;}
 .subview .subviewopen>.dl-submenu>li>a, .subview .subviewopen>.dl-submenu>li>span {display: block;position: relative;font-family: roboto_condensedlight,Arial,sans-serif;font-size: 14px;line-height: 14px;
 color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-align: right;}
@@ -321,7 +321,7 @@ color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-alig
 
 	.navbar-nav {padding: 18px 75px;}
 	// nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {padding-right: 42px;}
-	nav>.nav.navbar-nav>li>a>i {line-height: 55px;}
+	nav>.nav.navbar-nav>li>a>i {line-height: 48px;}
 	.subview .subviewopen>.dl-submenu>li>a, .subview .subviewopen>.dl-submenu>li>span {padding-right: 32px;}
 
 }

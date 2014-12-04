@@ -88,7 +88,7 @@ header {height: 62px;position: relative;z-index: 20;margin-bottom: 0;background-
 nav>.nav.navbar-nav {margin: 0;padding: 8px 50px;}
 nav>.nav.navbar-nav>li {border-bottom: 1px solid rgba(255,255,255,.2);}
 nav>.nav.navbar-nav>li:last-child {border-bottom-image: none;border-bottom: 0;}
-nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {display: block;float: right;font-family: $roboto-condensed-l;font-size: 18px;line-height: 18px;color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-align: right;}
+nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {display: block;float: right;font-family: $roboto-condensed-l;font-size: 18px;line-height: 18px;color: #fff;padding-top: 15px;padding-right: 55px;padding-bottom: 15px;text-align: right;}
 nav>.nav.navbar-nav>li>a:hover, nav>.nav.navbar-nav>li>span:hover {background-color: transparent;}
 nav>.nav.navbar-nav>li.active>a {color: #bdbbac;}
 nav>.nav.navbar-nav>li.active>span {color: #bdbbac;}
@@ -100,7 +100,7 @@ nav>.nav.navbar-nav>li.colors li {border-bottom: none !important;}
 nav>.nav.navbar-nav>li.colors li>a>svg, nav>.nav.navbar-nav>li.colors li>span>svg {display: block;float: left;position: absolute;right: 0;margin-right: 20px;}
 nav>.nav.navbar-nav>li.colors li>span>span {display: block;float: left;}
 nav>.nav.navbar-nav>li.colors li>a, nav>.nav.navbar-nav>li.colors li>span {border-bottom: none;}
-.dropdown-menu .divider {margin-top: 3px;margin-bottom: 3px;background-color: rgba(255,255,255,.2);}
+.dropdown-menu .divider {margin-top: 5px;margin-bottom: 5px;background-color: rgba(255,255,255,.1);}
 nav>.nav.navbar-nav>li.colors .dt-back>a  {padding-right: 32px;}
 
 // Slider
@@ -914,7 +914,8 @@ header {height: 80px;}
 .navbar-toggle .icon-bar:nth-child(3) {opacity: 0;@include transitions(.1s);}
 .navbar-toggle .icon-bar:nth-child(2) {width: 48px;height: 7px;top: 22px;left: 2px;}
 .navbar-toggle .icon-bar:nth-child(4) {width: 48px;height: 7px;top: 18px;left: 1px;bottom: 5px;}
-nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {line-height: 28px;padding-right: 31px;}
+nav>.nav.navbar-nav {padding: 8px 75px;}
+nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {line-height: 18px;padding-right: 30px;}
 nav>.nav.navbar-nav>li.active:after {right: -15px;}
 .line {margin-right: 15px;margin-left: 15px;}
 nav>.nav.navbar-nav>li.colors li>a, nav>.nav.navbar-nav>li.colors li>span {padding-right: 65px;}
@@ -1296,7 +1297,8 @@ header {height: 80px;}
 .navbar-toggle .icon-bar:nth-child(3) {opacity: 0;@include transitions(.1s);}
 .navbar-toggle .icon-bar:nth-child(2) {width: 48px;height: 7px;top: 22px;left: 2px;}
 .navbar-toggle .icon-bar:nth-child(4) {width: 48px;height: 7px;top: 18px;left: 1px;bottom: 5px;}
-nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {line-height: 28px;padding-right: 42px;}
+nav>.nav.navbar-nav {padding: 8px 75px;}
+nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {line-height: 18px;padding-right: 40px;}
 nav>.nav.navbar-nav>li.active:after {right: -15px;}
 .line {margin-right: 15px;margin-left: 15px;}
 nav>.nav.navbar-nav>li.colors li>a, nav>.nav.navbar-nav>li.colors li>span {padding-right: 65px;}
@@ -1681,13 +1683,14 @@ nav>.nav.navbar-nav>li.active>span {cursor: pointer;}
 nav>.nav.navbar-nav>li.active>span:hover, nav>.nav.navbar-nav>li.active>span {border-bottom: 2px solid #bdbbac;}
 nav>.nav.navbar-nav>li.active:after {display: none;}
 nav>.nav.navbar-nav>li.active>a {border-bottom: 2px solid #bdbbac;cursor: pointer;}
+nav>.nav.navbar-nav>li.dropdown.colors>.dropdown-menu {padding-top: 9px!important;padding-bottom: 5px !important;}
 .line.active, .line {display: none;}
 .colors>a>span {padding-right: 10px;padding-left: 10px;}
 .colors li {border-bottom: none !important;}
 .colors li>a>svg, .colors li>span>svg {display: block;float: left;position: absolute;left: 0;margin-right: 20px;}
 .colors li>span>span {display: block;float: left;}
 .colors li>a, .colors li>span {padding-top: 11px !important;padding-bottom: 11px !important;padding-left: 45px !important;border-bottom: none !important;}
-.dropdown-menu .divider {margin-top: 3px;margin-bottom: 3px;margin-left: 20px;background-color: rgba(255,255,255,.2);}
+.dropdown-menu .divider {margin-top: 5px;margin-bottom: 5px;margin-left: 20px;background-color: rgba(255,255,255,.1);}
 
 // Slider
 // -------------------------
