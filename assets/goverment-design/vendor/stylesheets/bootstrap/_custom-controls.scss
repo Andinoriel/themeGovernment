@@ -305,27 +305,34 @@ nav .dropdown-menu>.active>a, nav .dropdown-menu>.active>a:focus, nav .dropdown-
 .subview li {display: none;}
 .subview .subviewopen {display: block;border-bottom: none !important;}
 .subview .subviewopen>a {display: none !important;}
-.subview .subviewopen>.dl-submenu {display: block;position: relative;width: 100%;padding-top: 8px;padding-bottom: 8px;background-color: #990000;}
+.subview .subviewopen>.dl-submenu {display: block;position: relative;width: 100%;padding-top: 0px;padding-bottom: 0px;background-color: #990000;}
 .subview .subviewopen>.dl-submenu>li {display: block;border-bottom: 1px solid rgba(255,255,255,.1);}
 .subview .subviewopen>.dl-submenu>li:last-child {border-bottom: none;}
 .subview .subviewopen>.dl-submenu>li>a, .subview .subviewopen>.dl-submenu>li>span {display: block;position: relative;font-family: roboto_condensedlight,Arial,sans-serif;font-size: 14px;line-height: 14px;
-color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-align: right;}
-.subview .subviewopen>.dl-submenu>li>a>i, .subview .subviewopen>.dl-submenu>li>span>i {position: absolute;top: 11px;right: 0;height: 100%;width: 40px;top: 0;right: 0;font-family: $roboto-condensed-b;font-size: 18px;line-height: 42px;text-align: center;font-style: normal;}
+color: #fff;padding-top: 17px;padding-right: 31px;padding-bottom: 17px;text-align: right;}
+.subview .subviewopen>.dl-submenu>li>a>i, .subview .subviewopen>.dl-submenu>li>span>i {position: absolute;top: 11px;right: 0;height: 100%;width: 40px;top: 0;right: 0;font-family: $roboto-condensed-b;font-size: 18px;color: #bdbdac;line-height: 48px;text-align: right;font-style: normal;}
+.subview .subviewopen>.dl-submenu>li.dt-back>a>i {text-align: left;line-height: 40px;}
+.subview .subviewopen.active>span {display: none;}
 .subview li.subview {display: block;border-bottom: none !important;}
 .subview li.subview>a {display: none !important;}
 .subview li.subview .dl-submenu {display: block;position: relative;background-color: #990000;width: 100%;margin: 0;padding: 0;}
 .dt-back i {@include rotate(180deg);}
 // .dt-back a {padding-left: 40px !important;}
+nav>.nav.navbar-nav>li.colors li>a>svg, nav>.nav.navbar-nav>li.colors li>span>svg {margin-right: 0;top: 17px;}
+nav>.nav.navbar-nav>li.colors .dt-back>a {padding-right: 40px;}
+nav>.nav.navbar-nav>li.colors li>a, nav>.nav.navbar-nav>li.colors li>span {padding-right: 40px;}
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
 
 	.navbar-nav {padding: 18px 75px;}
-	// nav>.nav.navbar-nav>li>a, nav>.nav.navbar-nav>li>span {padding-right: 42px;}
 	nav>.nav.navbar-nav>li>a>i {line-height: 48px;}
 	.subview .subviewopen>.dl-submenu>li>a, .subview .subviewopen>.dl-submenu>li>span {padding-right: 32px;}
 
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.subview .subviewopen>.dl-submenu>li>a, .subview .subviewopen>.dl-submenu>li>span {padding-right: 40px;}
+}
 
 // Breakpoint 1200
 // -------------------------
@@ -352,13 +359,15 @@ color: #fff;padding-top: 16px;padding-right: 55px;padding-bottom: 16px;text-alig
 	.navbar-nav .dropdown>.dropdown-menu>li.dropdown-submenu:hover>a {color: #fff;}
 	// .navbar-nav .dropdown>.dropdown-menu>li a
 	.dropdown-submenu {position:relative;}
-	.dropdown-submenu>.dropdown-menu {top: -2px;right: auto;left: 100%;margin: 2px 0 0;padding: 0 20px;background-color: #000;}
+	.dropdown-submenu>.dropdown-menu {top: -3px;right: auto;left: 100%;margin: 2px 0 0;padding: 0 20px;background-color: #000;}
 	.dropdown-submenu>.dropdown-menu>li {border-bottom: 1px solid rgba(255,255,255,.1);}
 	.dropdown-submenu>.dropdown-menu>li:last-child {border-bottom: none;}
-	.dropdown-submenu>.dropdown-menu>li>a {padding:20px 0;font-size: 14px;line-height: 1;color: #bdbbac;}
+	.dropdown-submenu>.dropdown-menu>li>a {padding:21px 0;font-size: 14px;line-height: 1;color: #bdbbac;}
 	.dropdown-submenu>.dropdown-menu>li>span {display: block;padding: 20px 0;font-size: 14px;line-height: 1;color: #fff;white-space: nowrap;cursor: pointer;}
 	.dropdown-submenu>.dropdown-menu>li>a:hover {color: #fff;}
 	.dropdown-submenu:hover>.dropdown-menu {display:block;}
+	.dt-back {display: none;}
+	nav>.nav.navbar-nav>li.colors li>a>svg, nav>.nav.navbar-nav>li.colors li>span>svg {top: auto;}
 
 	.navbar-nav .dropdown>.dropdown-menu.dropdown-menu {right: auto;left: -20px;}
 	.navbar-nav .dropdown>.dropdown-menu.dropdown-menu__right {right: -20px;left: auto;padding: 0 20px 0 0;}

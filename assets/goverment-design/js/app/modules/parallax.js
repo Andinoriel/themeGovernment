@@ -46,11 +46,6 @@ appMakeBeCool.gateway.addClass('Parallax', function(properties, $, $window, $doc
 
 
                 $('.slider__bg-img').parallax("50%", 0.4); // Welcome Image
-                // $('.parallax-banner-2').parallax("50%", 0.4); // Philosophy 
-                // $('.parallax-banner-3').parallax("50%", 0.4); // Service
-                // $('.parallax-banner-4').parallax("50%", 0.4); // Connected
-                // $('.parallax-banner-5').parallax("50%", 0.4); // Contact
-                // $('.parallax-banner-6').parallax("50%", 0.4); // Counter
                 // if (_globals.parallaxNode.length && $window.width() >= 768) {
 
                 // _globals.parallaxVariable = skrollr.init({

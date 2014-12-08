@@ -10396,8 +10396,8 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   display: block;
   position: relative;
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #990000;
 }
 
@@ -10417,9 +10417,9 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   font-size: 14px;
   line-height: 14px;
   color: #fff;
-  padding-top: 16px;
-  padding-right: 55px;
-  padding-bottom: 16px;
+  padding-top: 17px;
+  padding-right: 31px;
+  padding-bottom: 17px;
   text-align: right;
 }
 
@@ -10433,9 +10433,19 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   right: 0;
   font-family: "roboto_condensedbold", Arial, sans-serif;
   font-size: 18px;
-  line-height: 42px;
-  text-align: center;
+  color: #bdbdac;
+  line-height: 48px;
+  text-align: right;
   font-style: normal;
+}
+
+.subview .subviewopen > .dl-submenu > li.dt-back > a > i {
+  text-align: left;
+  line-height: 40px;
+}
+
+.subview .subviewopen.active > span {
+  display: none;
 }
 
 .subview li.subview {
@@ -10463,6 +10473,19 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   transform: rotate(180deg);
 }
 
+nav > .nav.navbar-nav > li.colors li > a > svg, nav > .nav.navbar-nav > li.colors li > span > svg {
+  margin-right: 0;
+  top: 17px;
+}
+
+nav > .nav.navbar-nav > li.colors .dt-back > a {
+  padding-right: 40px;
+}
+
+nav > .nav.navbar-nav > li.colors li > a, nav > .nav.navbar-nav > li.colors li > span {
+  padding-right: 40px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .navbar-nav {
     padding: 18px 75px;
@@ -10474,6 +10497,11 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
 
   .subview .subviewopen > .dl-submenu > li > a, .subview .subviewopen > .dl-submenu > li > span {
     padding-right: 32px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .subview .subviewopen > .dl-submenu > li > a, .subview .subviewopen > .dl-submenu > li > span {
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -10589,7 +10617,7 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   }
 
   .dropdown-submenu > .dropdown-menu {
-    top: -2px;
+    top: -3px;
     right: auto;
     left: 100%;
     margin: 2px 0 0;
@@ -10606,7 +10634,7 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
   }
 
   .dropdown-submenu > .dropdown-menu > li > a {
-    padding: 20px 0;
+    padding: 21px 0;
     font-size: 14px;
     line-height: 1;
     color: #bdbbac;
@@ -10628,6 +10656,14 @@ nav .dropdown-menu > .active > a, nav .dropdown-menu > .active > a:focus, nav .d
 
   .dropdown-submenu:hover > .dropdown-menu {
     display: block;
+  }
+
+  .dt-back {
+    display: none;
+  }
+
+  nav > .nav.navbar-nav > li.colors li > a > svg, nav > .nav.navbar-nav > li.colors li > span > svg {
+    top: auto;
   }
 
   .navbar-nav .dropdown > .dropdown-menu.dropdown-menu {
@@ -11294,11 +11330,11 @@ header {
 
 nav > .nav.navbar-nav {
   margin: 0;
-  padding: 8px 50px;
+  padding: 8px 40px;
 }
 
 nav > .nav.navbar-nav > li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav > .nav.navbar-nav > li:last-child {
@@ -11314,7 +11350,7 @@ nav > .nav.navbar-nav > li > a, nav > .nav.navbar-nav > li > span {
   line-height: 18px;
   color: #fff;
   padding-top: 15px;
-  padding-right: 55px;
+  padding-right: 30px;
   padding-bottom: 15px;
   text-align: right;
 }
@@ -11357,12 +11393,15 @@ nav > .nav.navbar-nav > li.colors li > a > svg, nav > .nav.navbar-nav > li.color
   float: left;
   position: absolute;
   right: 0;
-  margin-right: 20px;
 }
 
 nav > .nav.navbar-nav > li.colors li > span > span {
   display: block;
   float: left;
+}
+
+nav > .nav.navbar-nav > li.colors li.active svg {
+  opacity: .33;
 }
 
 nav > .nav.navbar-nav > li.colors li > a, nav > .nav.navbar-nav > li.colors li > span {
@@ -11377,6 +11416,10 @@ nav > .nav.navbar-nav > li.colors li > a, nav > .nav.navbar-nav > li.colors li >
 
 nav > .nav.navbar-nav > li.colors .dt-back > a {
   padding-right: 32px;
+}
+
+.subview .subviewopen > .dl-submenu > li.active > span {
+  color: #bdbbac;
 }
 
 .slider {
@@ -12220,7 +12263,7 @@ section.soc .section-hdr__icon-tw:before {
 
 .tw-item__image {
   display: block;
-  width: 100%;
+  width: 50px;
   height: auto;
   float: right;
   margin-right: 5px;
@@ -14112,7 +14155,7 @@ figure.full-figure figcaption {
   position: absolute;
   z-index: 4;
   right: 0;
-  bottom: 10px;
+  bottom: 15px;
   left: 0;
   margin: auto;
 }
@@ -14223,7 +14266,7 @@ figure.full-figure figcaption {
 
 .event-cont {
   display: block;
-  margin-top: -10px;
+  margin-top: -12px;
 }
 
 .event-cont__item {
@@ -16164,6 +16207,10 @@ figure.full-figure figcaption {
     padding-left: 15px;
   }
 
+  .content aside .news-item__image-nobg {
+    height: auto;
+  }
+
   .recommend__news-wrap {
     padding-bottom: 20px;
   }
@@ -16191,6 +16238,10 @@ figure.full-figure figcaption {
 
   .recommend__news .news-item__title {
     padding-right: 20px;
+  }
+
+  .recommend__news-wrap .news-item__image-nobg {
+    height: auto;
   }
 
   .comments {
@@ -17820,6 +17871,10 @@ figure.full-figure figcaption {
     padding-left: 15px;
   }
 
+  .content aside .news-item__image-nobg {
+    height: auto;
+  }
+
   .recommend__news {
     padding-left: 15px;
     padding-right: 15px;
@@ -17840,6 +17895,10 @@ figure.full-figure figcaption {
 
   .recommend__news .news-item__title {
     padding-right: 25px;
+  }
+
+  .recommend__news-wrap .news-item__image-nobg {
+    height: auto;
   }
 
   .comments {
