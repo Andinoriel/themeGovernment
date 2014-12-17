@@ -78,7 +78,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      * Вызов всех прослушиваний необходимых событий для этого класса
      */
     _site.setEventBinds = function () {
-        _site.eventBinds().setUnloadBind();
+        // _site.eventBinds().setUnloadBind();
     };
 
     /**
