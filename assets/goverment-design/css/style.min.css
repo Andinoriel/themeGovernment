@@ -4116,7 +4116,7 @@ hr.half {
 header {
   height: 62px;
   position: relative;
-  z-index: 20;
+  z-index: 26;
   margin-bottom: 0;
   background-color: #000;
 }

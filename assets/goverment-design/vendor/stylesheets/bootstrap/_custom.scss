@@ -62,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce9c94', end
 
 // 404
 // -------------------------
-.ff {background: url('../../images/404.jpg') left top repeat;text-align: center;}
+.ff {position: relative;z-index: 5;background: url('../../images/404.jpg') left top repeat;text-align: center;}
 .ff__inner {width: 250px;padding-top: 100px;padding-bottom: 120px;margin: 0 auto;}
 .ff__title {position: relative;margin-bottom: 50px;font-family: $roboto-condensed-b;font-size: 125px;line-height: 1;color: #9a0000;}
 .ff__descr {font-family: $roboto-condensed-l;font-size: 30px;line-height: 1;color: #000;}
@@ -71,7 +71,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce9c94', end
 
 // Header
 // -------------------------
-header {height: 62px;position: relative;z-index: 20;margin-bottom: 0;background-color: #000;}
+header {height: 62px;position: relative;z-index: 26;margin-bottom: 0;background-color: #000;}
 .navbar-brand {padding: 15px 15px 15px 0;line-height: 26px;}
 .navbar-toggle {width: 40px;height: 40px;position: relative;background-color: #990000;border:none;border-radius: 0;margin-top: 10px;margin-bottom: 10px;margin-right: 0;padding: 6px;}
 .navbar-toggle.collapsed {background-color: #e9e8dc;}
