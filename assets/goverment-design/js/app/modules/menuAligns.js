@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('MenuAligns', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _menuAligns = this,

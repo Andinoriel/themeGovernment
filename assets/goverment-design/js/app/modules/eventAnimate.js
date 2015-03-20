@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _eventAnimate = this,

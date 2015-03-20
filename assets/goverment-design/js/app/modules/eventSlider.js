@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('EventSlider', function(properties, $, $window, $document) {
   //PRIVATE VARIABLES
   var _eventSlider = this,

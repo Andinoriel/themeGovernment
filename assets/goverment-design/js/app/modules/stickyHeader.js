@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('StickyHeader', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _stickyHeader = this,

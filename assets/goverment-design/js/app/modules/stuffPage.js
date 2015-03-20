@@ -1,4 +1,6 @@
-appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $document) {
+"use strict";
+
+appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _stuffPage = this,
         _defaults = {
@@ -38,12 +40,12 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_stuffPage, [_properties]);
             if (!_globals.preloaded) {
                 return _stuffPage.init();
             }
-            _stuffPage.globals.customCreate = function() {
+            _stuffPage.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -52,7 +54,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
             _stuffPage.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.body = $(_properties.body);
             _globals.stuff = $(_properties.stuff);
             _globals.closeB = $(_properties.closeB);
@@ -63,7 +65,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
             _globals.stuffPage = $(_properties.stuffPage);
         },
 
-        _setup = function() {
+        _setup = function () {
 
             //Append cover empty markup
             if (!_globals.cover.length && _globals.stuffPage.length) {
@@ -75,8 +77,8 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
 
             //Stuff click functions
             if (_globals.cover.length) {
-                _globals.coverBg.height($('body').height());
-                _globals.stuff.click(function(event) {
+                _globals.coverBg.height($('body').outerHeight());
+                _globals.stuff.click(function (event) {
                     event.preventDefault();
                     var $stuffNode = $(this);
                     var stuffImgSrc = $stuffNode.find('.stuff__item-img').attr('src');
@@ -98,11 +100,11 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
                     }
 
                     //Cache the user scroll value
-                    if (typeof(window['sessionStorage']) !== 'undefined') {
-                        _properties.scrollPosition = $window.scrollTop();
-                        _globals.sessionStorage = window.sessionStorage;
-                        _globals.sessionStorage[_properties.sessionStorage] = _properties.scrollPosition;
-                    }
+                    //                    if (typeof(window['sessionStorage']) !== 'undefined') {
+                    //                        _properties.scrollPosition = $window.scrollTop();
+                    //                        _globals.sessionStorage = window.sessionStorage;
+                    //                        _globals.sessionStorage[_properties.sessionStorage] = _properties.scrollPosition;
+                    //                    }
 
                     //Visual markups
                     _properties.coverMarginTop = _globals.heading.offset().top + _globals.heading.outerHeight();
@@ -119,51 +121,51 @@ appMakeBeCool.gateway.addClass('StuffPage', function(properties, $, $window, $do
                     //Close cover
                     function exitCover() {
                         _globals.cover.removeClass('active');
-                        $('html,body').animate({
-                            scrollTop: _globals.sessionStorage[_properties.sessionStorage]
-                        }, 500);
+                        //                        $('html,body').animate({
+                        //                            scrollTop: _globals.sessionStorage[_properties.sessionStorage]
+                        //                        }, 500);
                         // $('html,body').scrollTop(_globals.sessionStorage[_properties.sessionStorage]);
                     };
 
                     //Exit events
-                    $document.keydown(function(event) {
+                    $document.keydown(function (event) {
                         if (event.which === 27) {
                             exitCover();
                         }
                     });
-                    _globals.coverBg.click(function() {
+                    _globals.coverBg.click(function () {
                         exitCover();
                     });
-                    _globals.closeB.click(function() {
+                    _globals.closeB.click(function () {
                         exitCover();
                     });
                 });
             }
         },
 
-        _setBinds = function() {
+        _setBinds = function () {
             // _binds().setResizeBinds();
         },
 
-        _binds = function() {
+        _binds = function () {
             return {
-                setResizeBinds: function() {
-                    _stuffPage.bind($window, 'resize', function(e, data, el) {
+                setResizeBinds: function () {
+                    _stuffPage.bind($window, 'resize', function (e, data, el) {
                         _setup();
                     });
                 }
             };
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {};
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function () {};
 
     //PUBLIC METHODS
-    _stuffPage.addMethod('init', function() {
-        _stuffPage.bind($window, _stuffPage.globals.classType + '_Init', function(e, data, el) {
+    _stuffPage.addMethod('init', function () {
+        _stuffPage.bind($window, _stuffPage.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

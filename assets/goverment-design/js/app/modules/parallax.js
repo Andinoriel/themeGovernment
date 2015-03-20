@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('Parallax', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _parallax = this,

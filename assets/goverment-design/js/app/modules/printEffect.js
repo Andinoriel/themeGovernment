@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('PrintEffect', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _printEffect = this,

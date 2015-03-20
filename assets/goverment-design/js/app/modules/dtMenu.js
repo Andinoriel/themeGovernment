@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _dtMenu = this,

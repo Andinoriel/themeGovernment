@@ -23,21 +23,21 @@
     <link rel="dns-prefetch" href="http://code.jquery.com" />
     <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="http://www.google-analytics.com" />
-    <link rel="icon" href="images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/min/style.min.css">
-    <link rel="stylesheet" href="js/jquery/plugins/slick/slick.css">
-    <link rel="stylesheet" href="css/color/sandybay-color.min.css">
-    <link rel="stylesheet" href="css/color/skyline-color.min.css">
-    <link rel="stylesheet" href="css/color/raspberry-color.min.css">
+    <link rel="icon" href="../images/themegovrnmnt-favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/themegovrnmnt-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/min/style.min.css">
+    <link rel="stylesheet" href="../js/jquery/plugins/slick/slick.css">
+    <link rel="stylesheet" href="../css/color/sandybay-color.min.css">
+    <link rel="stylesheet" href="../css/color/skyline-color.min.css">
+    <link rel="stylesheet" href="../css/color/raspberry-color.min.css">
     <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
     <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <script src="js/jquery/jquery-1.11.1.min.js"></script>
-    <script src="js/otherlibs/bootstrap/bootstrap.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/otherlibs/bootstrap/bootstrap.js"></script>
 </head>
 
 <body id="body">
@@ -54,17 +54,17 @@
                         </button>
                         <div class="home-btn">Home</div>
                         <a href="index.html" class="navbar-brand">
-                            <img src="images/logo.png" alt="">
+                            <img src="../images/logo.png" alt="">
                         </a>
                         <div class="line"></div>
                     </div>
                     <div class="col-lg-7 col-lg-offset-1 navbar-collapse collapse">
                         <nav role="navigation">
                             <ul id="navigation" class="nav navbar-nav navbar-right dl-menu">
-                                <li class="dropdown active">
+                                <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Projects <i>›</i></a>
                                     <ul class="dropdown-menu dl-submenu" role="menu">
-                                        <li class="active"><span>Projects</span>
+                                        <li><a href="projects.html">Projects</a>
                                         </li>
                                         <li><a href="projects-view.html">Project view</a>
                                         </li>
@@ -114,8 +114,8 @@
                                     </ul>
                                     <div class="clearfix"></div>
                                 </li>
-                                <li>
-                                    <a href="contacts.html">Contacts</a>
+                                <li class="active">
+                                    <span>Contacts</span>
                                     <div class="clearfix"></div>
                                 </li>
                                 <li class="dropdown colors">
@@ -210,216 +210,71 @@
                 </div>
             </div>
         </header>
-        <div class="projects bg-col">
+        <div id="map_canvas" class="fw-gmap" data-latitude="47.095151" data-longitude="37.539726" data-map-name="Australia Prime Minister Tony Abbott governs from indigenous area">
+            <!-- <img src="../uploads/contacts/map.jpg" alt=""> -->
+            <!-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=16&center=47.0952%2C37.5397&key=AIzaSyAJ2423UhDMxQHzltQVLjAdju7YfMxImUY"></iframe>  -->
+        </div>
+        <div class="fw-colorBg contacts-list">
             <div class="container">
-                <h1>Projects</h1>
-                <article class="project-item">
-                    <a href="#" class="project-item__img-wrap">
-                        <img src="http://placehold.it/1140x400.jpg" alt="" class="project-item__img">
-                    </a>
-                    <div class="project-item__bt">
-                        <div class="blue-chart-diagramm project-item__diagramm">
-                            <div class="sm-diagramm">
-                                <canvas class="blue-chart" width="100%" height="100%" data-percent="67" data-size="80"></canvas>
-                            </div>
-                        </div>
-                        <h2><a href="#">Hеalth care plan most progressive nowdays</a></h2>
-                        <div class="prop-icons">
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-coins"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">We have</div>
-                                    <div class="prop-icons__item-vl">$51 008</div>
-                                </div>
-                            </div>
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-calendar"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">Days left</div>
-                                    <div class="prop-icons__item-vl">37</div>
-                                </div>
-                            </div>
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-hand-stop"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">Support</div>
-                                    <div class="prop-icons__item-vl">24</div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                        <a href="#" class="btn btn-support">Get more info about our health care plan</a>
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <ul class="list-icons">
+                            <li>
+                                <span><i class="fa fa-map-marker"></i>Ukraine, 87500 Mariupol <br>Kazanceva 7b, office 29</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-mobile"></i>
+                                <!-- 						<span>+38 (000) 000 00 00</span> -->
+                                <a href="tel:380673170274" class="list-icons__phn">+38 (067) 317-02-74</a>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-                <hr class="line-ctr">
-                <article class="project-item-ln">
-                    <div class="project-item-ln__shd-lft"></div>
-                    <div class="project-item-ln__shd-rt"></div>
-                    <div class="project-item-ln-wrap">
-                        <a href="#" class="project-item__img-wrap">
-                            <img src="http://placehold.it/1140x400.jpg" alt="" class="project-item__img">
-                        </a>
-                        <div class="project-item__bt">
-                            <div class="red-chart-diagramm project-item__diagramm">
-                                <div class="sm-diagramm">
-                                    <canvas class="red-chart" width="100%" height="100%" data-percent="97" data-size="80"></canvas>
-                                </div>
-                            </div>
-                            <h2><a href="#">Just $5 can provide a person with clean drinking water. person</a></h2>
-                            <div class="prop-icons">
-                                <div class="prop-icons__item">
-                                    <div class="prop-icons__item-left">
-                                        <i class="gic gic-calendar"></i>
-                                    </div>
-                                    <div class="prop-icons__item-right">
-                                        <div class="prop-icons__item-hd">Days left</div>
-                                        <div class="prop-icons__item-vl">37</div>
-                                    </div>
-                                </div>
-                                <div class="prop-icons__item">
-                                    <div class="prop-icons__item-left">
-                                        <i class="gic gic-hand-stop"></i>
-                                    </div>
-                                    <div class="prop-icons__item-right">
-                                        <div class="prop-icons__item-hd">Support</div>
-                                        <div class="prop-icons__item-vl">24</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                            <a href="#" class="btn btn-support">Support just from $5</a>
-                        </div>
+                    <div class="col-sm-6">
+                        <ul class="list-icons active">
+                            <li>
+                                <a href="#"><i class="fa fa-envelope-o"></i>hello@makebecool.com</a>
+                            </li>
+                            <li>
+                                <a href="skype:makebecool?call"><i class="fa fa-skype"></i>makebecool</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i>facebook.com/makebecool</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i>twitter.com/makebecool</a>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-                <hr class="line-ctr">
-                <article class="project-item project-item__ni">
-                    <a href="#" class="project-item__img-wrap project-item__no-img">
-                        <img src="images/themegovrnmnt-project_noFoto.svg" alt="">
-                    </a>
-                    <div class="project-item__bt">
-                        <div class="blue-chart-diagramm project-item__diagramm">
-                            <div class="sm-diagramm">
-                                <canvas class="blue-chart" width="100%" height="100%" data-percent="65" data-size="80"></canvas>
-                            </div>
-                        </div>
-                        <h2><a href="#">Hеalth care plan most progressive nowdays</a></h2>
-                        <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                        <a href="#" class="btn btn-support">Get more info about our health care plan</a>
-                    </div>
-                </article>
-                <hr class="line-ctr">
-                <article class="project-item">
-                    <a href="#" class="project-item__img-wrap">
-                        <img src="http://placehold.it/1140x400.jpg" alt="" class="project-item__img">
-                    </a>
-                    <div class="project-item__bt">
-                        <div class="blue-chart-diagramm project-item__diagramm">
-                            <div class="sm-diagramm">
-                                <canvas class="blue-chart" width="100%" height="100%" data-percent="61" data-size="80"></canvas>
-                            </div>
-                        </div>
-                        <h2><a href="#">Hеalth care plan most progressive nowdays</a></h2>
-                        <div class="prop-icons">
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-coins"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">We have</div>
-                                    <div class="prop-icons__item-vl">$51 008</div>
-                                </div>
-                            </div>
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-calendar"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">Days left</div>
-                                    <div class="prop-icons__item-vl">37</div>
-                                </div>
-                            </div>
-                            <div class="prop-icons__item">
-                                <div class="prop-icons__item-left">
-                                    <i class="gic gic-hand-stop"></i>
-                                </div>
-                                <div class="prop-icons__item-right">
-                                    <div class="prop-icons__item-hd">Support</div>
-                                    <div class="prop-icons__item-vl">24</div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                        <a href="#" class="btn btn-support">Get more info about our health care plan</a>
-                    </div>
-                </article>
-                <hr class="line-ctr">
-                <article class="project-item-ln">
-                    <div class="project-item-ln__shd-lft"></div>
-                    <div class="project-item-ln__shd-rt"></div>
-                    <div class="project-item-ln-wrap">
-                        <a href="#" class="project-item__img-wrap">
-                            <img src="http://placehold.it/1140x400.jpg" alt="" class="project-item__img">
-                        </a>
-                        <div class="project-item__bt">
-                            <div class="red-chart-diagramm project-item__diagramm">
-                                <div class="sm-diagramm">
-                                    <canvas class="red-chart" width="100%" height="100%" data-percent="92" data-size="80"></canvas>
-                                </div>
-                            </div>
-                            <h2><a href="#">Just $5 can provide a person with clean drinking water. person</a></h2>
-                            <div class="prop-icons">
-                                <div class="prop-icons__item">
-                                    <div class="prop-icons__item-left">
-                                        <i class="gic gic-calendar"></i>
-                                    </div>
-                                    <div class="prop-icons__item-right">
-                                        <div class="prop-icons__item-hd">Days left</div>
-                                        <div class="prop-icons__item-vl">37</div>
-                                    </div>
-                                </div>
-                                <div class="prop-icons__item">
-                                    <div class="prop-icons__item-left">
-                                        <i class="gic gic-hand-stop"></i>
-                                    </div>
-                                    <div class="prop-icons__item-right">
-                                        <div class="prop-icons__item-hd">Support</div>
-                                        <div class="prop-icons__item-vl">24</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                            <a href="#" class="btn btn-support">Support just from $5</a>
-                        </div>
-                    </div>
-                </article>
-                <hr class="line-ctr">
-                <article class="project-item project-item__ni">
-                    <a href="#" class="project-item__img-wrap project-item__no-img">
-                        <img src="images/themegovrnmnt-project_noFoto.svg" alt="">
-                    </a>
-                    <div class="project-item__bt">
-                        <div class="blue-chart-diagramm project-item__diagramm">
-                            <div class="sm-diagramm">
-                                <canvas class="blue-chart" width="100%" height="100%" data-percent="65" data-size="80"></canvas>
-                            </div>
-                        </div>
-                        <h2><a href="#">Hеalth care plan most progressive nowdays</a></h2>
-                        <p class="project-item__p">Millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace millions of Americans now have the chance to buy quality, affordable care through the new health insurance marketplace</p>
-                        <a href="#" class="btn btn-support">Get more info about our health care plan</a>
-                    </div>
-                </article>
-                <hr class="line-ctr">
-                <div class="row more">
-                    <a href="#" class="btn btn-default tw-item__follow">More projects</a>
                 </div>
             </div>
         </div>
+        <section class="bg-col text-center contacts-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+                        <h2>Write to us</h2>
+                        <form action="#" class="form-validate wh" role="form" method="post" novalidate="novalidate">
+                            <div class="form-group">
+                                <input id="subscribe-email" class="form-control" placeholder="email:" type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subscribe-name" name="subscribe-name" class="form-control" placeholder="your name:" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="subscribe-textarea" name="subscribe-textarea" class="form-control" rows="4" placeholder="Additional info:" required></textarea>
+                            </div>
+                            <button class="btn btn-default" value="Send" type="submit">Send</button>
+                            <div class="form-loader hidden">
+                                <div id="loader" class="loader"></div>
+                            </div>
+                        </form>
+                        <div class="success-message hidden">
+                            <div class="suc-title"><i class="fa fa-check"></i>Thank you!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer>
             <div class="container">
                 <div class="row">
@@ -474,39 +329,40 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery/plugins/Chart.js"></script>
-    <script src="js/jquery/plugins/bootstrap-select.js"></script>
-    <script src="js/jquery/plugins/slick/slick.js"></script>
-    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
-    <script src="js/jquery/plugins/skrollr.js"></script>
-    <script src="js/jquery/plugins/jquery.sharrre.min.js"></script>
-    <script src="js/jquery/plugins/jquery.form.js"></script>
-    <script src="js/jquery/plugins/validation/jquery.validate.js"></script>
-    <script src="js/app/lib/site.js"></script>
-    <script src="js/app/lib/siteMode.js"></script>
-    <script src="js/app/mode/themeMode.js"></script>
-    <script src="js/app/modules/mainSlider.js"></script>
-    <script src="js/app/modules/menuAligns.js"></script>
-    <script src="js/app/modules/bgStretch.js"></script>
-    <script src="js/app/modules/eventAnimate.js"></script>
-    <script src="js/app/modules/stuffSlider.js"></script>
-    <script src="js/app/modules/gridsDiagramms.js"></script>
-    <script src="js/app/modules/barChart.js"></script>
-    <script src="js/app/modules/disquis.js"></script>
-    <script src="js/app/modules/stickyHeader.js"></script>
-    <script src="js/app/modules/globalScripts.js"></script>
-    <script src="js/app/modules/parallax.js"></script>
-    <script src="js/app/modules/backgroundImg.js"></script>
-    <script src="js/app/modules/scrollPlugin.js"></script>
-    <script src="js/app/modules/googleMap.js"></script>
-    <script src="js/app/modules/eventSlider.js"></script>
-    <script src="js/app/modules/stuffPage.js"></script>
-    <script src="js/app/modules/aboutDiagramms.js"></script>
-    <script src="js/app/modules/sharrre.js"></script>
-    <script src="js/app/modules/dtMenu.js"></script>
-    <script src="js/app/modules/formSubscribe.js"></script>
-    <script src="js/app/modules/formFieldsSubscribe.js"></script>
-    <script src="js/init.js"></script>
+    <script src="../js/jquery/plugins/Chart.js"></script>
+    <script src="../js/jquery/plugins/bootstrap-select.js"></script>
+    <script src="../js/jquery/plugins/slick/slick.js"></script>
+    <script src="../js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="../js/jquery/plugins/skrollr.js"></script>
+    <script src="../js/jquery/plugins/jquery.sharrre.min.js"></script>
+    <script src="../js/jquery/plugins/jquery.parallax.min.js"></script>
+    <script src="../js/jquery/plugins/jquery.form.js"></script>
+    <script src="../js/jquery/plugins/validation/jquery.validate.js"></script>
+    <script src="../js/app/lib/site.js"></script>
+    <script src="../js/app/lib/siteMode.js"></script>
+    <script src="../js/app/mode/themeMode.js"></script>
+    <script src="../js/app/modules/mainSlider.js"></script>
+    <script src="../js/app/modules/menuAligns.js"></script>
+    <script src="../js/app/modules/bgStretch.js"></script>
+    <script src="../js/app/modules/eventAnimate.js"></script>
+    <script src="../js/app/modules/stuffSlider.js"></script>
+    <script src="../js/app/modules/gridsDiagramms.js"></script>
+    <script src="../js/app/modules/barChart.js"></script>
+    <script src="../js/app/modules/disquis.js"></script>
+    <script src="../js/app/modules/stickyHeader.js"></script>
+    <script src="../js/app/modules/globalScripts.js"></script>
+    <script src="../js/app/modules/parallax.js"></script>
+    <script src="../js/app/modules/backgroundImg.js"></script>
+    <script src="../js/app/modules/scrollPlugin.js"></script>
+    <script src="../js/app/modules/googleMap.js"></script>
+    <script src="../js/app/modules/eventSlider.js"></script>
+    <script src="../js/app/modules/stuffPage.js"></script>
+    <script src="../js/app/modules/aboutDiagramms.js"></script>
+    <script src="../js/app/modules/sharrre.js"></script>
+    <script src="../js/app/modules/dtMenu.js"></script>
+    <script src="../js/app/modules/formSubscribe.js"></script>
+    <script src="../js/app/modules/formFieldsSubscribe.js"></script>
+    <script src="../js/init.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+"use strict";
+
 var appMakeBeCool = (typeof appMakeBeCool === 'undefined') ? {} : console.log('Namespace appMakeBeCool is taken');
 
 appMakeBeCool.Site = function ($, window, document, undefined) {
@@ -534,7 +536,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @returns {boolean}
          */
         createComplete: function (fn) {
-            _baseClass = this;
+            var _baseClass = this;
             if (_baseClass.globals.createComplete) return false; /*_baseClass.logWarning('createComplete() has already been successfully executed...is this a necessary warning?');*/
             if (_baseClass.globals.classDependentsInstances.length > 0) _baseClass.loadCompleteChecker();
             if (_baseClass.globals.classDependentsInstances.length > 0 && !_baseClass.classDependentsStatus().setupComplete) {
@@ -599,7 +601,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @returns {boolean}
          */
         isLoaded: function () {
-            _baseClass = this;
+            var _baseClass = this;
             if (!_baseClass.globals.createComplete) return false;
             else if (_baseClass.globals.classDependentsInstances < 1) return true;
             else if (_baseClass.classDependentsStatus().loadComplete) return true;

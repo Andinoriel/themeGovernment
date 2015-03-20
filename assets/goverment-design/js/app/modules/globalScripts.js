@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _globalScripts = this,

@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window, $document) {
   //PRIVATE VARIABLES
   var _aboutDiagramms = this,

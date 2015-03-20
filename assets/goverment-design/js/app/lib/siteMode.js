@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('SiteMode', function(properties, $window, $document) {
     //PRIVATE VARIABLES
     var _siteMode = this,

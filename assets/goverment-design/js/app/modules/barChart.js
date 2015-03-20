@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $document) {
   //PRIVATE VARIABLES
   var _barChart = this,

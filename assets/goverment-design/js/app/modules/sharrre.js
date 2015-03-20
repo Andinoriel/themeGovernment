@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('Sharrre', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _sharrre = this,

@@ -23,21 +23,21 @@
     <link rel="dns-prefetch" href="http://code.jquery.com" />
     <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="http://www.google-analytics.com" />
-    <link rel="icon" href="images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/min/style.min.css">
-    <link rel="stylesheet" href="js/jquery/plugins/slick/slick.css">
-    <link rel="stylesheet" href="css/color/sandybay-color.min.css">
-    <link rel="stylesheet" href="css/color/skyline-color.min.css">
-    <link rel="stylesheet" href="css/color/raspberry-color.min.css">
+    <link rel="icon" href="../images/themegovrnmnt-favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/themegovrnmnt-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/min/style.min.css">
+    <link rel="stylesheet" href="../js/jquery/plugins/slick/slick.css">
+    <link rel="stylesheet" href="../css/color/sandybay-color.min.css">
+    <link rel="stylesheet" href="../css/color/skyline-color.min.css">
+    <link rel="stylesheet" href="../css/color/raspberry-color.min.css">
     <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
     <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-    <script src="js/jquery/jquery-1.11.1.min.js"></script>
-    <script src="js/otherlibs/bootstrap/bootstrap.js"></script>
+    <script src="../js/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../js/otherlibs/bootstrap/bootstrap.js"></script>
 </head>
 
 <body id="body">
@@ -54,7 +54,7 @@
                         </button>
                         <div class="home-btn">Home</div>
                         <a href="index.html" class="navbar-brand">
-                            <img src="images/logo.png" alt="">
+                            <img src="../images/logo.png" alt="">
                         </a>
                         <div class="line"></div>
                     </div>
@@ -84,9 +84,9 @@
                                 <li class="dropdown active">
                                     <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">News <i>›</i></a>
                                     <ul class="dropdown-menu dl-submenu" role="menu">
-                                        <li><a href="news.html">News</a>
+                                        <li class="active"><span>News</span>
                                         </li>
-                                        <li class="active"><span>News view (no image)</span>
+                                        <li><a href="news-no-image.html">News view (no image)</a>
                                         </li>
                                         <li class="dropdown-submenu">
                                             <a href="news-view.html" class="dropdown-toggle" role="button" aria-expanded="false">News view <i>›</i></a>
@@ -210,7 +210,10 @@
                 </div>
             </div>
         </header>
-        <section class="fw-news fw-news-nimg">
+        <section class="fw-news">
+            <!-- <img src="../uploads/news/tonyabbott.jpg" alt="" class="fw-news__image"> -->
+            <div class="fw-image-parallax" data-parallax-url="../../uploads/news/themeGovernment-News_05.jpg"></div>
+            <div class="fw-news__pattern"></div>
             <div class="fw-news__inner">
                 <div class="line-abt">
                     <a href="#" class="label label-default">
@@ -252,7 +255,7 @@
                     <div class="row">
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_04.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -284,7 +287,7 @@
                         </article>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2r">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_02.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -317,7 +320,7 @@
                         <div class="clearfix visible-xm visible-sm"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_07.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -386,7 +389,7 @@
                         <div class="clearfix visible-lg"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_01.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -454,7 +457,7 @@
                         <div class="clearfix visible-md"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_04.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -486,7 +489,7 @@
                         </article>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2r">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_02.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -520,7 +523,7 @@
                         <div class="clearfix visible-lg"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_07.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -553,7 +556,7 @@
                         <div class="clearfix visible-md"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_01.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -586,7 +589,7 @@
                         <div class="clearfix visible-xm visible-sm"></div>
                         <article class="col-xm-6 col-sm-6 col-md-4 col-lg-3 news-item news-item-2l">
                             <a href="#" class="news-item__image-wrap">
-                                <img class="news-item__image" src="http://placehold.it/350x198.jpg" alt="">
+                                <img class="news-item__image" src="../../uploads/news/themeGovernment-News_06.jpg" alt="">
                             </a>
                             <div class="line-abt">
                                 <a href="#" class="label label-default label-sm">
@@ -715,40 +718,40 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery/plugins/Chart.js"></script>
-    <script src="js/jquery/plugins/bootstrap-select.js"></script>
-    <script src="js/jquery/plugins/slick/slick.js"></script>
-    <script src="js/jquery/plugins/topEventsAnimate.js"></script>
-    <script src="js/jquery/plugins/skrollr.js"></script>
-    <script src="js/jquery/plugins/jquery.sharrre.min.js"></script>
-    <script src="js/jquery/plugins/jquery.form.js"></script>
-    <script src="js/jquery/plugins/validation/jquery.validate.js"></script>
-    <script src="js/app/lib/site.js"></script>
-    <script src="js/app/lib/siteMode.js"></script>
-    <script src="js/app/mode/themeMode.js"></script>
-    <script src="js/app/modules/mainSlider.js"></script>
-    <script src="js/app/modules/printEffect.js"></script>
-    <script src="js/app/modules/menuAligns.js"></script>
-    <script src="js/app/modules/bgStretch.js"></script>
-    <script src="js/app/modules/eventAnimate.js"></script>
-    <script src="js/app/modules/stuffSlider.js"></script>
-    <script src="js/app/modules/gridsDiagramms.js"></script>
-    <script src="js/app/modules/barChart.js"></script>
-    <script src="js/app/modules/disquis.js"></script>
-    <script src="js/app/modules/stickyHeader.js"></script>
-    <script src="js/app/modules/globalScripts.js"></script>
-    <script src="js/app/modules/parallax.js"></script>
-    <script src="js/app/modules/backgroundImg.js"></script>
-    <script src="js/app/modules/scrollPlugin.js"></script>
-    <script src="js/app/modules/googleMap.js"></script>
-    <script src="js/app/modules/eventSlider.js"></script>
-    <script src="js/app/modules/stuffPage.js"></script>
-    <script src="js/app/modules/aboutDiagramms.js"></script>
-    <script src="js/app/modules/sharrre.js"></script>
-    <script src="js/app/modules/dtMenu.js"></script>
-    <script src="js/app/modules/formSubscribe.js"></script>
-    <script src="js/app/modules/formFieldsSubscribe.js"></script>
-    <script src="js/init.js"></script>
+    <script src="../js/jquery/plugins/Chart.js"></script>
+    <script src="../js/jquery/plugins/bootstrap-select.js"></script>
+    <script src="../js/jquery/plugins/slick/slick.js"></script>
+    <script src="../js/jquery/plugins/topEventsAnimate.js"></script>
+    <script src="../js/jquery/plugins/skrollr.js"></script>
+    <script src="../js/jquery/plugins/jquery.sharrre.min.js"></script>
+    <script src="../js/jquery/plugins/jquery.parallax.min.js"></script>
+    <script src="../js/jquery/plugins/jquery.form.js"></script>
+    <script src="../js/jquery/plugins/validation/jquery.validate.js"></script>
+    <script src="../js/app/lib/site.js"></script>
+    <script src="../js/app/lib/siteMode.js"></script>
+    <script src="../js/app/mode/themeMode.js"></script>
+    <script src="../js/app/modules/mainSlider.js"></script>
+    <script src="../js/app/modules/menuAligns.js"></script>
+    <script src="../js/app/modules/bgStretch.js"></script>
+    <script src="../js/app/modules/eventAnimate.js"></script>
+    <script src="../js/app/modules/stuffSlider.js"></script>
+    <script src="../js/app/modules/gridsDiagramms.js"></script>
+    <script src="../js/app/modules/barChart.js"></script>
+    <script src="../js/app/modules/disquis.js"></script>
+    <script src="../js/app/modules/stickyHeader.js"></script>
+    <script src="../js/app/modules/globalScripts.js"></script>
+    <script src="../js/app/modules/parallax.js"></script>
+    <script src="../js/app/modules/backgroundImg.js"></script>
+    <script src="../js/app/modules/scrollPlugin.js"></script>
+    <script src="../js/app/modules/googleMap.js"></script>
+    <script src="../js/app/modules/eventSlider.js"></script>
+    <script src="../js/app/modules/stuffPage.js"></script>
+    <script src="../js/app/modules/aboutDiagramms.js"></script>
+    <script src="../js/app/modules/sharrre.js"></script>
+    <script src="../js/app/modules/dtMenu.js"></script>
+    <script src="../js/app/modules/formSubscribe.js"></script>
+    <script src="../js/app/modules/formFieldsSubscribe.js"></script>
+    <script src="../js/init.js"></script>
 </body>
 
 </html>

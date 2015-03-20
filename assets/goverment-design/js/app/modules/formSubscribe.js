@@ -1,3 +1,4 @@
+"use strict";
 appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _formSubscribe = this,

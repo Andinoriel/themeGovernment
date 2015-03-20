@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('ScrollPlugin', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _scrollPlugin = this,

@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('BackgroundImg', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _backgroundImg = this,

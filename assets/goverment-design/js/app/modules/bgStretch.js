@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _bgStretcher = this,

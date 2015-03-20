@@ -1,3 +1,5 @@
+"use strict";
+
 appMakeBeCool.gateway.addClass('Disquis', function(properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _disquis = this,
