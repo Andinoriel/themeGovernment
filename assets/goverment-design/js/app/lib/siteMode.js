@@ -15,16 +15,16 @@ appMakeBeCool.gateway.addClass('SiteMode', function(properties, $window, $docume
                 _setup();
                 _setBinds();
                 _setCustomMethods()
-            };
+            }
             _siteMode.create();
         },
         _config = function() {},
         _setup = function() {},
         _setBinds = function() {},
         _setCustomMethods = function() {
-            _siteMode.globals.customResurrect = function() {};
-            _siteMode.globals.customDestroy = function() {};
-        };
+            _siteMode.globals.customResurrect = function() {}
+            _siteMode.globals.customDestroy = function() {}
+        }
     
     //PUBLIC METHODS
     _siteMode.addMethod('init', function() {

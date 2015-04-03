@@ -38,7 +38,7 @@ appMakeBeCool.gateway.addClass('GoogleMap', function(properties, $, $window, $do
         _setup();
         _setBinds();
         _setCustomMethods();
-      };
+      }
       _googleMap.create();
     },
 
@@ -133,12 +133,12 @@ appMakeBeCool.gateway.addClass('GoogleMap', function(properties, $, $window, $do
     },
 
     _triggers = function() {
-      return {};
+      return {}
     },
 
     _setCustomMethods = function() {
 
-    };
+    }
 
   //PUBLIC METHODS
   _googleMap.addMethod('init', function() {

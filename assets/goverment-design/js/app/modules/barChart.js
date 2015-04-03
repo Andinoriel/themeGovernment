@@ -31,7 +31,7 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
         _setup();
         _setBinds();
         _setCustomMethods();
-      };
+      }
       _barChart.create();
     },
 
@@ -55,7 +55,7 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
           var barData = [];
           var barMainColor = $barChartParent.css('color');
           var addFlag = false;
-          var barData = {};
+          var barData = {}
 
           if (barNumber > 1) {
             var data1 = $(thisCanvas).data('values-first').split(',');
@@ -78,7 +78,7 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
                 highlightStroke: barMainColor,
                 data: data2
               }]
-            };
+            }
           } else if (barNumber > 0 && barNumber < 2) {
             var data1 = $(thisCanvas).data('values-first').split(',');
 
@@ -91,7 +91,7 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
                 highlightStroke: barMainColor,
                 data: data1
               }]
-            };
+            }
           }
           var ctx = thisCanvas.getContext("2d");
 
@@ -133,17 +133,16 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
     _setBinds = function() {},
 
     _binds = function() {
-      return {};
+      return {}
     },
 
     _triggers = function() {
-      return {};
+      return {}
     },
 
     _setCustomMethods = function() {
-      // _blogAnimate.globals.customResurrect = function() {};
-      // _blogAnimate.globals.customDestroy = function() {};
-    };
+
+    }
 
   //PUBLIC METHODS
   _barChart.addMethod('init', function() {

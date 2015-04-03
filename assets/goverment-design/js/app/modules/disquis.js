@@ -37,7 +37,7 @@ appMakeBeCool.gateway.addClass('Disquis', function(properties, $, $window, $docu
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _disquis.create();
         },
 
@@ -80,10 +80,10 @@ appMakeBeCool.gateway.addClass('Disquis', function(properties, $, $window, $docu
         },
 
         _triggers = function() {
-            return {};
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function() {}
 
     //PUBLIC METHODS
     _disquis.addMethod('init', function() {

@@ -50,7 +50,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _stuffPage.create();
         },
 
@@ -125,7 +125,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
                         //                            scrollTop: _globals.sessionStorage[_properties.sessionStorage]
                         //                        }, 500);
                         // $('html,body').scrollTop(_globals.sessionStorage[_properties.sessionStorage]);
-                    };
+                    }
 
                     //Exit events
                     $document.keydown(function (event) {
@@ -154,14 +154,14 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
                         _setup();
                     });
                 }
-            };
+            }
         },
 
         _triggers = function () {
-            return {};
+            return {}
         },
 
-        _setCustomMethods = function () {};
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
     _stuffPage.addMethod('init', function () {

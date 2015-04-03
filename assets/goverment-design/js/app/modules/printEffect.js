@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('PrintEffect', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('PrintEffect', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _printEffect = this,
         _defaults = {
@@ -22,31 +22,31 @@ appMakeBeCool.gateway.addClass('PrintEffect', function(properties, $, $window, $
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_printEffect, [_properties]);
             if (!_globals.preloaded) {
                 return _printEffect.init();
             }
-            _printEffect.globals.customCreate = function() {
+            _printEffect.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _printEffect.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.slider = $(_properties.sliderClass);
         },
 
-        _setup = function() {
+        _setup = function () {
 
             var slideIndex = 0;
             var slidesNumbers = $('.slider__slide').length - 1;
             var $slides = $('.slider__slide');
             var $slideTitle = $('.slider__title');
-            $slideTitle.each(function() {
+            $slideTitle.each(function () {
                 $(this).height($(this).height());
             });
 
@@ -76,7 +76,7 @@ appMakeBeCool.gateway.addClass('PrintEffect', function(properties, $, $window, $
                 var textVariable = '';
                 var j = 0;
                 var $visibleTitle = $currentSlide.find('.visible-title');
-                window.sliderTextInterval = setInterval(function() {
+                window.sliderTextInterval = setInterval(function () {
                     if (j === slideText.length) {
                         clearInterval(window.sliderTextInterval);
                         return;
@@ -87,30 +87,30 @@ appMakeBeCool.gateway.addClass('PrintEffect', function(properties, $, $window, $
             }
 
             prinTitles();
-            $('.main .slider .slick-prev').click(function() {
+            $('.main .slider .slick-prev').click(function () {
                 prinTitles('prev');
             });
-            $('.main .slider .slick-next').click(function() {
+            $('.main .slider .slick-next').click(function () {
                 prinTitles('next');
             });
 
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
-            return {};
+        _binds = function () {
+            return {}
         },
 
-        _triggers = function() {
-            return {};
+        _triggers = function () {
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _printEffect.addMethod('init', function() {
-        _printEffect.bind($window, _printEffect.globals.classType + '_Init', function(e, data, el) {
+    _printEffect.addMethod('init', function () {
+        _printEffect.bind($window, _printEffect.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

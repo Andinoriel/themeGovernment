@@ -109,4 +109,4 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-uncss');
     grunt.registerTask('default', ['sass', 'cssmin', 'uncss', 'watch']);
-};
+}

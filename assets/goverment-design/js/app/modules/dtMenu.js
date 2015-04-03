@@ -31,7 +31,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _dtMenu.create();
         },
 
@@ -104,14 +104,14 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
         _setBinds = function() {},
 
         _binds = function() {
-            return {};
+            return {}
         },
 
         _triggers = function() {
-            return {};
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function() {}
 
     //PUBLIC METHODS
     _dtMenu.addMethod('init', function() {

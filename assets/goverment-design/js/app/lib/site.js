@@ -22,7 +22,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
             classes: {},
             classInstances: [],
             events: {}
-        };
+        }
 
     //PRIVATE METHODS
 
@@ -42,14 +42,14 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         _options.onComplete();
         $window.trigger('siteInitComplete', { options: _options });
 
-    };
+    }
 
     /**
      * Установка режима приложения
      */
     _site.setSiteMode = function() {
         _site.globals.siteMode = 'ThemeMode';
-    };
+    }
 
     /**
      * Конфигурация объекта, определение свойств, параметров и необходимых элементов
@@ -69,19 +69,19 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 }
             );
         }
-    };
+    }
 
     /**
      * Установка всех зависимых элементов, манипуляции с ними, плагины
      */
-    _site.setup = function () {};
+    _site.setup = function () {}
 
     /**
      * Вызов всех прослушиваний необходимых событий для этого класса
      */
     _site.setEventBinds = function () {
         // _site.eventBinds().setUnloadBind();
-    };
+    }
 
     /**
      * Определение всех прослушиваемых событий и действий по ним
@@ -95,7 +95,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 });
             }
         }
-    };
+    }
 
     /**
      * Добавление классов в пространство имен
@@ -103,14 +103,14 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
     _site.extendClasses = function () {
         _site.utils.extend(site.classes.SiteMode, site.base.Class);
 //        _site.utils.extend(site.classes[_site.globals.siteMode], site.classes.SiteMode);
-    };
+    }
 
     /**
      * Создание экземпляров классов, наследуя их от базовых
      */
     _site.instantiateClasses = function () {
         site.createClassInstances(_site.getSiteMode());
-    };
+    }
 
     /**
      * Создание экземпляра класса
@@ -123,10 +123,10 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         if (classExtends) _site.utils.extend(classObject, classExtends);
         if (typeof instanceName !== 'string') return console.log('Error: _site.createClassInstance() expects a string for instanceName');
         if (typeof classObject !== 'function') return console.log('Error: _site.createClassInstance() expects a function for classObject');
-        var _classProperties = classProperties || {};
+        var _classProperties = classProperties || {}
         site.classInstances[instanceName] = new classObject(_classProperties, $, $window, $document);
         return site.classInstances[instanceName];
-    };
+    }
 
     /**
      * Возвращает главный объект сайта
@@ -134,7 +134,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      */
     _site.getSiteObj = function () {
         return site;
-    };
+    }
 
     /**
      * Возвращает текущий режим сайта
@@ -146,7 +146,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         siteMode.push({classObject: _site.globals.siteMode, classExtends: 'SiteMode'});
 
         return siteMode;
-    };
+    }
 
     //PRIVATE UTILS
 
@@ -160,7 +160,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @param superClass - базовый класс
          */
         extend: function (subClass, superClass) {
-            var F = function () {};
+            var F = function () {}
             F.prototype = superClass.prototype;
             subClass.prototype = new F();
             subClass.prototype.constructor = subClass;
@@ -193,12 +193,12 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
          * @returns {{}}
          */
         mergeOptions: function (obj1,obj2) {
-            var obj3 = {};
+            var obj3 = {}
             for (var attrname in obj1) { obj3[attrname] = obj1[attrname]; }
             for (var attrname in obj2) { obj3[attrname] = obj2[attrname]; }
             return obj3;
         }
-    };
+    }
 
     /** PUBLIC **/
 
@@ -225,7 +225,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         _site.init();
         
 
-    };
+    }
 
     /**
      * Добавляем классы в стек
@@ -234,7 +234,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      */
     site.addClass = function (name, Class) {
         site.classes[name] = Class;
-    };
+    }
 
     /**
      * Публичная функция для создания экземпляра класса
@@ -245,7 +245,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      */
     site.createClassInstance = function (instanceName, classObject, classProperties, classExtends) {
         return _site.createClassInstance(instanceName, classObject, classProperties, classExtends);
-    };
+    }
 
     /**
      * Функция для массового создания экземпляров классов
@@ -265,7 +265,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 _site.createClassInstance(_obj.instanceName, _obj.classObject, _obj.classProperties, _obj.classExtends);
             });
         }
-    };
+    }
 
     /**
      * Публичная обвертка для базовых функций
@@ -280,14 +280,14 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         mergeOptions: function (obj1,obj2) {
             return _site.utils.mergeOptions(obj1,obj2);
         }
-    };
+    }
 
     /**
      * Получаем глобальные свойства
      */
     site.getGlobals = function () {
         return _site.globals;
-    };
+    }
 
     /**
      * Получить экземпляр класса созданного ранее
@@ -296,7 +296,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
      */
     site.getClassInstance = function (instanceName) {
         return site.classInstances[instanceName];
-    };
+    }
 
     //BASE CLASS
 
@@ -311,7 +311,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         var _CONSTANTS = {
             VAR_1: null,
             VAR_2: null
-        };
+        }
         var _defaults = {
             sourceEl: null,
             classId: null,
@@ -330,7 +330,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
             onCreateComplete: function () {},
             onLoadComplete: function () {},
             onDestroyComplete: function () {}
-        };
+        }
         //PUBLIC VARS
         _baseClass.properties = $.extend(_defaults, properties);
         _baseClass.globals = {
@@ -351,25 +351,25 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
             customDestroyComplete: function () {},
             customResurrect: function () { },
             customLoadComplete: function () { }
-        };
+        }
 
         //PRIVATE METHODS
         var _init = function () {
             _config();
-        };
+        }
         var _config = function () {
             _baseClass.globals.classType = _baseClass.properties.classType || _baseClass.properties.classId;
             _baseClass.properties.sourceEl = $(_baseClass.properties.sourceEl);
             _baseClass.globals.classId = _baseClass.properties.classId || instance;
-        };
+        }
 
-        var _setup = function () {};
+        var _setup = function () {}
 
         //PUBLIC METHODS
 
-        _baseClass.getConstants = function () { return _CONSTANTS; };
+        _baseClass.getConstants = function () { return _CONSTANTS; }
         _init();
-    };
+    }
 
     /**
      * Прототип базового класса
@@ -500,7 +500,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
             var _ret = {
                 setupComplete: true,
                 loadComplete: true
-            };
+            }
             $.each(_baseClass.properties.classDependents, function (i) {
                 if (!_baseClass.globals.classDependentsInstances[i].globals.setupComplete) _ret = $.extend(_ret, { setupComplete: false });
                 if (!_baseClass.globals.classDependentsInstances[i].globals.loadComplete) _ret = $.extend(_ret, { loadComplete: false });
@@ -550,7 +550,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 _baseClass.globals.instantiated = true;
                 $window.trigger('classCreateComplete', { classId: _baseClass.properties.classId, classType: _baseClass.globals.classType });
                 if (_baseClass.isLoaded()) _baseClass.globals.loadComplete = true;
-            };
+            }
             if (typeof _fn === 'function') _fn();
             return true;
         },
@@ -566,7 +566,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 _baseClass.properties.onLoadComplete();
                 _baseClass.globals.customLoadComplete();
                 _baseClass.globals.loadComplete = true;
-            };
+            }
             _fn();
         },
 
@@ -592,7 +592,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
                 _baseClass.globals.customDestroyComplete();
                 _baseClass.globals.createComplete = false;
                 _baseClass.trigger('classDestroyComplete', { classId: _baseClass.properties.classId, classType: _baseClass.globals.classType });
-            };
+            }
             if (typeof fn === 'function') _fn();
         },
 
@@ -743,7 +743,7 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
         trigger: function(name, data){
             var _baseClass = this;
             var _data;
-            if (!data) _data = {};
+            if (!data) _data = {}
             else _data = data;
 
             if (_baseClass.properties.debugMode && event != 'scroll') {
@@ -753,8 +753,8 @@ appMakeBeCool.Site = function ($, window, document, undefined) {
             $window.trigger(name, _data);
             return true;
         }
-    };
-};
+    }
+}
 
 appMakeBeCool.gateway = new appMakeBeCool.Site(jQuery, window, window.document);
 

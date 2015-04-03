@@ -38,7 +38,7 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _bgStretcher.create();
         },
 
@@ -119,15 +119,15 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
                         _setup();
                     })
                 },
-            };
+            }
         },
 
         _triggers = function() {
-            return {};
+            return {}
         },
 
         _setCustomMethods = function() {
-        };
+        }
 
     //PUBLIC METHODS
     _bgStretcher.addMethod('init', function() {

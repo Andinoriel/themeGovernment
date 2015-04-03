@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('ScrollPlugin', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('ScrollPlugin', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _scrollPlugin = this,
         _defaults = {
@@ -24,29 +24,29 @@ appMakeBeCool.gateway.addClass('ScrollPlugin', function(properties, $, $window, 
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_scrollPlugin, [_properties]);
             if (!_globals.preloaded) {
                 return _scrollPlugin.init();
             }
-            _scrollPlugin.globals.customCreate = function() {
+            _scrollPlugin.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _scrollPlugin.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.scrollFlagNode = $(_properties.scrollFlagClass);
             _globals.sticky = $(_properties.sticky);
         },
 
-        _setup = function() {
+        _setup = function () {
             //Tooltips
             if (_globals.scrollFlagNode.length) {
-                _globals.scrollFlagNode.click(function() {
+                _globals.scrollFlagNode.click(function () {
                     var ancore = _globals.scrollFlagNode.attr('href');
                     var nodeToScrollOffsetTop = 0;
 
@@ -63,21 +63,21 @@ appMakeBeCool.gateway.addClass('ScrollPlugin', function(properties, $, $window, 
             }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
-            return {};
+        _binds = function () {
+            return {}
         },
 
-        _triggers = function() {
-            return {};
+        _triggers = function () {
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _scrollPlugin.addMethod('init', function() {
-        _scrollPlugin.bind($window, _scrollPlugin.globals.classType + '_Init', function(e, data, el) {
+    _scrollPlugin.addMethod('init', function () {
+        _scrollPlugin.bind($window, _scrollPlugin.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

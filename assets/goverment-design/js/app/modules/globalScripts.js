@@ -34,7 +34,7 @@ appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window,
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _globalScripts.create();
         },
 
@@ -58,14 +58,14 @@ appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window,
         _setBinds = function() {},
 
         _binds = function() {
-            return {};
+            return {}
         },
 
         _triggers = function() {
-            return {};
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function() {}
 
     //PUBLIC METHODS
     _globalScripts.addMethod('init', function() {

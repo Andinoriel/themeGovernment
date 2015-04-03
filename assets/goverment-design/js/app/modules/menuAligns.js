@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('MenuAligns', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('MenuAligns', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _menuAligns = this,
         _defaults = {
@@ -21,29 +21,29 @@ appMakeBeCool.gateway.addClass('MenuAligns', function(properties, $, $window, $d
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_menuAligns, [_properties]);
             if (!_globals.preloaded) {
                 return _menuAligns.init();
             }
-            _menuAligns.globals.customCreate = function() {
+            _menuAligns.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _menuAligns.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.navigation = $(_properties.navigation);
         },
 
-        _setup = function() {
+        _setup = function () {
             if ($window.width() >= 1200 && _globals.navigation.length) {
                 function testRigthSpace() {
                     var $navigLi = _globals.navigation.children('li');
-                    $navigLi.each(function() {
+                    $navigLi.each(function () {
                         var thisLeftOffset = $(this).offset().left;
                         var windowWidth = $window.width();
                         var $firstUl = $(this).children('.dropdown-menu');
@@ -82,21 +82,21 @@ appMakeBeCool.gateway.addClass('MenuAligns', function(properties, $, $window, $d
             }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
-            return {};
+        _binds = function () {
+            return {}
         },
 
-        _triggers = function() {
-            return {};
+        _triggers = function () {
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _menuAligns.addMethod('init', function() {
-        _menuAligns.bind($window, _menuAligns.globals.classType + '_Init', function(e, data, el) {
+    _menuAligns.addMethod('init', function () {
+        _menuAligns.bind($window, _menuAligns.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

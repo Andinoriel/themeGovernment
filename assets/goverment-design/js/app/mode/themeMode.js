@@ -175,9 +175,9 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
         },
 
         _setCustomMethods = function() {
-            _themeMode.globals.customResurrect = function() {};
-            _themeMode.globals.customDestroy = function() {};
-        };
+            _themeMode.globals.customResurrect = function() {}
+            _themeMode.globals.customDestroy = function() {}
+        }
 
     //PUBLIC METHODS
     _themeMode.addMethod('init', function() {

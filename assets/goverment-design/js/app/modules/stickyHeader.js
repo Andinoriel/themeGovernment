@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('StickyHeader', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('StickyHeader', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _stickyHeader = this,
         _defaults = {
@@ -31,29 +31,29 @@ appMakeBeCool.gateway.addClass('StickyHeader', function(properties, $, $window, 
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_stickyHeader, [_properties]);
             if (!_globals.preloaded) {
                 return _stickyHeader.init();
             }
-            _stickyHeader.globals.customCreate = function() {
+            _stickyHeader.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _stickyHeader.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.sticky = $(_properties.sticky);
             _globals.header = $(_properties.header);
             _globals.content = $(_properties.content);
-             if (_globals.sticky.length) {
-                 _globals.contentOffsetTop = _globals.content.offset().top;
+            if (_globals.sticky.length) {
+                _globals.contentOffsetTop = _globals.content.offset().top;
             }
 
-            _globals.topHeader = function() {
+            _globals.topHeader = function () {
                 if ($window.scrollTop() > (_globals.contentOffsetTop + 30) && !_globals.flagScroll === true) {
                     _globals.sticky.addClass('active');
                     _globals.flagScroll = true;
@@ -64,35 +64,35 @@ appMakeBeCool.gateway.addClass('StickyHeader', function(properties, $, $window, 
             }
         },
 
-        _setup = function() {
+        _setup = function () {
             if (_globals.sticky.length) {
                 _globals.topHeader();
             }
         },
 
-        _setBinds = function() {
+        _setBinds = function () {
             _binds().setScrollBinds();
         },
 
-        _binds = function() {
+        _binds = function () {
             return {
-                setScrollBinds: function() {
-                    _stickyHeader.bind($window, 'scroll', function(e, data, el) {
+                setScrollBinds: function () {
+                    _stickyHeader.bind($window, 'scroll', function (e, data, el) {
                         _globals.topHeader();
                     });
                 }
-            };
+            }
         },
 
-        _triggers = function() {
-            return {};
+        _triggers = function () {
+            return {}
         },
 
-        _setCustomMethods = function() {};
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _stickyHeader.addMethod('init', function() {
-        _stickyHeader.bind($window, _stickyHeader.globals.classType + '_Init', function(e, data, el) {
+    _stickyHeader.addMethod('init', function () {
+        _stickyHeader.bind($window, _stickyHeader.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

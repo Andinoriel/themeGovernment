@@ -34,7 +34,7 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _formSubscribe.create();
         },
 
@@ -91,8 +91,8 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
         },
 
         _setCustomMethods = function() {
-            _formSubscribe.globals.customResurrect = function() {};
-            _formSubscribe.globals.customDestroy = function() {};
+            _formSubscribe.globals.customResurrect = function() {}
+            _formSubscribe.globals.customDestroy = function() {}
         },
 
         _formBeforeSubmit = function(arr, $form, options) {
@@ -117,7 +117,7 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
                     el.addClass('error');
                 }
             }
-        };
+        }
 
     //PUBLIC METHODS
     _formSubscribe.addMethod('init', function() {

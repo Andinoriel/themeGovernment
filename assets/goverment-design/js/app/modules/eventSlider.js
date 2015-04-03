@@ -35,7 +35,7 @@ appMakeBeCool.gateway.addClass('EventSlider', function(properties, $, $window, $
         _setup();
         _setBinds();
         _setCustomMethods();
-      };
+      }
       _eventSlider.create();
     },
 
@@ -94,14 +94,14 @@ appMakeBeCool.gateway.addClass('EventSlider', function(properties, $, $window, $
     _setBinds = function() {},
 
     _binds = function() {
-      return {};
+      return {}
     },
 
     _triggers = function() {
-      return {};
+      return {}
     },
 
-    _setCustomMethods = function() {};
+    _setCustomMethods = function() {}
 
   //PUBLIC METHODS
   _eventSlider.addMethod('init', function() {

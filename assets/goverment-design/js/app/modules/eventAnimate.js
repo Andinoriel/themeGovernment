@@ -40,7 +40,7 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
                 _setup();
                 _setBinds();
                 _setCustomMethods();
-            };
+            }
             _eventAnimate.create();
         },
 
@@ -71,17 +71,17 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
         _setBinds = function() {},
 
         _binds = function() {
-            return {};
+            return {}
         },
 
         _triggers = function() {
-            return {};
+            return {}
         },
 
         _setCustomMethods = function() {
-            _eventAnimate.globals.customResurrect = function() {};
-            _eventAnimate.globals.customDestroy = function() {};
-        };
+            _eventAnimate.globals.customResurrect = function() {}
+            _eventAnimate.globals.customDestroy = function() {}
+        }
 
     //PUBLIC METHODS
     _eventAnimate.addMethod('init', function() {

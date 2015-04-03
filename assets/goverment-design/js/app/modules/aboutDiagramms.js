@@ -31,7 +31,7 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
         _setup();
         _setBinds();
         _setCustomMethods();
-      };
+      }
       _aboutDiagramms.create();
     },
 
@@ -151,7 +151,7 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
               });
               addFlag = true;
             }
-          };
+          }
           $window.scroll(function() {
             addCircle();
           });
@@ -164,16 +164,16 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
     _setBinds = function() {},
 
     _binds = function() {
-      return {};
+      return {}
     },
 
     _triggers = function() {
-      return {};
+      return {}
     },
 
     _setCustomMethods = function() {
 
-    };
+    }
 
   //PUBLIC METHODS
   _aboutDiagramms.addMethod('init', function() {
