@@ -1,12 +1,12 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('GlobalScripts', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _globalScripts = this,
         _defaults = {
             // elements
             tooltipClass: '.goverment-tooltip',
-            upperBtn:'.go-up'
+            upperBtn: '.go-up'
 
             // prop
             // data
@@ -24,12 +24,12 @@ appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window,
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_globalScripts, [_properties]);
             if (!_globals.preloaded) {
                 return _globalScripts.init();
             }
-            _globalScripts.globals.customCreate = function() {
+            _globalScripts.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -38,38 +38,38 @@ appMakeBeCool.gateway.addClass('GlobalScripts', function(properties, $, $window,
             _globalScripts.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.tooltips = $(_properties.tooltipClass);
             _globals.upperBtn = $(_properties.upperBtn);
         },
 
-        _setup = function() {
+        _setup = function () {
             //Tooltips
             if (_globals.tooltips.length) {
                 _globals.tooltips.tooltip({
                     placement: 'top'
                 });
-                _globals.tooltips.click(function(event){
+                _globals.tooltips.click(function (event) {
                     event.preventDefault();
                 });
             }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
+        _binds = function () {
             return {}
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {}
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _globalScripts.addMethod('init', function() {
-        _globalScripts.bind($window, _globalScripts.globals.classType + '_Init', function(e, data, el) {
+    _globalScripts.addMethod('init', function () {
+        _globalScripts.bind($window, _globalScripts.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

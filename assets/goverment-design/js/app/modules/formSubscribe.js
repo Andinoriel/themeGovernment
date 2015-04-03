@@ -1,5 +1,5 @@
 "use strict";
-appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('FormSubscribe', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _formSubscribe = this,
         _defaults = {
@@ -24,12 +24,12 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_formSubscribe, [_properties]);
             if (!_globals.preloaded) {
                 return _formSubscribe.init();
             }
-            _formSubscribe.globals.customCreate = function() {
+            _formSubscribe.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -38,16 +38,16 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
             _formSubscribe.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.form = $(_properties.form);
             _globals.formSuccessMessage = $(_properties.formSuccessMessage);
             _globals.formSuccessLoader = $(_properties.formSuccessLoader);
         },
 
-        _setup = function() {
+        _setup = function () {
             if (_globals.form.length) {
                 _globals.form.validate({
-                    errorPlacement: function(error, element) {
+                    errorPlacement: function (error, element) {
                         if ($(element).hasClass('error') && !$('label[for=' + $(element).attr('id') + ']').length) {
                             // var $label = $('<label/>');
                             // $label.attr('for', $(element).attr('id'));
@@ -68,7 +68,7 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
                             _globals.form.find('.form-group').removeClass('has-error');
                         }
                     },
-                    success: function(label) {
+                    success: function (label) {
                         $('label[for=fvi]').remove();
                     }
                 });
@@ -80,31 +80,31 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
             }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
+        _binds = function () {
             return {}
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {
-            _formSubscribe.globals.customResurrect = function() {}
-            _formSubscribe.globals.customDestroy = function() {}
+        _setCustomMethods = function () {
+            _formSubscribe.globals.customResurrect = function () {}
+            _formSubscribe.globals.customDestroy = function () {}
         },
 
-        _formBeforeSubmit = function(arr, $form, options) {
+        _formBeforeSubmit = function (arr, $form, options) {
             _globals.formSuccessLoader.removeClass('hidden');
             _globals.formSuccessLoader.find('.loader').addClass('active');
             _globals.form.find('.form-group').addClass('muted');
             _globals.form.find('button').addClass('muted');
         },
 
-        _formSuccess = function(response) {
+        _formSuccess = function (response) {
             if (response.success) {
-                _globals.form.slideUp('slow', function() {
+                _globals.form.slideUp('slow', function () {
                     _globals.formSuccessMessage.removeClass('hidden');
                 });
             } else {
@@ -120,8 +120,8 @@ appMakeBeCool.gateway.addClass('FormSubscribe', function(properties, $, $window,
         }
 
     //PUBLIC METHODS
-    _formSubscribe.addMethod('init', function() {
-        _formSubscribe.bind($window, _formSubscribe.globals.classType + '_Init', function(e, data, el) {
+    _formSubscribe.addMethod('init', function () {
+        _formSubscribe.bind($window, _formSubscribe.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

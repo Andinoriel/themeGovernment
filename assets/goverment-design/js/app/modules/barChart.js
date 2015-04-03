@@ -141,7 +141,8 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
     },
 
     _setCustomMethods = function() {
-
+      // _blogAnimate.globals.customResurrect = function() {}
+      // _blogAnimate.globals.customDestroy = function() {}
     }
 
   //PUBLIC METHODS

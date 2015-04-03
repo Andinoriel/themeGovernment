@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('BgStretcher', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _bgStretcher = this,
         _defaults = {
@@ -28,12 +28,12 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_bgStretcher, [_properties]);
             if (!_globals.preloaded) {
                 return _bgStretcher.init();
             }
-            _bgStretcher.globals.customCreate = function() {
+            _bgStretcher.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -42,20 +42,20 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
             _bgStretcher.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.slider = $(_properties.sliderClass);
             _globals.images = $(_properties.imagesClass);
             _globals.windowWidth = $window.width();
             _globals.windowHeight = $window.height();
         },
 
-        _setup = function() {
+        _setup = function () {
             _globals.windowWidth = $window.width();
             _globals.windowHeight = $window.height();
             _globals.sliderHeight = _globals.slider.height();
 
             if (_globals.windowWidth > _globals.sliderHeight) {
-                _globals.images.each(function() {
+                _globals.images.each(function () {
                     var $image = $(this);
                     var imageWidth = $image.width();
                     var imageHeight = $image.height();
@@ -87,7 +87,7 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
                     }
                 });
             } else if (_globals.windowWidth < _globals.sliderHeight) {
-                _globals.images.each(function() {
+                _globals.images.each(function () {
                     var $image = $(this);
                     var imageWidth = $image.width();
                     var imageHeight = $image.height();
@@ -108,30 +108,29 @@ appMakeBeCool.gateway.addClass('BgStretcher', function(properties, $, $window, $
 
         },
 
-        _setBinds = function() {
+        _setBinds = function () {
             _binds().setResizeBind();
         },
 
-        _binds = function() {
+        _binds = function () {
             return {
-                setResizeBind: function() {
-                    _bgStretcher.bind($window, 'resize', function(e, data, el) {
+                setResizeBind: function () {
+                    _bgStretcher.bind($window, 'resize', function (e, data, el) {
                         _setup();
                     })
                 },
             }
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {
-        }
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _bgStretcher.addMethod('init', function() {
-        _bgStretcher.bind($window, _bgStretcher.globals.classType + '_Init', function(e, data, el) {
+    _bgStretcher.addMethod('init', function () {
+        _bgStretcher.bind($window, _bgStretcher.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

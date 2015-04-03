@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _dtMenu = this,
         _defaults = {
@@ -21,12 +21,12 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_dtMenu, [_properties]);
             if (!_globals.preloaded) {
                 return _dtMenu.init();
             }
-            _dtMenu.globals.customCreate = function() {
+            _dtMenu.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -35,11 +35,11 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
             _dtMenu.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.navigation = $(_properties.navigation);
         },
 
-        _setup = function() {
+        _setup = function () {
             if (_globals.navigation.length && $window.width() < 1200) {
 
                 //Init
@@ -49,14 +49,14 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
                 var $submenu = _globals.navigation.find('.dl-submenu');
                 var backNode = '<li class="dt-back"><a href="#">Back <i>›</i></a></li>';
 
-                $submenu.each(function() {
+                $submenu.each(function () {
                     $(this).prepend(backNode);
                 });
 
                 var $backNodes = _globals.navigation.find('.dt-back');
 
                 //Events
-                $allLiIt.click(function() {
+                $allLiIt.click(function () {
                     var $clickedLiIt = $(this);
                     var $clickedLi = $clickedLiIt.closest('li');
                     var $parentUl = $clickedLi.closest('ul');
@@ -80,7 +80,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
                     return false;
                 });
 
-                $backNodes.click(function() {
+                $backNodes.click(function () {
                     var $backLink = $(this);
                     var $parentLi = $(this).closest('li.subviewopen');
                     var $parentUl = $parentLi.closest('ul');
@@ -101,21 +101,21 @@ appMakeBeCool.gateway.addClass('DtMenu', function(properties, $, $window, $docum
 
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
+        _binds = function () {
             return {}
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {}
+        _setCustomMethods = function () {}
 
     //PUBLIC METHODS
-    _dtMenu.addMethod('init', function() {
-        _dtMenu.bind($window, _dtMenu.globals.classType + '_Init', function(e, data, el) {
+    _dtMenu.addMethod('init', function () {
+        _dtMenu.bind($window, _dtMenu.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

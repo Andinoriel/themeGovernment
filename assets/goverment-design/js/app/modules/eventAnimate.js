@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('EventAnimate', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _eventAnimate = this,
         _defaults = {
@@ -30,12 +30,12 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_eventAnimate, [_properties]);
             if (!_globals.preloaded) {
                 return _eventAnimate.init();
             }
-            _eventAnimate.globals.customCreate = function() {
+            _eventAnimate.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -44,7 +44,7 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
             _eventAnimate.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.events = $(_properties.events);
             _globals.stuffContainer = $(_properties.stuffContainer);
             _globals.twitter = $(_properties.twitter);
@@ -53,7 +53,7 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
             // _globals.fullWNewsItem = $(_properties.fullWNewsItem);
         },
 
-        _setup = function() {
+        _setup = function () {
             if (_globals.events.length) {
                 var events = new EventAnimate(_globals.events);
             }
@@ -68,24 +68,24 @@ appMakeBeCool.gateway.addClass('EventAnimate', function(properties, $, $window, 
             // }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
+        _binds = function () {
             return {}
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {
-            _eventAnimate.globals.customResurrect = function() {}
-            _eventAnimate.globals.customDestroy = function() {}
+        _setCustomMethods = function () {
+            _eventAnimate.globals.customResurrect = function () {}
+            _eventAnimate.globals.customDestroy = function () {}
         }
 
     //PUBLIC METHODS
-    _eventAnimate.addMethod('init', function() {
-        _eventAnimate.bind($window, _eventAnimate.globals.classType + '_Init', function(e, data, el) {
+    _eventAnimate.addMethod('init', function () {
+        _eventAnimate.bind($window, _eventAnimate.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });

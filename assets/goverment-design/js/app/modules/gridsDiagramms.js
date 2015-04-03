@@ -176,7 +176,8 @@ appMakeBeCool.gateway.addClass('GridsDiagramms', function (properties, $, $windo
         },
 
         _setCustomMethods = function () {
-
+            // _blogAnimate.globals.customResurrect = function() {}
+            // _blogAnimate.globals.customDestroy = function() {}
         }
 
     //PUBLIC METHODS

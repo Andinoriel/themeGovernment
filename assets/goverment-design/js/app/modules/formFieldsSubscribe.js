@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function (properties, $, $window, $document) {
     //PRIVATE VARIABLES
     var _formSubscribe = this,
         _defaults = {
@@ -21,12 +21,12 @@ appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $w
         },
 
         //PRIVATE METHODS
-        _init = function() {
+        _init = function () {
             appMakeBeCool.gateway.base.Class.apply(_formSubscribe, [_properties]);
             if (!_globals.preloaded) {
                 return _formSubscribe.init();
             }
-            _formSubscribe.globals.customCreate = function() {
+            _formSubscribe.globals.customCreate = function () {
                 _config();
                 _setup();
                 _setBinds();
@@ -35,14 +35,14 @@ appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $w
             _formSubscribe.create();
         },
 
-        _config = function() {
+        _config = function () {
             _globals.form = $(_properties.form);
         },
 
-        _setup = function() {
+        _setup = function () {
             if (_globals.form.length) {
                 _globals.form.validate({
-                    errorPlacement: function(error, element) {
+                    errorPlacement: function (error, element) {
                         if ($(element).hasClass('error') && !$('label[for=' + $(element).attr('id') + ']').length) {
                             error.attr('for', $(element).attr('id'));
                             error.addClass('control-label').removeClass('error');
@@ -54,7 +54,7 @@ appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $w
                             $(element).closest('.form-group').removeClass('has-error');
                         }
                     },
-                    success: function(error, element) {
+                    success: function (error, element) {
                         $(element).parent().find('label').remove();
                     }
                 });
@@ -66,31 +66,31 @@ appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $w
             }
         },
 
-        _setBinds = function() {},
+        _setBinds = function () {},
 
-        _binds = function() {
+        _binds = function () {
             return {}
         },
 
-        _triggers = function() {
+        _triggers = function () {
             return {}
         },
 
-        _setCustomMethods = function() {
-            _formSubscribe.globals.customResurrect = function() {}
-            _formSubscribe.globals.customDestroy = function() {}
+        _setCustomMethods = function () {
+            _formSubscribe.globals.customResurrect = function () {}
+            _formSubscribe.globals.customDestroy = function () {}
         },
 
-        _formBeforeSubmit = function(arr, $form, options) {
+        _formBeforeSubmit = function (arr, $form, options) {
             $form.find('.form-loader').removeClass('hidden');
             $form.find('.form-loader').find('.loader').addClass('active');
             $form.find('.form-group').addClass('muted');
             $form.find('button').addClass('muted');
         },
 
-        _formSuccess = function(response) {
+        _formSuccess = function (response) {
             if (response.success) {
-                _globals.form.slideUp('slow', function() {
+                _globals.form.slideUp('slow', function () {
                     _globals.form.removeClass('error');
                     _globals.form.parent().find('.loader').removeClass('active');
                     _globals.form.parent().find('success-message').removeClass('hidden');
@@ -107,8 +107,8 @@ appMakeBeCool.gateway.addClass('FormFieldsSubscribe', function(properties, $, $w
         }
 
     //PUBLIC METHODS
-    _formSubscribe.addMethod('init', function() {
-        _formSubscribe.bind($window, _formSubscribe.globals.classType + '_Init', function(e, data, el) {
+    _formSubscribe.addMethod('init', function () {
+        _formSubscribe.bind($window, _formSubscribe.globals.classType + '_Init', function (e, data, el) {
             _globals.preloaded = true;
             _init();
         });
