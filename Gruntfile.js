@@ -6,16 +6,16 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: { // Dictionary of files
-                    'assets/goverment-design/css/not-min/style.css': 'assets/goverment-design/vendor/stylesheets/bootstrap.scss' // 'destination': 'source'
+                    'assets/goverment-design/css/not-min/style.css': 'assets/themegovernment-design/vendor/stylesheets/bootstrap.scss' // 'destination': 'source'
                 }
             }
         },
         cssmin: {
             minify: {
                 expand: true,
-                cwd: 'assets/goverment-design/css/not-min/',
+                cwd: 'assets/themegovernment-design/css/not-min/',
                 src: ['*.css', '!*.min.css'],
-                dest: 'assets/goverment-design/css/min/',
+                dest: 'assets/themegovernment-design/css/min/',
                 ext: '.min.css'
             }
         },
@@ -85,22 +85,22 @@ module.exports = function(grunt) {
                     // csspath: '../public/css/',
                     // raw: 'h1 { color: green }',
                     // stylesheets: ['lib/bootstrap/dist/css/bootstrap.css', 'src/public/css/main.css'],
-                    // ignoreSheets: ['assets/goverment-design/js/plugins/slick/slick.css'],
+                    // ignoreSheets: ['assets/themegovernment-design/js/plugins/slick/slick.css'],
                     // urls: ['http://localhost:3000/mypage', '...'], // Deprecated
                     // timeout: 1000,
                     // htmlroot: 'public',
                     // report: 'min'
                 },
                 files: {
-                    'assets/goverment-design/css/style.min.css': ['assets/goverment-design/buttons.html', 'assets/goverment-design/main.html', 'assets/goverment-design/news.html', 'assets/goverment-design/news-view.html', 'assets/goverment-design/projects.html',
-                    'assets/goverment-design/main-bordered.html','assets/goverment-design/projects-view.html','assets/goverment-design/events.html',
-                    'assets/goverment-design/events-view.html', 'assets/goverment-design/stuff.html', 'assets/goverment-design/contacts.html',
-                    'assets/goverment-design/about.html']
+                    'assets/goverment-design/css/style.min.css': ['assets/themegovernment-design/buttons.html', 'assets/themegovernment-design/main.html', 'assets/themegovernment-design/news.html', 'assets/themegovernment-design/news-view.html', 'assets/themegovernment-design/projects.html',
+                    'assets/themegovernment-design/main-bordered.html','assets/themegovernment-design/projects-view.html','assets/themegovernment-design/events.html',
+                    'assets/themegovernment-design/events-view.html', 'assets/themegovernment-design/stuff.html', 'assets/themegovernment-design/contacts.html',
+                    'assets/themegovernment-design/about.html']
                 }
             }
         },
         watch: {
-            files: ['assets/goverment-design/vendor/stylesheets/bootstrap/*', 'assets/goverment-design/vendor/stylesheets/*'],
+            files: ['assets/themegovernment-design/vendor/stylesheets/bootstrap/*', 'assets/themegovernment-design/vendor/stylesheets/*'],
             tasks: ['sass', 'cssmin', 'uncss'],
         }
     });
