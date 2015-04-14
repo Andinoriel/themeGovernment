@@ -25,6 +25,7 @@
                     <ul id="navigation" class="nav navbar-nav navbar-right dl-menu">
                         [[pdoMenu@mainMenu?
                         &startId=`0`
+                        &resources=`-[[++themegovernment.id_index_page]]`
                         &tplParentRow=`@INLINE
                         <li class="[[+classnames]] dropdown">
                             <a href="[[+link]]" class="dropdown-toggle main-heading-a" [[+attributes]] role="button" aria-expanded="false">[[+menutitle]]<i>›</i></a>
@@ -58,8 +59,8 @@
                                 <span class="fa fa-cog"></span><i>›</i>
                             </a>
                             <ul class="dropdown-menu dl-submenu" role="menu">
-                                <li class="active">
-                                        <span>
+                                <li>
+                                    <a href="?color=default">
 													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                          width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
 													<path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0"/>
@@ -67,10 +68,10 @@
                                                         <rect x="14" fill="#9A0000" width="14" height="14"/>
 													</svg>
 													Government
-												</span>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="?color=sandybay">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
                                                 <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                                             <rect fill="#01478e" width="14" height="14" />
@@ -80,7 +81,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="?color=skyline">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
                                                 <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                                             <rect fill="#232323" width="14" height="14" />
@@ -90,7 +91,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="?color=raspberry">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
                                                 <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                                             <rect fill="#900021" width="14" height="14" />
@@ -98,7 +99,7 @@
                                             </svg>
                                         Raspberry</a>
                                 </li>
-                                <li class="divider"></li>
+                                [[-  <li class="divider"></li>
                                 <li>
                                     <a href="#">
                                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
@@ -135,7 +136,7 @@
                                             <rect opacity="0.41" fill="url(#SVGID_2_)" width="5.938" height="14" />
                                             </svg>
                                         Boxed</a>
-                                </li>
+                                </li>]]
                             </ul>
                             <div class="clearfix"></div>
                         </li>

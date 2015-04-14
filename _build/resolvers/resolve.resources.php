@@ -108,9 +108,9 @@ if ($object && $object->xpdo) {
              */
             $templateNames = array(
                 'index',
-//                'text',
+                'projectsList',
 //                'contacts',
-//                '404',
+                '404',
             );
             $templateVarPrefix = 'tpl_';
             foreach($templateNames as $templateName){
@@ -145,30 +145,59 @@ if ($object && $object->xpdo) {
                         'context_key' => 'web',
                         'menutitle' => '',
                     ),
-//                    '404' => array(
-//                        'template' => $tpl_404->get('id'),
-//                        'pagetitle' => '404',
-//                        'longtitle' => '',
-//                        'description' => '',
-//                        'introtext' => '',
-//                        'alias' => '404',
-//                        'uri' => '404',
-//                        'link_attributes' => '',
-//                        'content' => '',
-//                        'isfolder' => false,
-//                        'published' => true,
-//                        'publishedon' => time(),
-//                        'hidemenu' => true,
-//                        'cacheable' => true,
-//                        'searchable' => false,
-//                        'richtext' => false,
-//                        'context_key' => 'web',
-//                        'menutitle' => '',
-//                        'group' => 'technical',
+                    'projects:TicketsSection' => array(
+                        'parentCheck' => true,
+                        'class_key' => 'TicketsSection',
+                        'template' => $tpl_projectsList->get('id'),
+                        'pagetitle' => 'Projects',
+                        'longtitle' => '',
+                        'description' => '',
+                        'introtext' => '',
+                        'alias' => 'events',
+                        'uri' => 'events',
+                        'link_attributes' => '',
+                        'content' => '',
+                        'isfolder' => true,
+                        'published' => true,
+                        'publishedon' => time(),
+                        'hidemenu' => false,
+                        'cacheable' => true,
+                        'searchable' => true,
+                        'richtext' => true,
+                        'context_key' => 'web',
+                        'menutitle' => '',
+                        'properties' => array(
+                            'tickets' => array(
+                              //  'template' => $tpl_eventsItem->get('id'),
+                                'uri' => '%alias',
+                                'disable_jevix' => true
+                            )
+                        ),
+                    ),
+                   '404' => array(
+                        'template' => $tpl_404->get('id'),
+                        'pagetitle' => '404',
+                        'longtitle' => '',
+                        'description' => '',
+                        'introtext' => '',
+                        'alias' => '404',
+                        'uri' => '404',
+                        'link_attributes' => '',
+                        'content' => '',
+                        'isfolder' => false,
+                        'published' => true,
+                        'publishedon' => time(),
+                        'hidemenu' => true,
+                        'cacheable' => true,
+                        'searchable' => false,
+                        'richtext' => false,
+                        'context_key' => 'web',
+                        'menutitle' => '',
+                        'group' => 'technical',
 //                        'tvs' => array(
 //                            'img' => '404.png'
 //                        )
-//                    ),
+                    ),
                     'sitemap' => array(
                         'template' => 0,
                         'pagetitle' => 'sitemap',

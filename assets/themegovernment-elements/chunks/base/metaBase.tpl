@@ -31,7 +31,7 @@
             &minifyCss=`1`
             &minifyJs=`1`
             &cssRegister=`placeholder`
-            &cacheFolder=`[[++themegovernment.design_url]]min/`
+            &cacheFolder=`[[++themegovernment.design_url]]/css/min-molt/`
             &jsSources=`
 				[[++themegovernment.design_url]]js/jquery/plugins/Chart.js
                 ,[[++themegovernment.design_url]]js/jquery/plugins/bootstrap-select.js
@@ -54,7 +54,7 @@
 				,[[++themegovernment.design_url]]js/app/modules/barChart.js
 				,[[++themegovernment.design_url]]js/app/modules/disquis.js
 				,[[++themegovernment.design_url]]js/app/modules/stickyHeader.js
-                ,[[++themegovernment.design_url]]jjs/app/modules/globalScripts.js
+                ,[[++themegovernment.design_url]]js/app/modules/globalScripts.js
                 ,[[++themegovernment.design_url]]js/app/modules/backgroundImg.js
 				,[[++themegovernment.design_url]]js/app/modules/scrollPlugin.js
                 ,[[++themegovernment.design_url]]js/app/modules/googleMap.js

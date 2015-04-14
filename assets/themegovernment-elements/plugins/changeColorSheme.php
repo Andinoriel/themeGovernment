@@ -9,13 +9,13 @@ switch($eventName) {
         if($modx->context->get('key') != "mgr"){
             if(isset($_GET['color']) || isset($_SESSION['color'])) {
                 $color = $_GET['color'] ? $_GET['color'] : $_SESSION['color'];
-                $colors = array('default', 'gold', 'basketball', 'blueberry');
+                $colors = array('default', 'raspberry', 'sandybay', 'skyline');
                 if(!in_array($color, $colors)) {
                     continue;
                 }
                 $_SESSION['color'] = $color;
 
-                $modx->regClientCSS($modx->getOption('themeclubcube.design_url').'css/'.$color.'-color.css');
+                $modx->regClientCSS($modx->getOption('themegovernment.design_url').'css/color/'.$color.'-color.min.css');
             } else {
                 $color = 'default';
             }

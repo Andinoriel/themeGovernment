@@ -8,7 +8,7 @@ $_lang['lf_footer_address_phone1'] = '+38 (000) 000-00-00';
 $_lang['lf_footer_address_phone2'] = '+38 (000) 000-00-00';
 $_lang['lf_footer_address'] = '87500 Украина, Мариуполь, ул. Казанцева 7б, 2й этаж, оф. 29';
 
-$_lang['lf_footer_subscribe_head'] = 'Список рассылки';
+$_lang['lf_footer_subscribe_head'] = 'Будьте вкурсе';
 $_lang['lf_footer_subscribe_line'] = 'Введите адрес вашей электронной почты ниже, чтобы подписаться на наши рассылки вечеринок. Мы обещаем делать вас счастливыми очень-очень часто!';
 $_lang['lf_footer_subscribe_email_placeholder'] = 'Ваш E-mail';
 $_lang['lf_footer_subscribe_send'] = 'Подписаться';

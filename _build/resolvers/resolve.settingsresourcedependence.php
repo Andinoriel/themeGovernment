@@ -8,7 +8,8 @@ if ($object && $object->xpdo) {
             $settings = array(
                 'themegovernment.id_ajax_form_contacts' => 'formcontacts',
                 'themegovernment.id_ajax_form_subscribe' => 'formsubscribe',
-                //'error_page' => '404',
+                'themegovernment.id_error_page' => '404',
+                'themegovernment.id_index_page' => 'index',
             );
 
             $context_key = 'web';

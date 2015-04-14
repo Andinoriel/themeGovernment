@@ -1,5 +1,4 @@
 <?php
-
 $eventName = $modx->event->name;
 switch($eventName) {
     case 'OnBeforeCacheUpdate':

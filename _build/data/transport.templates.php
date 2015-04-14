@@ -6,14 +6,14 @@ $tmp = array(
         'file' => 'index',
         'description' => 'Index template',
     ),
-//    'text' => array(
-//        'file' => 'text',
-//        'description' => 'Text template',
-//    ),
-//    'contacts' => array(
-//        'file' => 'contacts',
-//        'description' => 'Contact page template',
-//    ),
+    'projectsList' => array(
+        'file' => 'projectsList',
+        'description' => 'Projects List template',
+    ),
+    '404' => array(
+        'file' => '404',
+        'description' => 'Error page template',
+    ),
 );
 
 // Save chunks for setup options

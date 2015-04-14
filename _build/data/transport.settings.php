@@ -47,6 +47,16 @@ $tmp = array(
         'value' => '',
         'area' => 'themegovernment_resources',
     ),
+    'id_error_page' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themegovernment_resources',
+    ),
+    'id_index_page' => array(
+        'xtype' => 'numberfield',
+        'value' => '',
+        'area' => 'themegovernment_resources',
+    ),
 );
 
 foreach ($tmp as $k => $v) {
