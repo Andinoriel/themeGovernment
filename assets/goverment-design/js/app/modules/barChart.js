@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('BarChart', function (properties, $, $window, $document) {
   //PRIVATE VARIABLES
   var _barChart = this,
     _defaults = {
@@ -21,12 +21,12 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
     },
 
     //PRIVATE METHODS
-    _init = function() {
+    _init = function () {
       appMakeBeCool.gateway.base.Class.apply(_barChart, [_properties]);
       if (!_globals.preloaded) {
         return _barChart.init();
       }
-      _barChart.globals.customCreate = function() {
+      _barChart.globals.customCreate = function () {
         _config();
         _setup();
         _setBinds();
@@ -35,18 +35,18 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
       _barChart.create();
     },
 
-    _config = function() {
+    _config = function () {
       _globals.barChart = $(_properties.barChart);
     },
 
-    _setup = function() {
+    _setup = function () {
       if (_globals.barChart.length) {
         var animation = false;
 
         if ($window.width() > 767) {
           animation = true;
         }
-        _globals.barChart.each(function() {
+        _globals.barChart.each(function () {
           var $barChartParent = $(this);
           var thisCanvas = $barChartParent.find('canvas').get(0);
           var canvasTopOffset = $barChartParent.offset().top;
@@ -120,7 +120,7 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
               addFlag = true;
             }
           }
-          $window.scroll(function() {
+          $window.scroll(function () {
             addBar();
           });
           addBar();
@@ -130,24 +130,24 @@ appMakeBeCool.gateway.addClass('BarChart', function(properties, $, $window, $doc
       }
     },
 
-    _setBinds = function() {},
+    _setBinds = function () {},
 
-    _binds = function() {
+    _binds = function () {
       return {}
     },
 
-    _triggers = function() {
+    _triggers = function () {
       return {}
     },
 
-    _setCustomMethods = function() {
+    _setCustomMethods = function () {
       // _blogAnimate.globals.customResurrect = function() {}
       // _blogAnimate.globals.customDestroy = function() {}
     }
 
   //PUBLIC METHODS
-  _barChart.addMethod('init', function() {
-    _barChart.bind($window, _barChart.globals.classType + '_Init', function(e, data, el) {
+  _barChart.addMethod('init', function () {
+    _barChart.bind($window, _barChart.globals.classType + '_Init', function (e, data, el) {
       _globals.preloaded = true;
       _init();
     });

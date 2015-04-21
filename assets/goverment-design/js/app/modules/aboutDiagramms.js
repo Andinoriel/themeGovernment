@@ -1,6 +1,6 @@
 "use strict";
 
-appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window, $document) {
+appMakeBeCool.gateway.addClass('AboutDiagramms', function (properties, $, $window, $document) {
   //PRIVATE VARIABLES
   var _aboutDiagramms = this,
     _defaults = {
@@ -21,12 +21,12 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
     },
 
     //PRIVATE METHODS
-    _init = function() {
+    _init = function () {
       appMakeBeCool.gateway.base.Class.apply(_aboutDiagramms, [_properties]);
       if (!_globals.preloaded) {
         return _aboutDiagramms.init();
       }
-      _aboutDiagramms.globals.customCreate = function() {
+      _aboutDiagramms.globals.customCreate = function () {
         _config();
         _setup();
         _setBinds();
@@ -35,11 +35,11 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
       _aboutDiagramms.create();
     },
 
-    _config = function() {
+    _config = function () {
       _globals.aboutChart = $(_properties.aboutChart);
     },
 
-    _setup = function() {
+    _setup = function () {
 
       if (_globals.aboutChart.length) {
         var animation = false;
@@ -48,7 +48,7 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
           animation = true;
         }
 
-        _globals.aboutChart.each(function() {
+        _globals.aboutChart.each(function () {
           var $aboutChartParent = $(this).parent();
           var thisCanvas = $aboutChartParent.find('canvas').get(0);
           var canvasTopOffset = $aboutChartParent.offset().top;
@@ -114,12 +114,12 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
                 segmentStrokeWidth: 0,
                 segmentShowStroke: false,
                 segmentStrokeColor: "#e9e8dc",
-                onAnimationProgress: function() {
+                onAnimationProgress: function () {
                   if (animateValue < aboutChartValue) {
                     $aboutChartTextNode.text(++animateValue);
                   }
                 },
-                onAnimationComplete: function(){
+                onAnimationComplete: function () {
                   if (animation !== true) {
                     $aboutChartTextNode.text(aboutChartNumbers);
                   }
@@ -137,13 +137,13 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
                 segmentStrokeWidth: 0,
                 segmentShowStroke: false,
                 segmentStrokeColor: "#e9e8dc",
-                onAnimationProgress: function() {
+                onAnimationProgress: function () {
                   if (animateValue < aboutChartNumbers) {
                     chartNumber += aboutChartStep;
                     $aboutChartTextNode.text((chartNumber).toFixed().replace(/(\d)(?=(\d{3})+$)/g, '$1 '));
                   }
                 },
-                onAnimationComplete: function(){
+                onAnimationComplete: function () {
                   if (animation !== true) {
                     $aboutChartTextNode.text((aboutChartNumbers).toFixed().replace(/(\d)(?=(\d{3})+$)/g, '$1 '));
                   }
@@ -152,7 +152,7 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
               addFlag = true;
             }
           }
-          $window.scroll(function() {
+          $window.scroll(function () {
             addCircle();
           });
           addCircle();
@@ -161,23 +161,23 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function(properties, $, $window
       }
     },
 
-    _setBinds = function() {},
+    _setBinds = function () {},
 
-    _binds = function() {
+    _binds = function () {
       return {}
     },
 
-    _triggers = function() {
+    _triggers = function () {
       return {}
     },
 
-    _setCustomMethods = function() {
+    _setCustomMethods = function () {
 
     }
 
   //PUBLIC METHODS
-  _aboutDiagramms.addMethod('init', function() {
-    _aboutDiagramms.bind($window, _aboutDiagramms.globals.classType + '_Init', function(e, data, el) {
+  _aboutDiagramms.addMethod('init', function () {
+    _aboutDiagramms.bind($window, _aboutDiagramms.globals.classType + '_Init', function (e, data, el) {
       _globals.preloaded = true;
       _init();
     });
