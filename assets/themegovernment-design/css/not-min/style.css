@@ -9041,6 +9041,10 @@ textarea {
   margin-top: 2px;
 }
 
+.btn-read:focus {
+  outline: none;
+}
+
 .btn-read-primary__inverse {
   background-color: #000;
   -webkit-transition: background-color 0.3s ease;
@@ -11419,6 +11423,10 @@ nav > .nav.navbar-nav > li.colors .dt-back > a {
   color: #bdbbac;
 }
 
+.navbar-nav *:focus {
+  outline: none;
+}
+
 .slider {
   height: 340px;
   overflow: hidden;
@@ -12603,7 +12611,7 @@ footer {
   font-family: "roboto_condensedlight", Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
-  color: rgba(255, 255, 255, 0.33);
+  color: rgba(255, 255, 255, 0.66);
   border-bottom: 1px solid;
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
@@ -12614,14 +12622,14 @@ footer p {
   font-family: "roboto_condensedlight", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.33);
+  color: rgba(255, 255, 255, 0.66);
 }
 
 .copyrights {
   font-family: "roboto_condensedbold", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.33);
+  color: rgba(255, 255, 255, 0.66);
 }
 
 .copyrights__footer {
@@ -12639,7 +12647,7 @@ footer p {
   font-family: "roboto_condensedlight", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.33);
+  color: rgba(255, 255, 255, 0.66);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -14967,7 +14975,7 @@ figure.full-figure figcaption {
   font-family: "roboto_condensedlight", Arial, sans-serif;
   font-size: 22px;
   line-height: 22px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.66);
 }
 
 .contacts-form {
@@ -18850,6 +18858,10 @@ figure.full-figure figcaption {
     color: #002465;
   }
 
+  .ff__link:focus {
+    text-decoration: none;
+  }
+
   .home-btn {
     display: none;
   }
@@ -19307,6 +19319,10 @@ figure.full-figure figcaption {
 
   .news-item-big__diagramm-text .btn-read-more .btn-read-more__arr {
     display: inline-block;
+  }
+
+  .news-item-big__diagramm-text .btn-read-more:focus {
+    text-decoration: none;
   }
 
   .news .red-chart-diagramm .diagramm-number {
@@ -21260,6 +21276,10 @@ figure.full-figure figcaption {
     line-height: 14px;
   }
 
+  .stuff__item:focus {
+    text-decoration: none;
+  }
+
   .fw-gmap {
     height: 420px;
   }
@@ -21287,7 +21307,7 @@ figure.full-figure figcaption {
   }
 
   .list-icons li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.66);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
@@ -21296,6 +21316,10 @@ figure.full-figure figcaption {
     color: white;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+  }
+
+  .list-icons li a:focus {
+    text-decoration: none;
   }
 
   .contacts-form {

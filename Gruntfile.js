@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: { // Dictionary of files
-                    'assets/goverment-design/css/not-min/style.css': 'assets/themegovernment-design/vendor/stylesheets/bootstrap.scss' // 'destination': 'source'
+                    'assets/themegovernment-design/css/not-min/style.css': 'assets/themegovernment-design/vendor/stylesheets/bootstrap.scss' // 'destination': 'source'
                 }
             }
         },
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
                     // report: 'min'
                 },
                 files: {
-                    'assets/goverment-design/css/style.min.css': ['assets/themegovernment-design/buttons.html', 'assets/themegovernment-design/main.html', 'assets/themegovernment-design/news.html', 'assets/themegovernment-design/news-view.html', 'assets/themegovernment-design/projects.html',
+                    'assets/themegovernment-design/css/style.min.css': ['assets/themegovernment-design/buttons.html', 'assets/themegovernment-design/main.html', 'assets/themegovernment-design/news.html', 'assets/themegovernment-design/news-view.html', 'assets/themegovernment-design/projects.html',
                     'assets/themegovernment-design/main-bordered.html','assets/themegovernment-design/projects-view.html','assets/themegovernment-design/events.html',
                     'assets/themegovernment-design/events-view.html', 'assets/themegovernment-design/stuff.html', 'assets/themegovernment-design/contacts.html',
                     'assets/themegovernment-design/about.html']
