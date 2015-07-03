@@ -206,7 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce9c94', endC
 .news-item-big {position: relative;margin-bottom: 80px;padding-top: 40px;}
 .news-item-big__title {position: absolute;top: 10px;left: 13px;font-family: $roboto-condensed-b;font-size: 40px;line-height: 30px;color: #fff;text-transform: uppercase;}
 .news-item-big__title-color {color: #002266;}
-.news-item-big .thumbnail {overflow: hidden;height: 290px;margin-bottom: 20px;}
+.news-item-big .thumbnail {display: block;overflow: hidden;height: 290px;margin-bottom: 20px;}
 .news-item-big .thumbnail>img.news-item-big__image {max-width: none;min-height: 100%;max-height: 100%;}
 .news-item-big .news-item-big__header {display: block;position: absolute;top: 105px;left: 15px;padding-right: 20px;}
 .news-item-big .news-item-big__header h3 {display: inline;font-family: $roboto-condensed;font-size: 40px;line-height: 54px;color: #002266;padding-right: 60px;text-transform: none;background:rgba(255,255,255,.8);}
@@ -1746,7 +1746,7 @@ nav>.nav.navbar-nav>li.dropdown.colors>.dropdown-menu {padding-top: 9px!importan
 .news-item-big {width: 32% !important;position: relative;padding-left: 0;padding-right: 0;margin-bottom: 0;margin-top: -95px;z-index: 19;}
 .news-item-big h3 {left: -4px;top: 130px;}
 .news-item-big__title {font-size: 60px;line-height: 43px;top: -5px;left: -3px;}
-.news-item-big .thumbnail {height: 287px;}
+.news-item-big .thumbnail {height: 289px;}
 .news-item-big__left-t {display: block;position: absolute;top: 40px;left: -11px;width: 11px;height: 37px;background:url('../../images/themegovrnmnt-projects_leftTop.svg') center no-repeat;background-size: contain;}
 .news-item-big__left-b {display: block;position: absolute;top: 75px;left: -10px;width: 10px;height: 100px;background:url('../../images/themegovrnmnt-projects_leftBottom.svg') center no-repeat;background-size: contain;}
 .news-item-big__right-t {display: block;position: absolute;top: 40px;right: -11px;width: 11px;height: 37px;background:url('../../images/themegovrnmnt-projects_rightTop.svg') center no-repeat;background-size: contain;}
@@ -1863,6 +1863,7 @@ section.stuff .section-hdr {font-size: 48px;line-height: 48px;margin-bottom: 40p
 .stuff-slider .stuff-slider__item .stuff-slider__p {display: block;}
 .stuff-slider .stuff-slider__item hr {display: block;}
 .stuff-slider .stuff-slider__item .thumbnail {width: auto;height: auto;margin-right: 5px;}
+  .stuff-slider .stuff-slider__item .thumbnail img {max-width: 100%;}
 .stuff-slider__item-descr {padding-left: 0;}
 .stuff-slider .slick-prev {width: 36px;height: 100px;left: -60px;bottom: 50%;top: 40px;}
 .stuff-slider .slick-prev:before {width: 36px ;height: 100px ;right: 3px;background-size: 36px 100px;}
