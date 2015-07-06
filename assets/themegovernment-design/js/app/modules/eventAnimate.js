@@ -50,22 +50,12 @@ appMakeBeCool.gateway.addClass('EventAnimate', function (properties, $, $window,
       _globals.twitter = $(_properties.twitter);
       _globals.eventTabs = $(_properties.eventTabs);
       _globals.windowWidth = $window.width();
-      // _globals.fullWNewsItem = $(_properties.fullWNewsItem);
     },
 
     _setup = function () {
       if (_globals.events.length) {
         var events = new EventAnimate(_globals.events);
       }
-      // if (_globals.twitter.length) {
-      //     var twitter = new EventAnimate(_globals.twitter);
-      // }
-      // if (_globals.eventTabs.length) {
-      //     var eventTabs = new EventAnimate(_globals.eventTabs);
-      // }
-      // if (_globals.stuffContainer.length) {
-      //     var stuff = new EventAnimate(_globals.stuffContainer);
-      // }
     },
 
     _setBinds = function () {},

@@ -49,7 +49,7 @@ appMakeBeCool.gateway.addClass('GlobalScripts', function (properties, $, $window
         _globals.tooltips.tooltip({
           placement: 'top'
         });
-        _globals.tooltips.click(function (event) {
+        _globals.tooltips.on('click', function (event) {
           event.preventDefault();
         });
       }

@@ -3840,7 +3840,7 @@ nav>.nav.navbar-nav>li.colors li>span {
   width: 36px;
   height: 15px;
   margin-left: -18px;
-  background: url(../images/themegovrnmnt-event_arrow.svg) left top no-repeat;
+  background: url(../../images/themegovrnmnt-event_arrow.svg) left top no-repeat;
 }
 
 .pager {
@@ -5571,6 +5571,7 @@ footer .success-message .suc-title i {
   display: inline-block;
   position: relative;
   top: -29px;
+  margin: 0 -10px;
 }
 
 .heading-fw .line-abt .label-default {

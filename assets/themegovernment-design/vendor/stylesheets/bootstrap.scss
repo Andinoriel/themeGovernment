@@ -12,6 +12,9 @@
 9. Custom controls / #custom-controls
 10. Custom styles / #custom-styles
 
+
+Some Bootstrap .scss files are muted, beacuse this functions (modals, jumbotron etc.) are not used in the themeGovernment.
+
 -------------------------------------------------------------------*/
 
 
@@ -58,18 +61,18 @@
 @import "bootstrap/input-groups";
 @import "bootstrap/navs";
 @import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
+//@import "bootstrap/breadcrumbs";
 @import "bootstrap/pagination";
 @import "bootstrap/pager";
 @import "bootstrap/labels";
-@import "bootstrap/badges";
+//@import "bootstrap/badges";
 //@import "bootstrap/jumbotron";
 //@import "bootstrap/thumbnails";
 //@import "bootstrap/alerts";
 //@import "bootstrap/progress-bars";
-@import "bootstrap/media";
+//@import "bootstrap/media";
 @import "bootstrap/list-group";
-@import "bootstrap/panels";
+//@import "bootstrap/panels";
 @import "bootstrap/responsive-embed";
 @import "bootstrap/wells";
 @import "bootstrap/close";

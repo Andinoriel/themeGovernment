@@ -56,7 +56,7 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
         var $backNodes = _globals.navigation.find('.dt-back');
 
         //Events
-        $allLiIt.click(function () {
+        $allLiIt.on('click', function () {
           var $clickedLiIt = $(this);
           var $clickedLi = $clickedLiIt.closest('li');
           var $parentUl = $clickedLi.closest('ul');
@@ -76,11 +76,10 @@ appMakeBeCool.gateway.addClass('DtMenu', function (properties, $, $window, $docu
               $clickedLi.addClass('subviewopen');
             }
           }
-          console.log('Nope');
           return false;
         });
 
-        $backNodes.click(function () {
+        $backNodes.on('click', function () {
           var $backLink = $(this);
           var $parentLi = $(this).closest('li.subviewopen');
           var $parentUl = $parentLi.closest('ul');

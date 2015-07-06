@@ -34,7 +34,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
 
         _extendClasses = function() {
             _globals.siteObj.utils.extend(_globals.siteObj.classes.MainSlider, _globals.siteObj.base.Class);
-            // _globals.siteObj.utils.extend(_globals.siteObj.classes.PrintEffect, _globals.siteObj.base.Class);
             _globals.siteObj.utils.extend(_globals.siteObj.classes.BgStretcher, _globals.siteObj.base.Class);
             _globals.siteObj.utils.extend(_globals.siteObj.classes.MenuAligns, _globals.siteObj.base.Class);
             _globals.siteObj.utils.extend(_globals.siteObj.classes.StuffSlider, _globals.siteObj.base.Class);
@@ -76,9 +75,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
             _globals.siteObj.createClassInstance('gridsDiagramms', _globals.siteObj.classes.GridsDiagramms, {
                 classId: 'GridsDiagramms'
             });
-            // _globals.siteObj.createClassInstance('printEffect', _globals.siteObj.classes.PrintEffect, {
-            //     classId: 'PrintEffect'
-            // });
             _globals.siteObj.createClassInstance('disquis', _globals.siteObj.classes.Disquis, {
                 classId: 'Disquis'
             });
@@ -144,7 +140,6 @@ appMakeBeCool.gateway.addClass('ThemeMode', function(properties, $, $window, $do
                         _themeMode.trigger('StuffSlider_Init', data);
                         _themeMode.trigger('EventAnimate_Init', data);
                         _themeMode.trigger('GridsDiagramms_Init', data);
-                        // _themeMode.trigger('PrintEffect_Init', data);
                         _themeMode.trigger('Disquis_Init', data);
                         _themeMode.trigger('StickyHeader_Init', data);
                         _themeMode.trigger('GlobalScripts_Init', data);

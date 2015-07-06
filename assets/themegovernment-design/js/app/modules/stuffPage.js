@@ -78,7 +78,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
       //Stuff click functions
       if (_globals.cover.length) {
         _globals.coverBg.height($('body').outerHeight());
-        _globals.stuff.click(function (event) {
+        _globals.stuff.on('click', function (event) {
           event.preventDefault();
           var $stuffNode = $(this);
           var stuffImgSrc = $stuffNode.find('.stuff__item-img').attr('src');
@@ -122,10 +122,10 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
               exitCover();
             }
           });
-          _globals.coverBg.click(function () {
+          _globals.coverBg.on('click', function () {
             exitCover();
           });
-          _globals.closeB.click(function () {
+          _globals.closeB.on('click', function () {
             exitCover();
           });
         });
