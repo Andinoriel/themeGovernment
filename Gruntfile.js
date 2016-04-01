@@ -1,11 +1,11 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        sass: { // Task
-            dist: { // Target
-                options: { // Target options
+        sass: {
+            dist: {
+                options: {
                     style: 'expanded'
                 },
-                files: { // Dictionary of files
+                files: {
                     'assets/themegovernment-design/css/not-min/style.css': 'assets/themegovernment-design/vendor/stylesheets/bootstrap.scss' // 'destination': 'source'
                 }
             }
@@ -81,15 +81,6 @@ module.exports = function(grunt) {
                     '(min-width: 992px) and (max-width: 1199px)',
                     '(min-width: 1200px)',
                     ],
-                    // media: ['(min-width: 700px) handheld and (orientation: landscape)'],
-                    // csspath: '../public/css/',
-                    // raw: 'h1 { color: green }',
-                    // stylesheets: ['lib/bootstrap/dist/css/bootstrap.css', 'src/public/css/main.css'],
-                    // ignoreSheets: ['assets/themegovernment-design/js/plugins/slick/slick.css'],
-                    // urls: ['http://localhost:3000/mypage', '...'], // Deprecated
-                    // timeout: 1000,
-                    // htmlroot: 'public',
-                    // report: 'min'
                 },
                 files: {
                     'assets/themegovernment-design/css/style.min.css': ['assets/themegovernment-design/buttons.html', 'assets/themegovernment-design/main.html', 'assets/themegovernment-design/news.html', 'assets/themegovernment-design/news-view.html', 'assets/themegovernment-design/projects.html',
