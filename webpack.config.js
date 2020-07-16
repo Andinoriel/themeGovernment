@@ -1,6 +1,6 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
@@ -13,7 +13,7 @@ const isProd = !isDev
 const optimization = () => {
   const config = {
     splitChunks: {
-    //  chunks: "all"
+       chunks: "all"
     }
   }
   if (isProd) {
@@ -29,10 +29,10 @@ const cssLoaders = extra => {
   const loaders = [{
     loader: MiniCSSExtractPlugin.loader,
     options:
-      {
-        hmr: isDev,
-        reloadAll: true
-      }
+    {
+      hmr: isDev,
+      reloadAll: true
+    }
   },
     'css-loader'
   ]
@@ -64,6 +64,7 @@ module.exports = {
       '@css': path.resolve(__dirname, 'src/css'),
       '@js': path.resolve(__dirname, 'src/js'),
       '@fonts': path.resolve(__dirname, 'src/fonts'),
+      '@images': path.resolve(__dirname, 'src/images'),
       '@': path.resolve(__dirname, 'src')
     }
   },
@@ -74,14 +75,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, 'src/favicon.ico'),
-    //       to: path.resolve(__dirname, 'dist')
-    //     }
-    //   ]
-    // }),
     new MiniCSSExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
@@ -138,7 +131,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry', 'sandybay', 'skyline']
+      chunks: ['main', 'sandybay', 'skyline', 'raspberry']
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
@@ -170,7 +163,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry', 'sandybay', 'skyline']
+      chunks: ['main', 'sandybay', 'skyline', 'raspberry']
     }),
     new HTMLWebpackPlugin({
       filename: 'news.html.html',
@@ -233,10 +226,10 @@ module.exports = {
           {
             loader: MiniCSSExtractPlugin.loader,
             options:
-              {
-                hmr: isDev,
-                reloadAll: true
-              }
+            {
+              hmr: isDev,
+              reloadAll: true
+            }
           },
           {
             loader: 'css-loader', // translates CSS into CommonJS modules
@@ -256,20 +249,38 @@ module.exports = {
           }]
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(otf|svg|eot|ttf|woff|woff2)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
+              name: '[path][name].[ext]',
             }
           }
         ]
       },
       {
-        test: /\.(png|jpg|gif)$/,
-        use: ['file-loader']
+        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            }
+          }
+        ]
+      },
+      {
+        // doesn't work properly
+        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            }
+          }
+        ]
       }
     ]
   }

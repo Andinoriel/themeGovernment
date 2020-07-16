@@ -3,15 +3,15 @@
 
 1. Fonts
 2. Normalize.css
-3. Print / #print
-4. Glyphicons / #glyphicons
+3. Print
+4. Glyphicons
 5. Utility
 6. Bootstrap 4
-7. Javascript components / #javascript-component
-8. Utility classes / #utility-classes
-9. Font awesome / #font-awesome
-10. Custom controls / #custom-controls
-11. Custom styles / #custom-styles
+7. Javascript components
+8. Utility classes
+9. Font awesome
+10. Custom controls
+11. Custom styles 
 
 -------------------------------------------------------------------*/
 
@@ -20,7 +20,7 @@
 @import "print";
 @import "glyphicons";
 @import "utility";
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap.scss";
 @import "javascript-components";
 @import "utility-classes";
 @import "font-awesome";

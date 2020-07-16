@@ -8,7 +8,8 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <base href="" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -22,13 +23,8 @@
   <link rel="dns-prefetch" href="http://code.jquery.com" />
   <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
   <link rel="dns-prefetch" href="http://www.google-analytics.com" />
-  <link rel="icon" href="src/images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="src/images/themegovrnmnt-favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="src/old/assets/themegovernment-design/css/min/style.min.css">
-  <link rel="stylesheet" href="src/old/assets/themegovernment-design/js/jquery/plugins/slick/slick.css">
-  <link rel="stylesheet" href="src/old/assets/themegovernment-design/css/color/sandybay-color.min.css">
-  <link rel="stylesheet" href="src/old/assets/themegovernment-design/css/color/skyline-color.min.css">
-  <link rel="stylesheet" href="src/old/assets/themegovernment-design/css/color/raspberry-color.min.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <!--[if lt IE 9]>
             <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
         <![endif]-->
@@ -42,96 +38,106 @@
     <header>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2 col-lg-offset-1 navbar-header">
+          <div class="col-2 offset-1">
+            <a href="index.html" class="navbar-brand">
+              <img src="images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="overflow-hidden d-xl-none col-2 offset-6 navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div class="home-btn">Home</div>
-            <a href="src/index.htmlhtml" class="navbar-brand">
-              <img src="src/images/logo.png" alt="">
-            </a>
+            <!-- <div class="home-btn">home</div> col-lg-7 offset-lg-1-->
+
             <div class="line"></div>
           </div>
-          <div class="col-lg-7 col-lg-offset-1 navbar-collapse collapse">
+          <div class=" col-xl-8 offset-xl-0 navbar-expand-xl navbar-collapse collapse">
             <nav role="navigation">
               <ul id="navigation" class="nav navbar-nav navbar-right dl-menu">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Projects <i>›</i></a>
+                  <a href="#" class="" role="button" aria-expanded="false">Projects <i>›</i></a>
                   <ul class="dropdown-menu dl-submenu" role="menu">
-                    <li><a href="src/projects.htmlhtml">Projects</a>
+                    <li><a href="projects.html">Projects</a>
                     </li>
-                    <li><a href="src/projects-view.htmlhtml">Project view</a>
+                    <li><a href="projects-view.html">Project view</a>
                     </li>
                   </ul>
                   <div class="clearfix"></div>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">Events <i>›</i></a>
+                  <a href="#" class="" role="button" aria-expanded="false">Events <i>›</i></a>
                   <ul class="dropdown-menu dl-submenu" role="menu">
-                    <li><a href="src/events.htmlhtml">Events</a>
+                    <li><a href="events.html">Events</a>
                     </li>
-                    <li><a href="src/events-view.htmlhtml">Events view</a>
+                    <li><a href="events-view.html">Events view</a>
                     </li>
                   </ul>
                   <div class="clearfix"></div>
                 </li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">News <i>›</i></a>
+                  <a href="#" class="" role="button" aria-expanded="false">News <i>›</i></a>
                   <ul class="dropdown-menu dl-submenu" role="menu">
+                    <li><a href="news.html">News</a>
+                    </li>
+                    <li><a href="news-no-image.html">News view (no image)</a>
+                    </li>
                     <li class="dropdown-submenu">
-                      <a href="src/news.htmlhtml">News</a>
-                      <a href="src/news-no-image.htmlhtml">News view (no image)</a>
-                      <a href="src/news-view.htmlhtml">News view <i>›</i></a>
+                      <a href="news-view.html" class="" role="button" aria-expanded="false">News view
+                        <i>›</i></a>
                       <ul class="dropdown-menu dl-submenu" role="menu">
                         <li><a href="#">News view 3 level</a>
                         </li>
                       </ul>
                     </li>
+                    <!--                      </li>-->
                   </ul>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <a href="src/stuff.htmlhtml">Stuff</a>
+                  <a href="stuff.html">Stuff</a>
+
                   <div class="clearfix"></div>
                 </li>
-                <li class="dropdown active">
-                  <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">About <i>›</i></a>
+                <li class="dropdown">
+                  <a href="#" class="" role="button" aria-expanded="false">About <i>›</i></a>
                   <ul class="dropdown-menu dl-submenu" role="menu">
-                    <li><a href="src/about.htmlhtml">About page</a>
+                    <li><a href="about.html">About page</a>
                     </li>
-                    <li><a href="src/404.htmlhtml">404 page</a>
+                    <li><a href="404.html">404 page</a>
                     </li>
-                    <li class="active"><span>Design elements</span>
+                    <li><a href="buttons.html">Design elements</a>
                     </li>
                   </ul>
                   <div class="clearfix"></div>
                 </li>
                 <li>
-                  <a href="src/contacts.htmlhtml">Contacts</a>
+                  <a href="contacts.html">Contacts</a>
+
                   <div class="clearfix"></div>
                 </li>
                 <li class="dropdown colors">
-                  <a href="#" class="dropdown-toggle" role="button" aria-expanded="false">
+                  <a href="#" class="" role="button" aria-expanded="false">
                     <span class="fa fa-cog"></span><i>›</i>
                   </a>
                   <ul class="dropdown-menu dl-submenu" role="menu">
                     <li class="active">
                       <span>
-													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
-													<path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0"/>
-													<rect fill="#012267" width="14" height="14"/>
-													<rect x="14" fill="#9A0000" width="14" height="14"/>
-													</svg>
-													Government
-												</span>
+                        <svg x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14"
+                          enable-background="new 0 0 28 14" xml:space="preserve">
+                          <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
+                          <rect fill="#012267" width="14" height="14" />
+                          <rect x="14" fill="#9A0000" width="14" height="14" />
+                        </svg>
+                        Government
+                      </span>
                     </li>
                     <li>
-                      <a href="src/index-sandybay.htmlhtml">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
+                      <a href="index-sandybay.html">
+                        <svg x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14"
+                          enable-background="new 0 0 28 14" xml:space="preserve">
                           <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                           <rect fill="#01478e" width="14" height="14" />
                           <rect x="14" fill="#ab6a0f" width="14" height="14" />
@@ -140,8 +146,9 @@
                       </a>
                     </li>
                     <li>
-                      <a href="src/index-skyline.htmlhtml">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
+                      <a href="index-skyline.html">
+                        <svg x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14"
+                          enable-background="new 0 0 28 14" xml:space="preserve">
                           <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                           <rect fill="#232323" width="14" height="14" />
                           <rect x="14" fill="#006b8e" width="14" height="14" />
@@ -150,22 +157,25 @@
                       </a>
                     </li>
                     <li>
-                      <a href="src/index-raspberry.htmlhtml">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
+                      <a href="index-raspberry.html">
+                        <svg x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14"
+                          enable-background="new 0 0 28 14" xml:space="preserve">
                           <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                           <rect fill="#900021" width="14" height="14" />
                           <rect x="14" fill="#242424" width="14" height="14" />
                         </svg>
                         Raspberry</a>
                     </li>
-                    <li class="divider"></li>
+                    <li class="dropdown-divider"></li>
                     <li>
-                      <a href="src/main-bordered.htmlhtml">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14" enable-background="new 0 0 28 14" xml:space="preserve">
+                      <a href="main-bordered.html">
+                        <svg x="0px" y="0px" width="28px" height="14px" viewBox="0 0 28 14"
+                          enable-background="new 0 0 28 14" xml:space="preserve">
                           <path fill="#012267" stroke="#201600" stroke-miterlimit="10" d="M0,0" />
                           <rect fill="#F8F8F8" width="28" height="14" />
                           <rect x="5.906" fill="#E9E8DC" width="16.156" height="14" />
-                          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="22.0625" y1="7" x2="28" y2="7">
+                          <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="22.0625" y1="7" x2="28"
+                            y2="7">
                             <stop offset="0" style="stop-color:#000000" />
                             <stop offset="1" style="stop-color:#FFFFFF" />
                           </linearGradient>
@@ -212,16 +222,22 @@
                       <td>
                         <button class="btn-read-primary disabled">
                           <span>Read</span>
-                          <svg class="btn-read-primary__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
-                            <path class="btn-read-primary__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                          <svg class="btn-read-primary__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13"
+                            enable-background="new 0 0 7 13" xml:space="preserve">
+                            <path class="btn-read-primary__arr-path" fill="#990000"
+                              d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
                           </svg>
                         </button>
                       </td>
                       <td>
                         <button class="btn-read-primary">
                           <span>Read</span>
-                          <svg class="btn-read-primary__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
-                            <path class="btn-read-primary__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                          <svg class="btn-read-primary__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13"
+                            enable-background="new 0 0 7 13" xml:space="preserve">
+                            <path class="btn-read-primary__arr-path" fill="#990000"
+                              d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
                           </svg>
                         </button>
                       </td>
@@ -248,11 +264,12 @@
                       </td>
                       <td>
                         <a href="" class="btn-read-more">Read more
-													<svg class="btn-read-more__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
-													<path class="btn-read-more__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-													</svg>
-												</a>
+                          <svg class="btn-read-more__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13"
+                            enable-background="new 0 0 7 13" xml:space="preserve">
+                            <path class="btn-read-more__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                          </svg>
+                        </a>
                       </td>
                       <td>.btn-read-more</td>
                       <td></td>
@@ -260,25 +277,27 @@
 
                     <tr>
                       <td>
-                        <a href="" class="btn-read disabled"><span>Read</span><svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
-													<path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-												</svg></a>
+                        <a href="" class="btn-read disabled"><span>Read</span><svg class="btn-read__arr" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                            <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                          </svg></a>
                       </td>
                       <td>
                         <a href="" class="btn-read"><span>Read</span>
-													<svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
-													<path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-													</svg>
-												</a>
+                          <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 13"
+                            enable-background="new 0 0 7 13" xml:space="preserve">
+                            <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                          </svg>
+                        </a>
                       </td>
                       <td>.btn-read</td>
                       <td></td>
                     </tr>
                     <tr>
                       <td>
-                        <a href="" class="label label-default disabled">
+                        <a href="" class="tag label-default disabled">
                           <div class="lbl-default__lns">
                             <span></span>
                             <span></span>
@@ -286,13 +305,15 @@
                             <span></span>
                           </div>
                           <span>Word</span>
-                          <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
+                          <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.145px" height="30px"
+                            viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
                             <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
                           </svg>
                         </a>
                       </td>
                       <td>
-                        <a href="" class="label label-default">
+                        <a href="" class="tag label-default">
                           <div class="lbl-default__lns">
                             <span></span>
                             <span></span>
@@ -300,7 +321,9 @@
                             <span></span>
                           </div>
                           <span>Word</span>
-                          <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
+                          <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.145px" height="30px"
+                            viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
                             <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
                           </svg>
                         </a>
@@ -310,10 +333,10 @@
                     </tr>
                     <tr>
                       <td>
-                        <button class="btn btn-default disabled">Follow</button>
+                        <button class="btn btn-secondary disabled">Follow</button>
                       </td>
                       <td>
-                        <button class="btn btn-default">Follow</button>
+                        <button class="btn btn-secondary">Follow</button>
                       </td>
                       <td>.btn.btn-default</td>
                       <td>.btn.btn-default</td>
@@ -330,10 +353,10 @@
                     </tr>
                     <tr>
                       <td>
-                        <button class="btn btn-default btn-lg disabled">Follow</button>
+                        <button class="btn btn-secondary btn-lg disabled">Follow</button>
                       </td>
                       <td>
-                        <button class="btn btn-default btn-lg">Follow</button>
+                        <button class="btn btn-secondary btn-lg">Follow</button>
                       </td>
                       <td>.btn.btn-default.btn-lg</td>
                       <td>.btn.btn-default.btn-lg</td>
@@ -360,38 +383,58 @@
                     </tr>
                     <tr>
                       <td>
-                        <button class="arrow-lg-left disabled pull-left">
-                          <svg version="1.1" class="arrow-lg-left__white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px" viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
+                        <button class="arrow-lg-left disabled float-left">
+                          <svg version="1.1" class="arrow-lg-left__white" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px"
+                            viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
                             <path fill="#FFFFFF" d="M4.534,75L36,0L0,75l36,75L4.534,75z" />
                           </svg>
-                          <svg version="1.1" class="arrow-lg-left__shad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px" viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
-                            <path opacity="0.33" enable-background="new    " d="M0,75L31.465,0L5.141,75l26.324,75L0,75z" />
+                          <svg version="1.1" class="arrow-lg-left__shad" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px"
+                            viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
+                            <path opacity="0.33" enable-background="new    "
+                              d="M0,75L31.465,0L5.141,75l26.324,75L0,75z" />
                           </svg>
                         </button>
-                        <button class="arrow-lg-right disabled pull-right">
-                          <svg version="1.1" class="arrow-lg-right__white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px" viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
+                        <button class="arrow-lg-right disabled float-right">
+                          <svg version="1.1" class="arrow-lg-right__white" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px"
+                            viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
                             <path fill="#FFFFFF" d="M4.534,75L36,0L0,75l36,75L4.534,75z" />
                           </svg>
-                          <svg version="1.1" class="arrow-lg-right__shad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px" viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
-                            <path opacity="0.33" enable-background="new    " d="M31.465,75L0,150l26.324-75L0,0L31.465,75z" />
+                          <svg version="1.1" class="arrow-lg-right__shad" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px"
+                            viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
+                            <path opacity="0.33" enable-background="new    "
+                              d="M31.465,75L0,150l26.324-75L0,0L31.465,75z" />
                           </svg>
                         </button>
                       </td>
                       <td>
-                        <button class="arrow-lg-left pull-left">
-                          <svg version="1.1" class="arrow-lg-left__white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px" viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
+                        <button class="arrow-lg-left float-left">
+                          <svg version="1.1" class="arrow-lg-left__white" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px"
+                            viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
                             <path fill="#FFFFFF" d="M4.534,75L36,0L0,75l36,75L4.534,75z" />
                           </svg>
-                          <svg version="1.1" class="arrow-lg-left__shad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px" viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
-                            <path opacity="0.33" enable-background="new    " d="M0,75L31.465,0L5.141,75l26.324,75L0,75z" />
+                          <svg version="1.1" class="arrow-lg-left__shad" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px"
+                            viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
+                            <path opacity="0.33" enable-background="new    "
+                              d="M0,75L31.465,0L5.141,75l26.324,75L0,75z" />
                           </svg>
                         </button>
-                        <button class="arrow-lg-right pull-right">
-                          <svg version="1.1" class="arrow-lg-right__white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px" viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
+                        <button class="arrow-lg-right float-right">
+                          <svg version="1.1" class="arrow-lg-right__white" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="150px"
+                            viewBox="0 0 36 150" enable-background="new 0 0 36 150" xml:space="preserve">
                             <path fill="#FFFFFF" d="M31.466,75L0,150l36-75L0,0L31.466,75z" />
                           </svg>
-                          <svg version="1.1" class="arrow-lg-right__shad" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px" viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
-                            <path opacity="0.33" enable-background="new    " d="M31.465,75L0,150l26.324-75L0,0L31.465,75z" />
+                          <svg version="1.1" class="arrow-lg-right__shad" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.465px" height="150px"
+                            viewBox="0 0 31.465 150" enable-background="new 0 0 31.465 150" xml:space="preserve">
+                            <path opacity="0.33" enable-background="new    "
+                              d="M31.465,75L0,150l26.324-75L0,0L31.465,75z" />
                           </svg>
                         </button>
                       </td>
@@ -400,12 +443,12 @@
                     </tr>
                     <tr>
                       <td>
-                        <button class="arrow-sm-left disabled pull-left"></button>
-                        <button class="arrow-sm-right disabled pull-right"></button>
+                        <button class="arrow-sm-left disabled float-left"></button>
+                        <button class="arrow-sm-right disabled float-right"></button>
                       </td>
                       <td>
-                        <button class="arrow-sm-left pull-left"></button>
-                        <button class="arrow-sm-right pull-right"></button>
+                        <button class="arrow-sm-left float-left"></button>
+                        <button class="arrow-sm-right float-right"></button>
                       </td>
                       <td>.arrow-sm-left + .arrow-sm-right</td>
                       <td></td>
@@ -414,11 +457,11 @@
                       <td colspan="4">
                         <ul class="nav nav-tabs" role="tablist">
                           <!-- 	<li class="active disabled">
-														<a class="tablist__item" href="#profile1" role="tab" data-toggle="tab">
-																											<span class="tablist__title">Tab1</span>
-																											<span class="tablist__descr">Selected disabled</span>
-														</a>
-												</li> -->
+                                <a class="tablist__item" href="#profile1" role="tab" data-toggle="tab">
+                                                          <span class="tablist__title">Tab1</span>
+                                                          <span class="tablist__descr">Selected disabled</span>
+                                </a>
+                            </li> -->
                           <li class="active">
                             <a class="tablist__item" href="#profile1" role="tab" data-toggle="tab">
                               <span class="tablist__title">Tab2</span>
@@ -528,15 +571,16 @@
                       <td>
                         <form>
                           <div class="form-group disabled">
-                            <label for="ep1" class="control-label">Enter your password</label>
-                            <input id="ep1" class="form-control" type="text" placeholder="Input disabled LABEL:" disabled>
+                            <label for="ep1" class="form-control-label">Enter your password</label>
+                            <input id="ep1" class="form-control" type="text" placeholder="Input disabled LABEL:"
+                              disabled>
                           </div>
                         </form>
                       </td>
                       <td>
                         <form>
                           <div class="form-group">
-                            <label for="ep2" class="control-label">Enter your password</label>
+                            <label for="ep2" class="form-control-label">Enter your password</label>
                             <input id="ep2" class="form-control" type="text" placeholder="Input LABEL:">
                           </div>
                         </form>
@@ -548,7 +592,7 @@
                       <td>
                         <form>
                           <div class="form-group">
-                            <label for="ep3" class="control-label">Enter your password</label>
+                            <label for="ep3" class="form-control-label">Enter your password</label>
                             <input id="ep3" type="text" class="form-control" placeholder="Input LABEL:">
                           </div>
                           <label for="ep3" class="error"></label>
@@ -557,9 +601,9 @@
                       <td>
                         <form>
                           <div class="form-group has-error">
-                            <label for="ep4" class="control-label control-label-top">Enter your password</label>
+                            <label for="ep4" class="form-control-label control-label-top">Enter your password</label>
                             <input id="ep4" type="text" class="form-control" placeholder="Input LABEL:">
-                            <label for="ep4" class="control-label error">Error input</label>
+                            <label for="ep4" class="form-control-label error">Error input</label>
                           </div>
                         </form>
                       </td>
@@ -568,23 +612,25 @@
                     </tr>
                     <tr>
                       <td colspan="2">
-                        <form class="form-horizontal" role="form">
+                        <form class="" role="form">
                           <div class="form-group">
-                            <label for="inline-input1" class="col-sm-3 control-label">Your name:</label>
+                            <label for="inline-input1" class="col-sm-3 form-control-label">Your name:</label>
                             <div class="col-sm-8">
                               <input type="text" id="inline-input1" class="form-control" placeholder="Enter your name:">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="inline-input2" class="col-sm-3 control-label">Your Email:</label>
+                            <label for="inline-input2" class="col-sm-3 form-control-label">Your Email:</label>
                             <div class="col-sm-8">
-                              <input type="text" id="inline-input2" class="form-control" placeholder="Enter your Email:">
+                              <input type="text" id="inline-input2" class="form-control"
+                                placeholder="Enter your Email:">
                             </div>
                           </div>
                           <div class="form-group">
-                            <label for="inline-input3" class="col-sm-3 control-label">Your phone:</label>
+                            <label for="inline-input3" class="col-sm-3 form-control-label">Your phone:</label>
                             <div class="col-sm-8">
-                              <input type="text" id="inline-input3" class="form-control" placeholder="Enter Your phone:">
+                              <input type="text" id="inline-input3" class="form-control"
+                                placeholder="Enter Your phone:">
                             </div>
                           </div>
                         </form>
@@ -621,22 +667,22 @@
                       <td>.selectpicker</td>
                     </tr>
                     <!-- 				<tr>
-											<td>
-												<div class="dropdown">
-													<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-													<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-														<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
-														<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
-														<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
-														<li role="presentation" class="divider"></li>
-														<li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
-													</ul>
-												</div>
-											</td>
-											<td></td>
-											<td></td>
-											<td></td>
-										</tr> -->
+                          <td>
+                            <div class="dropdown">
+                              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Something else here</a></li>
+                                <li role="presentation" class="dropdown-divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Separated link</a></li>
+                              </ul>
+                            </div>
+                          </td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr> -->
                   </tbody>
                 </table>
               </div>
@@ -649,24 +695,24 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="foot-sect col-xs-12 col-md-6 col-sm-6 col-lg-3">
+          <div class="foot-sect col-12 col-md-6 col-sm-6 col-lg-3">
             <div class="foot-title">Stay updated</div>
             <form action="#" id="email-footer-form" role="form" method="post" novalidate="novalidate">
               <div class="form-group">
                 <input type="email" id="fvi" class="form-control" placeholder="Email:" required>
-                <!-- <label for="fvi" class="control-label"></label> -->
+                <!-- <label for="fvi" class="form-control-label"></label> -->
               </div>
               <div id="loader-subscribe-form" class="form-loader hidden">
                 <div class="loader">
                 </div>
               </div>
-              <button type="submit" class="btn btn-darkened pull-left">Subscribe</button>
+              <button type="submit" class="btn btn-darkened float-left">Subscribe</button>
             </form>
             <div id="success-subscribe" class="success-message hidden">
               <div class="suc-title"><i class="fa fa-check"></i>Thank you!</div>
             </div>
           </div>
-          <div class="foot-sect col-xs-12 col-md-6 col-sm-6 col-lg-3">
+          <div class="foot-sect col-12 col-md-6 col-sm-6 col-lg-3">
             <div class="foot-title">We need your support</div>
             <ul class="footer__ulist">
               <li><a href="#">Donate</a>
@@ -680,60 +726,63 @@
             </ul>
           </div>
           <div class="clearfix visible-sm-block visible-md-block"></div>
-          <div class="foot-sect col-xs-12 col-md-6 col-sm-6 col-lg-3">
+          <div class="foot-sect col-12 col-md-6 col-sm-6 col-lg-3">
             <div class="foot-title">Contact</div>
             <ul class="footer__icon-list">
               <li class="icon-list__item icon-list__item-baloone">Kazantseva str. 7B, 29
-                <br>Mariupol 87500 Ukraine</li>
+                <br>Mariupol 87500 Ukraine
+              </li>
               <li class="icon-list__item icon-list__item-phone">+38 (074) 458 78 78</li>
-              <li class="icon-list__item icon-list__item-letter"><a href="mailto:themes@makebecool.com">themes@makebecool.com</a>
+              <li class="icon-list__item icon-list__item-letter"><a
+                  href="mailto:themes@makebecool.com">themes@makebecool.com</a>
                 <br><a href="#">makebecool.com</a>
               </li>
             </ul>
           </div>
-          <div class="foot-sect col-xs-12 col-md-6 col-sm-6 col-lg-3">
+          <div class="foot-sect col-12 col-md-6 col-sm-6 col-lg-3">
             <div class="foot-title">Our mission</div>
-            <p>Yet as Philip Ball points out, the history of camouflage and our limited understanding of how creatures hide in nature may make the task trickier than it seems.</p>
+            <p>Yet as Philip Ball points out, the history of camouflage and our limited understanding of how creatures
+              hide
+              in nature may make the task trickier than it seems.</p>
+
             <div class="copyrights copyrights__footer">Copyright © 2015. All Rights reserved.</div>
           </div>
         </div>
       </div>
     </footer>
   </div>
-  <script src="src/old/assets/themegovernment-design/js/jquery/jquery-1.11.1.min.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/otherlibs/bootstrap/bootstrap.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/Chart.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/bootstrap-select.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/slick/slick.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/topEventsAnimate.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/skrollr.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/jquery.sharrre.min.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/jquery.form.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/jquery/plugins/validation/jquery.validate.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/lib/site.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/lib/siteMode.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/mode/themeMode.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/mainSlider.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/menuAligns.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/bgStretch.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/eventAnimate.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/stuffSlider.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/gridsDiagramms.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/barChart.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/disquis.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/stickyHeader.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/globalScripts.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/parallax.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/backgroundImg.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/scrollPlugin.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/googleMap.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/eventSlider.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/stuffPage.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/aboutDiagramms.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/sharrre.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/dtMenu.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/formSubscribe.js"></script>
-  <script src="src/old/assets/themegovernment-design/js/app/modules/formFieldsSubscribe.js"></script>
+  <script src="src/js/jquery/plugins/Chart.js"></script>
+  <script src="src/js/jquery/plugins/bootstrap-select.js"></script>
+  <script src="src/js/jquery/plugins/slick/slick.js"></script>
+  <script src="src/js/jquery/plugins/topEventsAnimate.js"></script>
+  <script src="src/js/jquery/plugins/skrollr.js"></script>
+  <script src="src/js/jquery/plugins/jquery.sharrre.min.js"></script>
+  <script src="src/js/jquery/plugins/jquery.form.js"></script>
+  <script src="src/js/jquery/plugins/validation/jquery.validate.js"></script>
+  <script src="src/js/app/lib/site.js"></script>
+  <script src="src/js/app/lib/siteMode.js"></script>
+  <script src="src/js/app/mode/themeMode.js"></script>
+  <script src="src/js/app/modules/mainSlider.js"></script>
+  <script src="src/js/app/modules/menuAligns.js"></script>
+  <script src="src/js/app/modules/bgStretch.js"></script>
+  <script src="src/js/app/modules/eventAnimate.js"></script>
+  <script src="src/js/app/modules/stuffSlider.js"></script>
+  <script src="src/js/app/modules/gridsDiagramms.js"></script>
+  <script src="src/js/app/modules/barChart.js"></script>
+  <script src="src/js/app/modules/disquis.js"></script>
+  <script src="src/js/app/modules/stickyHeader.js"></script>
+  <script src="src/js/app/modules/globalScripts.js"></script>
+  <script src="src/js/app/modules/parallax.js"></script>
+  <script src="src/js/app/modules/backgroundImg.js"></script>
+  <script src="src/js/app/modules/scrollPlugin.js"></script>
+  <script src="src/js/app/modules/googleMap.js"></script>
+  <script src="src/js/app/modules/eventSlider.js"></script>
+  <script src="src/js/app/modules/stuffPage.js"></script>
+  <script src="src/js/app/modules/aboutDiagramms.js"></script>
+  <script src="src/js/app/modules/sharrre.js"></script>
+  <script src="src/js/app/modules/dtMenu.js"></script>
+  <script src="src/js/app/modules/formSubscribe.js"></script>
+  <script src="src/js/app/modules/formFieldsSubscribe.js"></script>
   <script>
     appMakeBeCool.gateway.init();
   </script>
