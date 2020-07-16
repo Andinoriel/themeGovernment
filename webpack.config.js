@@ -5,6 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const {ProvidePlugin} = require('webpack')
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -82,6 +83,10 @@ module.exports = {
     //     }
     //   ]
     // }),
+    new ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new MiniCSSExtractPlugin({
       filename: "[name].[contenthash].css",
     }),
@@ -138,7 +143,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry', 'sandybay', 'skyline']
+      chunks: ['main', 'sandybay', 'skyline', 'raspberry']
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
@@ -173,7 +178,7 @@ module.exports = {
       chunks: ['main', 'raspberry', 'sandybay', 'skyline']
     }),
     new HTMLWebpackPlugin({
-      filename: 'news.html.html',
+      filename: 'news.html',
       template: "./news.html",
       minify: {
         collapseWhitespace: isProd
