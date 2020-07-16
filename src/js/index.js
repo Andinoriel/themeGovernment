@@ -1,8 +1,9 @@
-import 'bootstrap'
-
 import * as $ from 'jquery'
+
 import '@css/_custom.scss'
 import '@js/jquery/plugins/slick/slick.scss'
+
+import 'bootstrap'
 
 import 'script-loader!./jquery/plugins/Chart';
 import '@js/jquery/plugins/bootstrap-select.js'

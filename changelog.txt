@@ -11,6 +11,13 @@ All notable changes to this project will be documented in this file.
 ### Removed
 - Unused scripts import in html files.
 
+## [2.4.0] - 2020-07-16
+### Changed
+- Fix favicon.
+- Page layout is now correspond to Boostrap 4.
+- Loading images on the pages using Webpack.
+- Finally fix favicon displaying.
+
 ## [2.3.0] - 2020-07-16
 ### Added
 - Targeting styles depending on the target pages.
