@@ -1,7 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [2.1.0] - 2020-07-16
+## [2.3.0] - 2020-07-16
+### Added
+- Targeting styles depending on the target pages.
+- Color stylesheets.
+
+## [2.2.0] - 2020-07-16
 ### Changed
 - Reformatting by splitting scss files.
 

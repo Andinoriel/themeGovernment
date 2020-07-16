@@ -13,7 +13,7 @@ const isProd = !isDev
 const optimization = () => {
   const config = {
     splitChunks: {
-      chunks: "all"
+    //  chunks: "all"
     }
   }
   if (isProd) {
@@ -49,7 +49,10 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: './js/index.js'
+    main: './js/index.js',
+    raspberry: './js/raspberry.js',
+    sandybay: './js/sandybay.js',
+    skyline: './js/skyline.js'
   },
   output: {
     filename: "[name].[contenthash].js",
@@ -87,118 +90,135 @@ module.exports = {
       template: "./404.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'about.html',
       template: "./about.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'buttons.html',
       template: "./buttons.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'contacts.html',
       template: "./contacts.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'events.html',
       template: "./events.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'events-view.html',
       template: "./events-view.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       template: "./index.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main', 'raspberry', 'sandybay', 'skyline']
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
       template: "./index-raspberry.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main', 'raspberry']
     }),
     new HTMLWebpackPlugin({
       filename: 'index-sandybay.html',
       template: "./index-sandybay.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main', 'sandybay']
     }),
     new HTMLWebpackPlugin({
       filename: 'index-skyline.html',
       template: "./index-skyline.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main', 'skyline']
     }),
     new HTMLWebpackPlugin({
       filename: 'main-bordered.html',
       template: "./main-bordered.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main', 'raspberry', 'sandybay', 'skyline']
     }),
     new HTMLWebpackPlugin({
       filename: 'news.html.html',
       template: "./news.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'news-no-image.html',
       template: "./news-no-image.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'news-view.html',
       template: "./news-view.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'projects.html',
       template: "./projects.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'projects-view.html',
       template: "./projects-view.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     }),
     new HTMLWebpackPlugin({
       filename: 'stuff.html',
       template: "./stuff.html",
       minify: {
         collapseWhitespace: isProd
-      }
+      },
+      chunks: ['main']
     })
   ],
   module: {
