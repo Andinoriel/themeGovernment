@@ -1,0 +1,11 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+## [2.0.0] - 2020-07-16
+### Changed
+- Starting migrate from Grunt to Webpack.
+- Files stucture.
+- Starting migrate from Bootstrap 3 to Bootstrap 4.
+- New jQuery version.
+- New normalize.css version.
+- New .gitignore.
