@@ -2,23 +2,27 @@
 [Table of contents]
 
 1. Fonts
-2.
+2. Normalize.css
 3. Print / #print
 4. Glyphicons / #glyphicons
-5.
-6. Javascript components / #javascript-component
-7. Utility classes / #utility-classes
-8. Font awesome / #font-awesome
-9. Custom controls / #custom-controls
-10. Custom styles / #custom-styles
-
-
-Some Bootstrap .scss files are muted, beacuse this functions (modals, jumbotron etc.) are not used in the themeGovernment.
+5. Utility
+6. Bootstrap 4
+7. Javascript components / #javascript-component
+8. Utility classes / #utility-classes
+9. Font awesome / #font-awesome
+10. Custom controls / #custom-controls
+11. Custom styles / #custom-styles
 
 -------------------------------------------------------------------*/
 
+@import "fonts";
 @import "~normalize.css";
-
+@import "print";
+@import "glyphicons";
+@import "utility";
 @import "~bootstrap/scss/bootstrap";
-
-@import "style.scss";
+@import "javascript-components";
+@import "utility-classes";
+@import "font-awesome";
+@import "custom-controls";
+@import "custom-styles";
