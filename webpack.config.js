@@ -6,14 +6,13 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 
-
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
 const optimization = () => {
   const config = {
     splitChunks: {
-       chunks: "all"
+      chunks: "all"
     }
   }
   if (isProd) {
@@ -84,7 +83,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'about.html',
@@ -92,7 +92,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'buttons.html',
@@ -100,7 +101,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'contacts.html',
@@ -108,7 +110,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'events.html',
@@ -116,7 +119,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'events-view.html',
@@ -124,14 +128,16 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       template: "./index.html",
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'sandybay', 'skyline', 'raspberry']
+      chunks: ['main', 'raspberry'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
@@ -139,7 +145,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry']
+      chunks: ['main', 'raspberry'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'index-sandybay.html',
@@ -147,7 +154,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'sandybay']
+      chunks: ['main', 'sandybay'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'index-skyline.html',
@@ -155,7 +163,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'skyline']
+      chunks: ['main', 'skyline'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'main-bordered.html',
@@ -163,7 +172,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'sandybay', 'skyline', 'raspberry']
+      chunks: ['main', 'raspberry'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'news.html.html',
@@ -171,7 +181,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'news-no-image.html',
@@ -179,7 +190,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'news-view.html',
@@ -187,7 +199,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'projects.html',
@@ -195,7 +208,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'projects-view.html',
@@ -203,7 +217,8 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
       filename: 'stuff.html',
@@ -211,11 +226,16 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main']
-    })
+      chunks: ['main'],
+      favicon: 'images/favicon.ico',
+    }),
   ],
   module: {
     rules: [
+      {
+        test: /\.(html)$/,
+        use: ['html-loader']
+      },
       {
         test: /\.css$/,
         use: cssLoaders()
@@ -250,17 +270,6 @@ module.exports = {
       },
       {
         test: /\.(otf|svg|eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
         use: [
           {
             loader: 'file-loader',

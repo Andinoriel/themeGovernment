@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Fix favicon.
 - Page layout is now correspond to Boostrap 4.
+- Loading images on the pages using Webpack.
+- Finally fix favicon displaying.
 
 ## [2.3.0] - 2020-07-16
 ### Added
