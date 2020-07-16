@@ -499,4 +499,4 @@ php-cs-fixer
 .idea/
 
 /src/old/
-/dist
+/dist/
