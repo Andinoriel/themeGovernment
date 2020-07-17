@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.9.0] - 2020-07-17
+### Changed
+- Refactoring index.js and init.js.
+- App scripts' files structure.
+
+### Removed
+- IE support.
+
+### Fixed
+- Title on all pages.
+
 ## [2.7.0] - 2020-07-17
 ### Added
 - Pictures to all pages.
