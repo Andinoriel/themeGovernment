@@ -274,19 +274,7 @@ module.exports = {
           }]
       },
       {
-        test: /\.(otf|svg|eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            }
-          }
-        ]
-      },
-      {
-        // doesn't work properly
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
+        test: /\.(otf|svg|eot|ttf|woff|woff2|png|jpg|jpeg|gif|ico)$/,
         use: [
           {
             loader: 'file-loader',
