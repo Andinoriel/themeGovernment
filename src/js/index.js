@@ -39,3 +39,5 @@ import '@js/app/modules/dtMenu.js'
 import '@js/app/modules/formSubscribe.js'
 import '@js/app/modules/formFieldsSubscribe.js'
 import '@js/init.js'
+
+import '@js/image'
