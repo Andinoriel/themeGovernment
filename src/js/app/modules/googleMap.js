@@ -8,9 +8,10 @@ appMakeBeCool.gateway.addClass('GoogleMap', function (properties, $, $window, $d
     _defaults = {
       // elements
       mapContacts: 'map_canvas',
-      // mapContactsGeo: [47.095151, 37.539726],
+      mapContactsGeo: [47.095151, 37.539726],
       eventContact: 'event_canvas',
-      // googleMapKey:'AIzaSyAJ2423UhDMxQHzltQVLjAdju7YfMxImUY'
+      eventContactGeo: [41.033658, 28.993832],
+      googleMapKey:''
 
 
       // prop
@@ -117,8 +118,8 @@ appMakeBeCool.gateway.addClass('GoogleMap', function (properties, $, $window, $d
             _googleMap.bind($window, 'load', function (e, data, el) {
               var script = document.createElement("script");
               script.type = "text/javascript";
-              // script.src = "http://maps.googleapis.com/maps/api/js?key=" + _properties.googleMapKey + "&sensor=false&callback=addMapContacts";
-              script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' + 'callback=addMapContacts';
+              script.src = "http://maps.googleapis.com/maps/api/js?key=" + _properties.googleMapKey + "&sensor=false&callback=addMapContacts";
+              // script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' + 'callback=addMapContacts';
               document.body.appendChild(script);
             });
           } else if (_globals.eventContact.length) {
