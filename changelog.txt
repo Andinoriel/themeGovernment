@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [2.10.0] - 2020-07-17
 ### Changed
 - Type of web pages' files for further use of the template engine.
+- Reformating all files.
 
 ## [2.9.0] - 2020-07-17
 ### Changed

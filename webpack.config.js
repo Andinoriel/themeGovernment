@@ -1,11 +1,11 @@
 const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-const { ProvidePlugin } = require('webpack')
+const {ProvidePlugin} = require('webpack')
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -29,10 +29,10 @@ const cssLoaders = extra => {
   const loaders = [{
     loader: MiniCSSExtractPlugin.loader,
     options:
-    {
-      hmr: isDev,
-      reloadAll: true
-    }
+      {
+        hmr: isDev,
+        reloadAll: true
+      }
   },
     'css-loader'
   ]
@@ -251,10 +251,10 @@ module.exports = {
           {
             loader: MiniCSSExtractPlugin.loader,
             options:
-            {
-              hmr: isDev,
-              reloadAll: true
-            }
+              {
+                hmr: isDev,
+                reloadAll: true
+              }
           },
           {
             loader: 'css-loader', // translates CSS into CommonJS modules

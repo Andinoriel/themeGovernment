@@ -5,7 +5,7 @@
 .disabled {
   pointer-events: none;
   cursor: not-allowed;
-  filter: alpha(opacity = 65);
+  filter: alpha(opacity=65);
 }
 
 textarea {
@@ -1540,7 +1540,7 @@ input {
 
   &.has-error label.control-label {
     &.control-label-top {
-      font-family: roboto_condensedlight,Arial,sans-serif;
+      font-family: roboto_condensedlight, Arial, sans-serif;
       font-size: 20px;
       font-weight: lighter;
       line-height: 20px;
@@ -1704,7 +1704,7 @@ nav {
             a, span {
               display: block;
               position: relative;
-              font-family: roboto_condensedlight,Arial,sans-serif;
+              font-family: roboto_condensedlight, Arial, sans-serif;
               font-size: 14px;
               line-height: 14px;
               color: #fff;
