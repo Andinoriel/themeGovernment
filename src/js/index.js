@@ -1,6 +1,7 @@
 import * as $ from 'jquery'
 
 import '@css/_custom.scss'
+import '@css/color/raspberry-color.min.css'
 import '@js/jquery/plugins/slick/slick.scss'
 
 import 'bootstrap'
@@ -39,3 +40,5 @@ import '@js/app/modules/dtMenu.js'
 import '@js/app/modules/formSubscribe.js'
 import '@js/app/modules/formFieldsSubscribe.js'
 import '@js/init.js'
+
+import '@js/image'

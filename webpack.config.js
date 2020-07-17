@@ -50,9 +50,9 @@ module.exports = {
   mode: 'development',
   entry: {
     main: './js/index.js',
-    raspberry: './js/raspberry.js',
     sandybay: './js/sandybay.js',
-    skyline: './js/skyline.js'
+    skyline: './js/skyline.js',
+    raspberry: './js/raspberry.js'
   },
   output: {
     filename: "[name].[contenthash].js",
@@ -141,7 +141,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry'],
+      chunks: ['main', 'sandybay', 'skyline', 'raspberry'],
       favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
