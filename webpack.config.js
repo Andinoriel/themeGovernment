@@ -84,7 +84,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: '404.html',
-      template: "./404.html",
+      template: "./404.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -93,7 +93,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'about.html',
-      template: "./about.html",
+      template: "./about.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -102,7 +102,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'buttons.html',
-      template: "./buttons.html",
+      template: "./buttons.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -111,7 +111,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'contacts.html',
-      template: "./contacts.html",
+      template: "./contacts.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -120,7 +120,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'events.html',
-      template: "./events.html",
+      template: "./events.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -129,7 +129,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'events-view.html',
-      template: "./events-view.html",
+      template: "./events-view.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -137,7 +137,7 @@ module.exports = {
       favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
-      template: "./index.html",
+      template: "./index.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -146,7 +146,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
-      template: "./index.html",
+      template: "./index.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -155,7 +155,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-sandybay.html',
-      template: "./index.html",
+      template: "./index.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -164,7 +164,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-skyline.html',
-      template: "./index.html",
+      template: "./index.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -173,7 +173,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'main-bordered.html',
-      template: "./main-bordered.html",
+      template: "./main-bordered.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -182,7 +182,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'news.html',
-      template: "./news.html",
+      template: "./news.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -191,7 +191,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'news-no-image.html',
-      template: "./news-no-image.html",
+      template: "./news-no-image.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -200,7 +200,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'news-view.html',
-      template: "./news-view.html",
+      template: "./news-view.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -209,7 +209,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'projects.html',
-      template: "./projects.html",
+      template: "./projects.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -218,7 +218,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'projects-view.html',
-      template: "./projects-view.html",
+      template: "./projects-view.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -227,7 +227,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'stuff.html',
-      template: "./stuff.html",
+      template: "./stuff.ejs",
       minify: {
         collapseWhitespace: isProd
       },
@@ -238,7 +238,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(html)$/,
+        test: /\.(html|ejs)$/,
         use: ['html-loader']
       },
       {
