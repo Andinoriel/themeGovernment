@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Fix using Google Map develop api.
 - Partial fixes of index page.
+- Multiple page fixes.
 
 ## [2.7.0] - 2020-07-17
 ### Removed
