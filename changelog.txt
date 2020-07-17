@@ -12,6 +12,16 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Title on all pages.
 
+## [2.8.0] - 2020-07-17
+### Changed
+- Fix using Google Map develop api.
+- Partial fixes of index page.
+- Multiple page fixes.
+
+## [2.7.0] - 2020-07-17
+### Removed
+- Unnecessary index pages.
+
 ## [2.7.0] - 2020-07-17
 ### Added
 - Pictures to all pages.

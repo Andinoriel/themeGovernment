@@ -10763,3 +10763,13 @@ figure {
   opacity: 1 !important;
 }
 
+@media (min-width: 1450px)
+{
+  .d-xlp-block {
+    display: block !important;
+}
+}
+
+.news-item-big {
+  max-width: 100% !important;
+}

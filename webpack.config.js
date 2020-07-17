@@ -146,7 +146,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-raspberry.html',
-      template: "./index-raspberry.html",
+      template: "./index.html",
       minify: {
         collapseWhitespace: isProd
       },
@@ -155,7 +155,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-sandybay.html',
-      template: "./index-sandybay.html",
+      template: "./index.html",
       minify: {
         collapseWhitespace: isProd
       },
@@ -164,7 +164,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       filename: 'index-skyline.html',
-      template: "./index-skyline.html",
+      template: "./index.html",
       minify: {
         collapseWhitespace: isProd
       },
