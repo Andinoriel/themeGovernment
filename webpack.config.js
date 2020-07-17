@@ -141,7 +141,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'sandybay', 'skyline', 'raspberry'],
+      chunks: ['main'],
       favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
@@ -150,7 +150,7 @@ module.exports = {
       minify: {
         collapseWhitespace: isProd
       },
-      chunks: ['main', 'raspberry'],
+      chunks: ['main'],
       favicon: 'images/favicon.ico',
     }),
     new HTMLWebpackPlugin({
