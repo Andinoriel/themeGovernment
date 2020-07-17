@@ -1,6 +1,7 @@
 import * as $ from 'jquery'
 
 import '@css/_custom.scss'
+import '@css/color/raspberry-color.min.css'
 import '@js/jquery/plugins/slick/slick.scss'
 
 import 'bootstrap'
