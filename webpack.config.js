@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
-const {ProvidePlugin} = require('webpack')
+const { ProvidePlugin } = require('webpack')
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -43,7 +43,7 @@ const cssLoaders = extra => {
 
 }
 
-console.log('IS DEV:', isDev)
+console.log('DEV MODE:', isDev)
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -243,7 +243,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: cssLoaders()
+        use: cssLoaders() // process all style files
       },
       {
         test: /\.(scss)$/,
@@ -274,22 +274,10 @@ module.exports = {
           }]
       },
       {
-        test: /\.(otf|svg|eot|ttf|woff|woff2)$/,
+        test: /\.(otf|svg|eot|ttf|woff|woff2|png|jpg|jpeg|gif|ico)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            }
-          }
-        ]
-      },
-      {
-        // doesn't work properly
-        test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
+            loader: 'file-loader', // process images
             options: {
               name: '[path][name].[ext]',
             }
