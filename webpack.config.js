@@ -6,6 +6,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const {ProvidePlugin} = require('webpack')
+const ImageminPlugin = require("imagemin-webpack");
 
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
@@ -76,6 +77,27 @@ module.exports = {
     hot: isDev
   },
   plugins: [
+    new ImageminPlugin({
+      bail: false, // Ignore errors on corrupted images
+      cache: true,
+      imageminOptions: {
+        plugins: [
+          ["gifsicle", { interlaced: true }],
+          ["mozjpeg", { quality: 80 }],
+          ["pngquant", { optimizationLevel: 5 }],
+          [
+            "svgo",
+            {
+              plugins: [
+                {
+                  removeViewBox: false
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    }),
     new CleanWebpackPlugin(),
     new ProvidePlugin({
       $: 'jquery',
