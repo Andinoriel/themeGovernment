@@ -1,56 +1,62 @@
 /**
  * jquery.simplr.smoothscroll
- * version 1.0
+ * version 1.0.1
  * copyright (c) 2012 https://github.com/simov/simplr-smoothscroll
  * licensed under MIT
- * requires jquery.mousewheel - https://github.com/brandonaaron/jquery-mousewheel/
+ * requires jquery.mousewheel - https://github.com/jquery/jquery-mousewheel
  */
-;(function($) {
-    'use strict';
-    
-    $.srSmoothscroll = function(options) {
-    
+
+;(function ($) {
+  'use strict'
+
+  $.srSmoothscroll = function (options) {
+
+    // defaults
     var self = $.extend({
-        step: 55,
-        speed: 400
-    }, options || {});
-    
+      step: 55,
+      speed: 400,
+      ease: 'swing',
+      target: $('body'),
+      container: $(window)
+    }, options || {})
+
     // private fields & init
-    var win = $(window),
-        doc = $(document),
-        top = 0,
-        step = self.step,
-        speed = self.speed,
-        viewport = win.height(),
-        body = $.browser.webkit ? $('body') : $('html'),
-        wheel = false;
+    var container = self.container
+      , top = 0
+      , step = self.step
+      , viewport = container.height()
+      , wheel = false
+
+    var target = (self.target.selector == 'body')
+      ? ((navigator.userAgent.indexOf('AppleWebKit') !== -1) ? self.target : $('html'))
+      : container
 
     // events
-    $('body').mousewheel(function(event, delta) {
+    self.target.mousewheel(function (event, delta) {
 
-        wheel = true;
+      wheel = true
 
-        if (delta < 0) // down
-            top = (top+viewport) >= doc.height() ? top : top+=step;
+      if (delta < 0) // down
+        top = (top+viewport) >= self.target.outerHeight(true) ? top : top+=step
 
-        else // up
-            top = top <= 0 ? 0 : top-=step;
+      else // up
+        top = top <= 0 ? 0 : top-=step
 
-        body.stop().animate({scrollTop: top}, speed, function () {
-            wheel = false;
-        });
+      target.stop().animate({scrollTop: top}, self.speed, self.ease, function () {
+        wheel = false
+      })
 
-        return false;
-    });
-
-    win
-    .on('resize', function (e) {
-        viewport = win.height();
+      return false
     })
-    .on('scroll', function (e) {
+
+    container
+      .on('resize', function (e) {
+        viewport = container.height()
+      })
+      .on('scroll', function (e) {
         if (!wheel)
-            top = win.scrollTop();
-    });
-    
-    };
+          top = container.scrollTop()
+      })
+
+  }
 })(jQuery);

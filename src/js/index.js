@@ -2,13 +2,14 @@
 import '@css/_custom.scss'
 import '@css/color/_raspberry-color.scss'
 import '@js/jquery/plugins/slick/slick.scss'
+import 'bootstrap-select/dist/css/bootstrap-select.css'
 // Load images
 import '@js/image'
 // Load Bootstrap
 import 'bootstrap'
+import 'bootstrap-select'
 // Load jQuery plugins
 import 'script-loader!./jquery/plugins/Chart';
-import '@js/jquery/plugins/bootstrap-select.js'
 import '@js/jquery/plugins/slick/slick.js'
 import '@js/jquery/plugins/topEventsAnimate.js'
 import '@js/jquery/plugins/skrollr.js'
