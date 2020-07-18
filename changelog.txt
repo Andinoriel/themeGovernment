@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.10.0] - 2020-07-18
+### Added
+- Header and footer in a separate folder, which are inserted in the pages with the use of the template engine.
+
+### Changed
+- Type of web pages' files for further use of the template engine.
+- Reformating all files.
+
+### Fixed
+- Loading image by image.js file.
+
 ## [2.9.0] - 2020-07-17
 ### Changed
 - Refactoring index.js and init.js.

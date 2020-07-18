@@ -61,7 +61,8 @@ img {
 
 .img-responsive {
   display: block;
-  width: 100% \9;
+  width: 100% \9
+;
   max-width: 100%;
   height: auto;
 }
@@ -80,7 +81,8 @@ img {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  width: 100% \9;
+  width: 100% \9
+;
   max-width: 100%;
   height: auto;
 }
@@ -2149,7 +2151,8 @@ input {
 
   &[type="radio"], &[type="checkbox"] {
     margin: 4px 0 0;
-    margin-top: 1px \9;
+    margin-top: 1px \9
+  ;
     line-height: normal;
   }
 
@@ -2243,7 +2246,8 @@ input {
 
   &[type="date"], &[type="time"], &[type="datetime-local"], &[type="month"] {
     line-height: 34px;
-    line-height: 1.42857 \0;
+    line-height: 1.42857 \0
+  ;
   }
 
   &[type="date"].input-sm {
@@ -2401,7 +2405,8 @@ input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"
 .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px \9;
+  margin-top: 4px \9
+;
 }
 
 .radio + .radio, .checkbox + .checkbox {
@@ -2918,7 +2923,7 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.65;
-    filter: alpha(opacity = 65);
+    filter: alpha(opacity=65);
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -2928,7 +2933,7 @@ fieldset[disabled] .btn {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
-  filter: alpha(opacity = 65);
+  filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
