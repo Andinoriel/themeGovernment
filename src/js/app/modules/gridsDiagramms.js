@@ -114,12 +114,13 @@ appMakeBeCool.gateway.addClass('GridsDiagramms', function (properties, $, $windo
           var thisCanvas = $redChartParent.find('canvas').get(0);
           var canvasTopOffset = $redChartParent.offset().top;
           var redChartPercents = $(this).data('percent');
+          var redNodeName = 'redChart' + redChartPercents;
           var leftChartSpace = 100 - redChartPercents;
           var diagrammThickness = $(this).data('size');
           var chartMainColor = $(this).css('color');
           var animateValue = 0;
           var addFlag = false;
-          var appendNode = '<div class="diagramm-number"><span></span>%</div>';
+          var appendNode = '<div class="diagramm-number"><span>' + redChartPercents + '</span>%</div>';
           var redChartData = [{
             value: redChartPercents,
             color: chartMainColor,
@@ -135,7 +136,7 @@ appMakeBeCool.gateway.addClass('GridsDiagramms', function (properties, $, $windo
 
           function addCircle() {
             if (($window.scrollTop() + $window.height()) >= canvasTopOffset && addFlag === false) {
-              $window['redChart' + redChartPercents] = new Chart(ctx).Doughnut(redChartData, {
+              $window[redNodeName] = new Chart(ctx).Doughnut(redChartData, {
                 responsive: true,
                 animation: animation,
                 showTooltips: false,
@@ -158,10 +159,10 @@ appMakeBeCool.gateway.addClass('GridsDiagramms', function (properties, $, $windo
               addFlag = true;
             }
           }
-
           $window.scroll(function () {
             addCircle();
           });
+          addCircle();
         });
       }
 

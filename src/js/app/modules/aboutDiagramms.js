@@ -68,6 +68,7 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function (properties, $, $windo
           var aboutChartData = [];
           var appendNode = '';
 
+
           if (aboutChartValue === '' && aboutChartNumbers) {
             aboutChartStep = aboutChartNumbers / 100;
             aboutChartData = [{
@@ -92,8 +93,10 @@ appMakeBeCool.gateway.addClass('AboutDiagramms', function (properties, $, $windo
           }
 
           if (symbol && symbolPlacement) {
+
             if (symbolPlacement === 'left') {
-              appendNode = '<div class="diagramm-number">' + symbol + '<span class="val-rgth">' + aboutChartValue + '</span></div>';
+              console.log(aboutChartNumbers)
+              appendNode = '<div class="diagramm-number">' + symbol + '<span class="val-rgth">' + new Intl.NumberFormat().format(aboutChartNumbers) + '</span></div>';
             } else {
               appendNode = '<div class="diagramm-number"><span>' + aboutChartValue + '</span>' + symbol + '</div>';
             }

@@ -41,6 +41,7 @@ import '@images/news/themeGovernment-News_04.jpg'
 import '@images/news/themeGovernment-News_05.jpg'
 import '@images/news/themeGovernment-News_06.jpg'
 import '@images/news/themeGovernment-News_07.jpg'
+import '@images/news/water.jpg'
 
 import '@images/news-view/Enseada.jpg'
 import '@images/news-view/Palacio_Pedro_Ernesto.jpg'
