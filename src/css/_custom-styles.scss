@@ -10772,3 +10772,16 @@ figure {
 .news-item-big {
   max-width: 100% !important;
 }
+
+@media (min-width: 1200px) {
+  .hw20025{
+    width: 200px; 
+    height: 25px;
+  }
+  .hw__wrapper li:last-child{
+    margin-bottom: 20px;
+  }
+  .hw__wrapper li a{
+    border-bottom: 0px !important;
+  }
+}

@@ -1851,7 +1851,7 @@ nav > .nav.navbar-nav > li.colors {
 
   .navbar-nav .dropdown {
     > .dropdown-menu {
-      padding: 0 0 0 20px;
+      padding: 0 0 0 20px !important;
       background-color: #000;
 
       > li {
@@ -1888,11 +1888,12 @@ nav > .nav.navbar-nav > li.colors {
 
         i {
           position: absolute;
-          top: 16px;
+          top: 20px;
           right: 0;
+          left: 170px;
           height: 18px;
           font-family: "roboto_condensedbold", Arial, sans-serif;
-          font-size: 18px;
+          font-size: 24px;
           line-height: 16px;
           font-style: normal;
         }
