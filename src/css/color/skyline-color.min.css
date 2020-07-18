@@ -395,3 +395,15 @@ ul.nav.nav-tabs > li.tablist__all > a {
   }
 
 }
+
+li.tablist__all{
+  background-color: #232323;
+}
+
+li.tablist__all:hover{
+  background-color:  #000;
+}
+
+ul.nav.nav-tabs>li.tablist__all:hover .tablist__all-arr path {
+  fill: #000;
+}

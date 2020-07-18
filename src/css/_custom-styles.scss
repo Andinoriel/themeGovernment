@@ -10785,3 +10785,49 @@ figure {
     border-bottom: 0px !important;
   }
 }
+
+a.tablist__item{
+  background-color: transparent !important;
+}
+
+ul.nav-tabs li:nth-child(-n+5){
+  background-color: #bdbbac;
+  border-left: 1px solid rgba(233, 232, 220, 0.9);
+  border-bottom: 1px solid rgba(233, 232, 220, 0.9);
+}
+
+ul.nav-tabs li:hover:nth-child(-n+5){
+  background-color: transparent !important;
+}
+
+ul.nav-tabs li.active{
+  background-color: transparent !important;
+}
+
+@media screen and (min-width: 1200px){
+  .tablist__all-arr {
+      top: 20px;
+      right: -85px;
+      height: 40px;
+      width: 25px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .tablist__all-arr {
+      top: 9px;
+      right: -10px;
+      height: 40px;
+      width: 25px;
+  }
+  
+}
+
+@media screen and (min-width: 768px){
+  .tablist__all-arr {
+      top: 16px;
+      right: -10px;
+      height: 40px;
+      width: 25px;
+  }
+}
