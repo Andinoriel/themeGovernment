@@ -1,1 +1,1 @@
-import '@css/color/sandybay-color.min.css'
+import '@css/color/_sandybay-color.scss'

@@ -1,6 +1,6 @@
 // Load stylesheets
 import '@css/_custom.scss'
-import '@css/color/raspberry-color.min.css'
+import '@css/color/_raspberry-color.scss'
 import '@js/jquery/plugins/slick/slick.scss'
 // Load images
 import '@js/image'

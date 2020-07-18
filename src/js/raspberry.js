@@ -1,1 +1,1 @@
-import '@css/color/raspberry-color.min.css'
+import '@css/color/_raspberry-color.scss'
