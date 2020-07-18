@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.12.0] - 2020-07-18
+## Added
+- Image compressing plugin.
+
+### Changed
+- Rewrite color css to scss.
+- Update all jQuery plugins except for bg-stretcher.js and topEventsAnimate.js.
+
 ## [2.10.0] - 2020-07-18
 ### Added
 - Header and footer in a separate folder, which are inserted in the pages with the use of the template engine.

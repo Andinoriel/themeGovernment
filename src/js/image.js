@@ -1,5 +1,14 @@
 import '@images/logo.png'
 
+import '@images/themegovrnmnt-slider_arrow_Shadow.svg'
+import '@images/themegovrnmnt-slider_arrow_Shadow_left.svg'
+import '@images/themegovrnmnt-slider_arrow_White.svg'
+import '@images/themegovrnmnt-slider_arrow_White_left.svg'
+import '@images/themegovrnmnt-staff_arrow_Shadow.svg'
+import '@images/themegovrnmnt-staff_arrow_Shadow_left.svg'
+import '@images/themegovrnmnt-staff_arrow_White.svg'
+import '@images/themegovrnmnt-staff_arrow_White_left.svg'
+
 import '@images/about/we-are.jpg'
 import '@images/about/wins.jpg'
 
