@@ -19,7 +19,9 @@ const optimization = () => {
   if (isProd) {
     config.minimizer = [
       new OptimizeCSSAssetsWebpackPlugin(),
-      new TerserWebpackPlugin()
+      new TerserWebpackPlugin({
+        cache: true
+      })
     ]
   }
   return config
@@ -237,10 +239,6 @@ module.exports = {
   ],
   module: {
     rules: [
-      {
-        test: /\.(html|ejs)$/,
-        use: ['html-loader']
-      },
       {
         test: /\.css$/,
         use: cssLoaders() // process all style files
