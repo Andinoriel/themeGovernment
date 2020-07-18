@@ -9,6 +9,9 @@ All notable changes to this project will be documented in this file.
 - Type of web pages' files for further use of the template engine.
 - Reformating all files.
 
+### Fixed
+- Loading image by image.js file.
+
 ## [2.9.0] - 2020-07-17
 ### Changed
 - Refactoring index.js and init.js.
