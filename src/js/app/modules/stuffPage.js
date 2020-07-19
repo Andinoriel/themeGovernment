@@ -11,7 +11,7 @@ appMakeBeCool.gateway.addClass('StuffPage', function (properties, $, $window, $d
       cover: '#all-cover',
       coverBg: '#all-cover__bg',
       coverInner: '#all-cover-inner',
-      coverHtmlInsert: '<div id="all-cover" class="all-cover"><div id="all-cover__bg" class="all-cover__bg"><div id="all-cover-inner" class="all-cover__inner"><div class="stuff__item"><img src="" alt="" class="stuff__item-img img-circle"><h3 class="stuff__item-ttl"></h3><h5 class="stuff__item-descr"></h5></div><hr class="first"><div class="section-details__thn content__text"></div><div class="row all-cover__b-close"><button id="all-cover__close-b" class="btn btn-default">Close</button></div></div></div></div>',
+      coverHtmlInsert: '<div id="all-cover" class="all-cover"><div id="all-cover__bg" class="all-cover__bg"><div id="all-cover-inner" class="all-cover__inner"><div class="stuff__item"><img src="" alt="" class="stuff__item-img img-circle"><h3 class="stuff__item-ttl"></h3><h5 class="stuff__item-descr"></h5></div><hr class="first"><div class="section-details__thn content__text"></div><div class="row all-cover__b-close"><button id="all-cover__close-b" class="mx-auto btn btn-default">Close</button></div></div></div></div>',
       stuff: '.stuff__item-act',
       closeB: '#all-cover__close-b',
       heading: '#heading-stuff',

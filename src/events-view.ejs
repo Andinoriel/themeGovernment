@@ -67,9 +67,9 @@
     </section>
     <div id="content" class="mapper">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-3 mapper__desrc">
-            <div class="mapper__desrc-inner">
+        <div class="d-flex flex-column-reverse flex-md-row">
+          <div class="col-md-4 mapper__desrc">
+            <div class="mapper__desrc-inner d-flex flex-row flex-md-column">
               <div class="mapper__desrc-item">
                 <div class="mapper__desrc-d">Monday</div>
                 <div class="mapper__desrc-dt">14 Sep 2014</div>
@@ -85,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div id="map-canvas-event1" class="col-sm-8 col-md-8 mapper__map">
+          <div id="map-canvas-event1" class="col-md-8 mapper__map">
             <div id="event_canvas" class="mapper__map-inner" data-latitude="41.033658"
                data-longitude="28.993832"
                data-map-name="Kabataş, Istanbul">
@@ -99,10 +99,10 @@
         <h2 class="coll-hdr">
           Event <b>Organizers</b>
         </h2>
-        <div class="row">
-          <div class="col-md-8 col-lg-8 event-organizers__ppl">
+        <div class="d-flex flex-column flex-lg-row">
+          <div class="col-12 col-lg-8 event-organizers__ppl">
             <div class="row event-organizers__ppl-inner">
-              <article class="col-sm-6 col-md-6 event-organizers__item">
+              <article class="col-md-6 event-organizers__item">
                 <div class="event-organizers__item-lft">
                   <img src="images/stuff/account-manager.jpg" alt=""
                      class="event-organizers__item-img img-circle">
@@ -131,7 +131,7 @@
                 </div>
               </article>
               <div class="br-t clearfix visible-xs"></div>
-              <article class="col-sm-6 col-md-6 event-organizers__item">
+              <article class="col-md-6 event-organizers__item">
                 <div class="event-organizers__item-lft">
                   <img src="images/stuff/manager.jpg" alt=""
                      class="event-organizers__item-img img-circle">
@@ -155,7 +155,7 @@
             </div>
             <div class="br-t clearfix visible-sm visible-lg visible-md"></div>
             <div class="row event-organizers__ppl-inner">
-              <article class="col-sm-6 col-md-6 event-organizers__item">
+              <article class="col-md-6 event-organizers__item">
                 <div class="event-organizers__item-lft">
                   <img src="images/stuff/manager3.jpg" alt=""
                      class="event-organizers__item-img img-circle">
@@ -184,7 +184,7 @@
                 </div>
               </article>
               <div class="br-t clearfix visible-xs"></div>
-              <article class="col-sm-6 col-md-6 event-organizers__item">
+              <article class="col-md-6 event-organizers__item">
                 <div class="event-organizers__item-lft">
                   <img src="images/stuff/manager4.jpg" alt=""
                      class="event-organizers__item-img img-circle">
@@ -214,7 +214,7 @@
               </article>
             </div>
           </div>
-          <div class="col-md-4 col-lg-4 project-news__subscribe-wrap event-organizers__subscribe-wrap">
+          <div class="col-12 col-lg-4 project-news__subscribe-wrap event-organizers__subscribe-wrap">
             <div class="project-news__subscribe-left-t"></div>
             <div class="project-news__subscribe-left-b"></div>
             <div class="project-news__subscribe-right-t"></div>
@@ -276,12 +276,12 @@
           <p>On the Asian side, the main piers are located in Kadıköy (to Beşiktaş, Eminönü, Karaköy and the
             Princes’
             Islands) and in Üsküdar (towards Beşiktaş, Eminönü and Kabataş).</p>
-          <figure class="row full-figure-aside">
-            <div class="col-sm-7 col-md-8">
+          <figure class="d-flex flex-column flex-md-row full-figure-aside">
+            <div class="col-12 col-md-8">
               <img src="images/events/kabatas_uskudar_ferry_station.jpg" alt=""
                  title="American C-130 planes">
             </div>
-            <div class="col-sm-5 col-md-4">
+            <div class="col-12 col-md-4">
               <hr>
               <figcaption>High-speed ferry or sea bus.</figcaption>
             </div>
@@ -301,7 +301,7 @@
         <h2 class="coll-hdr br-t">Event <b>Chronogram</b></h2>
         <div class="project-details__inner content__text">
           <hr class="first">
-          <div class="event-details__item">
+          <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
             <div class="event-details__item-lft">
               <time datetime="2004-07-24T09:00"><b>9:00</b> — 10:00</time>
             </div>
@@ -328,7 +328,7 @@
             </div>
           </div>
           <hr class="first clearfix">
-          <div class="event-details__item">
+          <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
             <div class="event-details__item-lft">
               <time datetime="2004-07-24T09:00"><b>10:00</b> — 10:45</time>
             </div>
@@ -353,7 +353,7 @@
             </div>
           </div>
           <hr class="first clearfix">
-          <div class="event-details__item">
+          <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
             <div class="event-details__item-lft">
               <time datetime="2004-07-24T09:00"><b>10:45</b> — 12:00</time>
             </div>
@@ -362,7 +362,7 @@
             </div>
           </div>
           <hr class="first clearfix">
-          <div class="event-details__item">
+          <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
             <div class="event-details__item-lft">
               <time datetime="2004-07-24T09:00"><b>12:00</b> — 12:45</time>
             </div>
@@ -397,7 +397,7 @@
             </div>
           </div>
           <hr class="first clearfix">
-          <div class="event-details__item">
+          <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
             <div class="event-details__item-lft">
               <time datetime="2004-07-24T09:00"><b>13:00</b> — 13:45</time>
             </div>

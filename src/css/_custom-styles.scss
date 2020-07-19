@@ -7097,7 +7097,7 @@ figure {
   .aside__news-title {
     display: block;
     width: 200px;
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   .side-news {
@@ -8812,7 +8812,7 @@ figure {
     padding: 75px 0;
 
     .section-hdr__icon-tw:before {
-      left: -70px;
+      left: -60px;
     }
 
     .section-hdr {
@@ -9174,7 +9174,7 @@ figure {
   .sticky__title {
     display: block;
     float: left;
-    width: 50%;
+    width: 500px;
     height: 50px;
     margin-left: 80px;
     font-size: 24px;
@@ -10128,7 +10128,7 @@ figure {
         padding: 20px 50px;
         font-size: 20px;
 
-        &:hover {
+        &:hover{
           color: #fff;
           background-color: #000;
         }
@@ -10811,6 +10811,9 @@ ul.nav-tabs li.active{
       height: 40px;
       width: 25px;
   }
+  header {
+    height: 62px;
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px){
@@ -10820,7 +10823,12 @@ ul.nav-tabs li.active{
       height: 40px;
       width: 25px;
   }
-  
+  .section-hdr__icon-tw:before {
+    left: -15px !important;
+  }
+  header {
+    height: 88px;
+  }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px){
@@ -10830,13 +10838,57 @@ ul.nav-tabs li.active{
       height: 40px;
       width: 25px;
   }
+  .section-hdr__icon-tw:before {
+    left: -55px !important;
+  }
+  header {
+    height: 88px;
+  }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .tablist__all-arr {
       top: 13px;
       right: -95px;
       height: 40px;
       width: 25px;
   }
+  .section-hdr__icon-tw:before {
+    left: -75px !important;
+  }
+}
+
+.slick-slide {
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.slick-prev, .slick-next {
+  outline: none !important;
+}
+
+ul.pager {
+  list-style-type: none !important;
+}
+
+.go-up, .go-previous, .go-next {
+  min-height: 70px !important;
+  min-width: 130px !important;
+}
+.go-previous {
+  border-radius: 25px 0 0 25px !important;
+}
+.go-next {
+  border-radius: 0 25px 25px 0 !important;
+} 
+.go-previous:hover, .go-next:hover {
+  background-color: #000 !important;
+  & span {
+    color: #fff;
+  }
+}
+
+li.tablist__all {
+  border-radius: 0 20px 0 0 !important;
 }
