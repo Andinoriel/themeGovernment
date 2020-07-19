@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.11.0] - 2020-07-19
+### Fixed
+- Header working.
+- Event cards.
+
 ## [2.10.0] - 2020-07-18
 ### Added
 - Header and footer in a separate folder, which are inserted in the pages with the use of the template engine.

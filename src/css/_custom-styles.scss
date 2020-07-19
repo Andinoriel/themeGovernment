@@ -10813,20 +10813,29 @@ ul.nav-tabs li.active{
   }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: 1199px) and (min-width: 992px){
   .tablist__all-arr {
-      top: 9px;
-      right: -10px;
+      top: 20px;
+      right: -100px;
       height: 40px;
       width: 25px;
   }
   
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 991px) and (min-width: 768px){
   .tablist__all-arr {
-      top: 16px;
-      right: -10px;
+      top: 20px;
+      right: -90px;
+      height: 40px;
+      width: 25px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .tablist__all-arr {
+      top: 13px;
+      right: -95px;
       height: 40px;
       width: 25px;
   }
