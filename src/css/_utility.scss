@@ -7,7 +7,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  &:before, &:after {
+  &:before,
+  &:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -27,7 +28,10 @@ body {
   background-color: #fff;
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -61,8 +65,7 @@ img {
 
 .img-responsive {
   display: block;
-  width: 100% \9
-;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -81,8 +84,7 @@ img {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
-  width: 100% \9
-;
+  width: 100% \9;
   max-width: 100%;
   height: auto;
 }
@@ -110,7 +112,8 @@ hr {
 }
 
 .sr-only-focusable {
-  &:active, &:focus {
+  &:active,
+  &:focus {
     position: static;
     width: auto;
     height: auto;
@@ -120,7 +123,18 @@ hr {
   }
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -128,7 +142,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 h1 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -136,7 +151,8 @@ h1 {
 }
 
 h2 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -144,7 +160,8 @@ h2 {
 }
 
 h3 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -152,7 +169,8 @@ h3 {
 }
 
 h4 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -160,7 +178,8 @@ h4 {
 }
 
 h5 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -168,7 +187,8 @@ h5 {
 }
 
 h6 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -176,7 +196,8 @@ h6 {
 }
 
 .h1 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -184,7 +205,8 @@ h6 {
 }
 
 .h2 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -192,7 +214,8 @@ h6 {
 }
 
 .h3 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -200,7 +223,8 @@ h6 {
 }
 
 .h4 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -208,7 +232,8 @@ h6 {
 }
 
 .h5 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
@@ -216,116 +241,145 @@ h6 {
 }
 
 .h6 {
-  small, .small {
+  small,
+  .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
   }
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 h1 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
 .h1 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
 h2 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
 .h2 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
 h3 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
 .h3 {
-  small, .small {
+  small,
+  .small {
     font-size: 65%;
   }
 }
 
-h4, .h4, h5, .h5, h6, .h6 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h4 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
 .h4 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
 h5 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
 .h5 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
 h6 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
 .h6 {
-  small, .small {
+  small,
+  .small {
     font-size: 75%;
   }
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 36px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 30px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 18px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 14px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 12px;
 }
 
@@ -346,7 +400,8 @@ p {
   }
 }
 
-small, .small {
+small,
+.small {
   font-size: 85%;
 }
 
@@ -354,9 +409,10 @@ cite {
   font-style: normal;
 }
 
-mark, .mark {
+mark,
+.mark {
   background-color: #fcf8e3;
-  padding: .2em;
+  padding: 0.2em;
 }
 
 .text-left {
@@ -482,19 +538,22 @@ a.bg-danger:hover {
   border-bottom: 1px solid #eeeeee;
 }
 
-ul, ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
 ul {
-  ul, ol {
+  ul,
+  ol {
     margin-bottom: 0;
   }
 }
 
 ol {
-  ul, ol {
+  ul,
+  ol {
     margin-bottom: 0;
   }
 }
@@ -521,7 +580,8 @@ dl {
   margin-bottom: 20px;
 }
 
-dt, dd {
+dt,
+dd {
   line-height: 1.42857;
 }
 
@@ -565,7 +625,8 @@ dd {
 }
 
 abbr {
-  &[title], &[data-original-title] {
+  &[title],
+  &[data-original-title] {
     cursor: help;
     border-bottom: 1px dotted #777777;
   }
@@ -582,23 +643,30 @@ blockquote {
   font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 
-  p:last-child, ul:last-child, ol:last-child {
+  p:last-child,
+  ul:last-child,
+  ol:last-child {
     margin-bottom: 0;
   }
 
-  footer, small, .small {
+  footer,
+  small,
+  .small {
     display: block;
     font-size: 80%;
     line-height: 1.42857;
     color: #777777;
   }
 
-  footer:before, small:before, .small:before {
-    content: '\2014 \00A0';
+  footer:before,
+  small:before,
+  .small:before {
+    content: "\2014 \00A0";
   }
 }
 
-.blockquote-reverse, blockquote.pull-right {
+.blockquote-reverse,
+blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
@@ -607,31 +675,40 @@ blockquote {
 }
 
 .blockquote-reverse {
-  footer:before, small:before, .small:before {
-    content: '';
+  footer:before,
+  small:before,
+  .small:before {
+    content: "";
   }
 }
 
 blockquote.pull-right {
-  footer:before, small:before, .small:before {
-    content: '';
+  footer:before,
+  small:before,
+  .small:before {
+    content: "";
   }
 }
 
 .blockquote-reverse {
-  footer:after, small:after, .small:after {
-    content: '\00A0 \2014';
+  footer:after,
+  small:after,
+  .small:after {
+    content: "\00A0 \2014";
   }
 }
 
 blockquote {
   &.pull-right {
-    footer:after, small:after, .small:after {
-      content: '\00A0 \2014';
+    footer:after,
+    small:after,
+    .small:after {
+      content: "\00A0 \2014";
     }
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
   }
 }
@@ -642,7 +719,10 @@ address {
   line-height: 1.42857;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
@@ -697,7 +777,8 @@ pre {
   overflow-y: scroll;
 }
 
-.container, .container-fluid {
+.container,
+.container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -749,14 +830,72 @@ pre {
   }
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 
@@ -965,7 +1104,18 @@ pre {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
     float: left;
   }
 
@@ -1175,7 +1325,18 @@ pre {
 }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
     float: left;
   }
 
@@ -1385,7 +1546,18 @@ pre {
 }
 
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
     float: left;
   }
 
@@ -1609,7 +1781,8 @@ th {
 
   > {
     thead > tr > {
-      th, td {
+      th,
+      td {
         padding: 8px;
         line-height: 1.42857;
         vertical-align: top;
@@ -1618,7 +1791,8 @@ th {
     }
 
     tbody > tr > {
-      th, td {
+      th,
+      td {
         padding: 8px;
         line-height: 1.42857;
         vertical-align: top;
@@ -1627,7 +1801,8 @@ th {
     }
 
     tfoot > tr > {
-      th, td {
+      th,
+      td {
         padding: 8px;
         line-height: 1.42857;
         vertical-align: top;
@@ -1641,19 +1816,22 @@ th {
     }
 
     caption + thead > tr:first-child > {
-      th, td {
+      th,
+      td {
         border-top: 0;
       }
     }
 
     colgroup + thead > tr:first-child > {
-      th, td {
+      th,
+      td {
         border-top: 0;
       }
     }
 
     thead:first-child > tr:first-child > {
-      th, td {
+      th,
+      td {
         border-top: 0;
       }
     }
@@ -1670,19 +1848,22 @@ th {
 
 .table-condensed > {
   thead > tr > {
-    th, td {
+    th,
+    td {
       padding: 5px;
     }
   }
 
   tbody > tr > {
-    th, td {
+    th,
+    td {
       padding: 5px;
     }
   }
 
   tfoot > tr > {
-    th, td {
+    th,
+    td {
       padding: 5px;
     }
   }
@@ -1693,25 +1874,29 @@ th {
 
   > {
     thead > tr > {
-      th, td {
+      th,
+      td {
         border: 1px solid #ddd;
       }
     }
 
     tbody > tr > {
-      th, td {
+      th,
+      td {
         border: 1px solid #ddd;
       }
     }
 
     tfoot > tr > {
-      th, td {
+      th,
+      td {
         border: 1px solid #ddd;
       }
     }
 
     thead > tr > {
-      th, td {
+      th,
+      td {
         border-bottom-width: 2px;
       }
     }
@@ -1719,13 +1904,15 @@ th {
 }
 
 .table-striped > tbody > tr:nth-child(odd) > {
-  td, th {
+  td,
+  th {
     background-color: #f9f9f9;
   }
 }
 
 .table-hover > tbody > tr:hover > {
-  td, th {
+  td,
+  th {
     background-color: #f5f5f5;
   }
 }
@@ -1737,7 +1924,8 @@ table {
     display: table-column;
   }
 
-  td[class*="col-"], th[class*="col-"] {
+  td[class*="col-"],
+  th[class*="col-"] {
     position: static;
     float: none;
     display: table-cell;
@@ -1747,13 +1935,15 @@ table {
 .table > {
   thead > tr {
     > {
-      td.active, th.active {
+      td.active,
+      th.active {
         background-color: #f5f5f5;
       }
     }
 
     &.active > {
-      td, th {
+      td,
+      th {
         background-color: #f5f5f5;
       }
     }
@@ -1761,13 +1951,15 @@ table {
 
   tbody > tr {
     > {
-      td.active, th.active {
+      td.active,
+      th.active {
         background-color: #f5f5f5;
       }
     }
 
     &.active > {
-      td, th {
+      td,
+      th {
         background-color: #f5f5f5;
       }
     }
@@ -1775,13 +1967,15 @@ table {
 
   tfoot > tr {
     > {
-      td.active, th.active {
+      td.active,
+      th.active {
         background-color: #f5f5f5;
       }
     }
 
     &.active > {
-      td, th {
+      td,
+      th {
         background-color: #f5f5f5;
       }
     }
@@ -1790,12 +1984,15 @@ table {
 
 .table-hover > tbody > tr {
   > {
-    td.active:hover, th.active:hover {
+    td.active:hover,
+    th.active:hover {
       background-color: #e8e8e8;
     }
   }
 
-  &.active:hover > td, &:hover > .active, &.active:hover > th {
+  &.active:hover > td,
+  &:hover > .active,
+  &.active:hover > th {
     background-color: #e8e8e8;
   }
 }
@@ -1803,13 +2000,15 @@ table {
 .table > {
   thead > tr {
     > {
-      td.success, th.success {
+      td.success,
+      th.success {
         background-color: #dff0d8;
       }
     }
 
     &.success > {
-      td, th {
+      td,
+      th {
         background-color: #dff0d8;
       }
     }
@@ -1817,13 +2016,15 @@ table {
 
   tbody > tr {
     > {
-      td.success, th.success {
+      td.success,
+      th.success {
         background-color: #dff0d8;
       }
     }
 
     &.success > {
-      td, th {
+      td,
+      th {
         background-color: #dff0d8;
       }
     }
@@ -1831,13 +2032,15 @@ table {
 
   tfoot > tr {
     > {
-      td.success, th.success {
+      td.success,
+      th.success {
         background-color: #dff0d8;
       }
     }
 
     &.success > {
-      td, th {
+      td,
+      th {
         background-color: #dff0d8;
       }
     }
@@ -1846,12 +2049,15 @@ table {
 
 .table-hover > tbody > tr {
   > {
-    td.success:hover, th.success:hover {
+    td.success:hover,
+    th.success:hover {
       background-color: #d0e9c6;
     }
   }
 
-  &.success:hover > td, &:hover > .success, &.success:hover > th {
+  &.success:hover > td,
+  &:hover > .success,
+  &.success:hover > th {
     background-color: #d0e9c6;
   }
 }
@@ -1859,13 +2065,15 @@ table {
 .table > {
   thead > tr {
     > {
-      td.info, th.info {
+      td.info,
+      th.info {
         background-color: #d9edf7;
       }
     }
 
     &.info > {
-      td, th {
+      td,
+      th {
         background-color: #d9edf7;
       }
     }
@@ -1873,13 +2081,15 @@ table {
 
   tbody > tr {
     > {
-      td.info, th.info {
+      td.info,
+      th.info {
         background-color: #d9edf7;
       }
     }
 
     &.info > {
-      td, th {
+      td,
+      th {
         background-color: #d9edf7;
       }
     }
@@ -1887,13 +2097,15 @@ table {
 
   tfoot > tr {
     > {
-      td.info, th.info {
+      td.info,
+      th.info {
         background-color: #d9edf7;
       }
     }
 
     &.info > {
-      td, th {
+      td,
+      th {
         background-color: #d9edf7;
       }
     }
@@ -1902,12 +2114,15 @@ table {
 
 .table-hover > tbody > tr {
   > {
-    td.info:hover, th.info:hover {
+    td.info:hover,
+    th.info:hover {
       background-color: #c4e3f3;
     }
   }
 
-  &.info:hover > td, &:hover > .info, &.info:hover > th {
+  &.info:hover > td,
+  &:hover > .info,
+  &.info:hover > th {
     background-color: #c4e3f3;
   }
 }
@@ -1915,13 +2130,15 @@ table {
 .table > {
   thead > tr {
     > {
-      td.warning, th.warning {
+      td.warning,
+      th.warning {
         background-color: #fcf8e3;
       }
     }
 
     &.warning > {
-      td, th {
+      td,
+      th {
         background-color: #fcf8e3;
       }
     }
@@ -1929,13 +2146,15 @@ table {
 
   tbody > tr {
     > {
-      td.warning, th.warning {
+      td.warning,
+      th.warning {
         background-color: #fcf8e3;
       }
     }
 
     &.warning > {
-      td, th {
+      td,
+      th {
         background-color: #fcf8e3;
       }
     }
@@ -1943,13 +2162,15 @@ table {
 
   tfoot > tr {
     > {
-      td.warning, th.warning {
+      td.warning,
+      th.warning {
         background-color: #fcf8e3;
       }
     }
 
     &.warning > {
-      td, th {
+      td,
+      th {
         background-color: #fcf8e3;
       }
     }
@@ -1958,12 +2179,15 @@ table {
 
 .table-hover > tbody > tr {
   > {
-    td.warning:hover, th.warning:hover {
+    td.warning:hover,
+    th.warning:hover {
       background-color: #faf2cc;
     }
   }
 
-  &.warning:hover > td, &:hover > .warning, &.warning:hover > th {
+  &.warning:hover > td,
+  &:hover > .warning,
+  &.warning:hover > th {
     background-color: #faf2cc;
   }
 }
@@ -1971,13 +2195,15 @@ table {
 .table > {
   thead > tr {
     > {
-      td.danger, th.danger {
+      td.danger,
+      th.danger {
         background-color: #f2dede;
       }
     }
 
     &.danger > {
-      td, th {
+      td,
+      th {
         background-color: #f2dede;
       }
     }
@@ -1985,13 +2211,15 @@ table {
 
   tbody > tr {
     > {
-      td.danger, th.danger {
+      td.danger,
+      th.danger {
         background-color: #f2dede;
       }
     }
 
     &.danger > {
-      td, th {
+      td,
+      th {
         background-color: #f2dede;
       }
     }
@@ -1999,13 +2227,15 @@ table {
 
   tfoot > tr {
     > {
-      td.danger, th.danger {
+      td.danger,
+      th.danger {
         background-color: #f2dede;
       }
     }
 
     &.danger > {
-      td, th {
+      td,
+      th {
         background-color: #f2dede;
       }
     }
@@ -2014,12 +2244,15 @@ table {
 
 .table-hover > tbody > tr {
   > {
-    td.danger:hover, th.danger:hover {
+    td.danger:hover,
+    th.danger:hover {
       background-color: #ebcccc;
     }
   }
 
-  &.danger:hover > td, &:hover > .danger, &.danger:hover > th {
+  &.danger:hover > td,
+  &:hover > .danger,
+  &.danger:hover > th {
     background-color: #ebcccc;
   }
 }
@@ -2040,19 +2273,22 @@ table {
 
         > {
           thead > tr > {
-            th, td {
+            th,
+            td {
               white-space: nowrap;
             }
           }
 
           tbody > tr > {
-            th, td {
+            th,
+            td {
               white-space: nowrap;
             }
           }
 
           tfoot > tr > {
-            th, td {
+            th,
+            td {
               white-space: nowrap;
             }
           }
@@ -2064,49 +2300,57 @@ table {
 
         > {
           thead > tr > {
-            th:first-child, td:first-child {
+            th:first-child,
+            td:first-child {
               border-left: 0;
             }
           }
 
           tbody > tr > {
-            th:first-child, td:first-child {
+            th:first-child,
+            td:first-child {
               border-left: 0;
             }
           }
 
           tfoot > tr > {
-            th:first-child, td:first-child {
+            th:first-child,
+            td:first-child {
               border-left: 0;
             }
           }
 
           thead > tr > {
-            th:last-child, td:last-child {
+            th:last-child,
+            td:last-child {
               border-right: 0;
             }
           }
 
           tbody > tr > {
-            th:last-child, td:last-child {
+            th:last-child,
+            td:last-child {
               border-right: 0;
             }
           }
 
           tfoot > tr > {
-            th:last-child, td:last-child {
+            th:last-child,
+            td:last-child {
               border-right: 0;
             }
           }
 
           tbody > tr:last-child > {
-            th, td {
+            th,
+            td {
               border-bottom: 0;
             }
           }
 
           tfoot > tr:last-child > {
-            th, td {
+            th,
+            td {
               border-bottom: 0;
             }
           }
@@ -2149,10 +2393,10 @@ input {
     box-sizing: border-box;
   }
 
-  &[type="radio"], &[type="checkbox"] {
+  &[type="radio"],
+  &[type="checkbox"] {
     margin: 4px 0 0;
-    margin-top: 1px \9
-  ;
+    margin-top: 1px \9;
     line-height: normal;
   }
 
@@ -2167,13 +2411,16 @@ input {
 }
 
 select {
-  &[multiple], &[size] {
+  &[multiple],
+  &[size] {
     height: auto;
   }
 }
 
 input {
-  &[type="file"]:focus, &[type="radio"]:focus, &[type="checkbox"]:focus {
+  &[type="file"]:focus,
+  &[type="radio"]:focus,
+  &[type="checkbox"]:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -2202,15 +2449,18 @@ output {
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 
   &:focus {
     border-color: #66afe9;
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+      0 0 8px rgba(102, 175, 233, 0.6);
   }
 
   &::-moz-placeholder {
@@ -2218,11 +2468,13 @@ output {
     opacity: 1;
   }
 
-  &:-ms-input-placeholder, &::-webkit-input-placeholder {
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder {
     color: #777777;
   }
 
-  &[disabled], &[readonly] {
+  &[disabled],
+  &[readonly] {
     cursor: not-allowed;
     background-color: #eeeeee;
     opacity: 1;
@@ -2244,10 +2496,11 @@ input {
     -webkit-appearance: none;
   }
 
-  &[type="date"], &[type="time"], &[type="datetime-local"], &[type="month"] {
+  &[type="date"],
+  &[type="time"],
+  &[type="datetime-local"],
+  &[type="month"] {
     line-height: 34px;
-    line-height: 1.42857 \0
-  ;
   }
 
   &[type="date"].input-sm {
@@ -2261,7 +2514,8 @@ input {
 
 .input-group-sm > {
   input[type="date"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 30px;
     }
   }
@@ -2271,13 +2525,15 @@ input {
   }
 }
 
-input[type="time"].input-sm, .form-horizontal .form-group-sm input[type="time"].form-control {
+input[type="time"].input-sm,
+.form-horizontal .form-group-sm input[type="time"].form-control {
   line-height: 30px;
 }
 
 .input-group-sm > {
   input[type="time"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 30px;
     }
   }
@@ -2287,13 +2543,15 @@ input[type="time"].input-sm, .form-horizontal .form-group-sm input[type="time"].
   }
 }
 
-input[type="datetime-local"].input-sm, .form-horizontal .form-group-sm input[type="datetime-local"].form-control {
+input[type="datetime-local"].input-sm,
+.form-horizontal .form-group-sm input[type="datetime-local"].form-control {
   line-height: 30px;
 }
 
 .input-group-sm > {
   input[type="datetime-local"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 30px;
     }
   }
@@ -2303,13 +2561,15 @@ input[type="datetime-local"].input-sm, .form-horizontal .form-group-sm input[typ
   }
 }
 
-input[type="month"].input-sm, .form-horizontal .form-group-sm input[type="month"].form-control {
+input[type="month"].input-sm,
+.form-horizontal .form-group-sm input[type="month"].form-control {
   line-height: 30px;
 }
 
 .input-group-sm > {
   input[type="month"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 30px;
     }
   }
@@ -2319,13 +2579,15 @@ input[type="month"].input-sm, .form-horizontal .form-group-sm input[type="month"
   }
 }
 
-input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].form-control {
+input[type="date"].input-lg,
+.form-horizontal .form-group-lg input[type="date"].form-control {
   line-height: 46px;
 }
 
 .input-group-lg > {
   input[type="date"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 46px;
     }
   }
@@ -2335,13 +2597,15 @@ input[type="date"].input-lg, .form-horizontal .form-group-lg input[type="date"].
   }
 }
 
-input[type="time"].input-lg, .form-horizontal .form-group-lg input[type="time"].form-control {
+input[type="time"].input-lg,
+.form-horizontal .form-group-lg input[type="time"].form-control {
   line-height: 46px;
 }
 
 .input-group-lg > {
   input[type="time"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 46px;
     }
   }
@@ -2351,13 +2615,15 @@ input[type="time"].input-lg, .form-horizontal .form-group-lg input[type="time"].
   }
 }
 
-input[type="datetime-local"].input-lg, .form-horizontal .form-group-lg input[type="datetime-local"].form-control {
+input[type="datetime-local"].input-lg,
+.form-horizontal .form-group-lg input[type="datetime-local"].form-control {
   line-height: 46px;
 }
 
 .input-group-lg > {
   input[type="datetime-local"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 46px;
     }
   }
@@ -2367,13 +2633,15 @@ input[type="datetime-local"].input-lg, .form-horizontal .form-group-lg input[typ
   }
 }
 
-input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"].form-control {
+input[type="month"].input-lg,
+.form-horizontal .form-group-lg input[type="month"].form-control {
   line-height: 46px;
 }
 
 .input-group-lg > {
   input[type="month"] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       line-height: 46px;
     }
   }
@@ -2387,7 +2655,8 @@ input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"
   margin-bottom: 15px;
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
   position: relative;
   display: block;
   min-height: 20px;
@@ -2395,25 +2664,30 @@ input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"
   margin-bottom: 10px;
 }
 
-.radio label, .checkbox label {
+.radio label,
+.checkbox label {
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
 }
 
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px \9
-;
+  margin-top: 4px \9;
 }
 
-.radio + .radio, .checkbox + .checkbox {
+.radio + .radio,
+.checkbox + .checkbox {
   margin-top: -5px;
 }
 
-.radio-inline, .checkbox-inline {
+.radio-inline,
+.checkbox-inline {
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -2422,13 +2696,15 @@ input[type="month"].input-lg, .form-horizontal .form-group-lg input[type="month"
   cursor: pointer;
 }
 
-.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
   margin-top: 0;
   margin-left: 10px;
 }
 
 input[type="radio"] {
-  &[disabled], &.disabled {
+  &[disabled],
+  &.disabled {
     cursor: not-allowed;
   }
 }
@@ -2438,12 +2714,21 @@ fieldset[disabled] input[type="radio"] {
 }
 
 input[type="checkbox"] {
-  &[disabled], &.disabled {
+  &[disabled],
+  &.disabled {
     cursor: not-allowed;
   }
 }
 
-fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disabled] .radio-inline, .checkbox-inline.disabled, fieldset[disabled] .checkbox-inline, .radio.disabled label, fieldset[disabled] .radio label, .checkbox.disabled label, fieldset[disabled] .checkbox label {
+fieldset[disabled] input[type="checkbox"],
+.radio-inline.disabled,
+fieldset[disabled] .radio-inline,
+.checkbox-inline.disabled,
+fieldset[disabled] .checkbox-inline,
+.radio.disabled label,
+fieldset[disabled] .radio label,
+.checkbox.disabled label,
+fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 
@@ -2465,7 +2750,8 @@ fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disa
 
 .input-group-lg > {
   .form-control-static {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       padding-left: 0;
       padding-right: 0;
     }
@@ -2477,14 +2763,16 @@ fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disa
   }
 }
 
-.form-control-static.input-sm, .form-horizontal .form-group-sm .form-control-static.form-control {
+.form-control-static.input-sm,
+.form-horizontal .form-group-sm .form-control-static.form-control {
   padding-left: 0;
   padding-right: 0;
 }
 
 .input-group-sm > {
   .form-control-static {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       padding-left: 0;
       padding-right: 0;
     }
@@ -2496,7 +2784,8 @@ fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disa
   }
 }
 
-.input-sm, .form-horizontal .form-group-sm .form-control {
+.input-sm,
+.form-horizontal .form-group-sm .form-control {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
@@ -2505,7 +2794,9 @@ fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disa
 }
 
 .input-group-sm > {
-  .form-control, .input-group-addon, .input-group-btn > .btn {
+  .form-control,
+  .input-group-addon,
+  .input-group-btn > .btn {
     height: 30px;
     padding: 5px 10px;
     font-size: 12px;
@@ -2514,14 +2805,16 @@ fieldset[disabled] input[type="checkbox"], .radio-inline.disabled, fieldset[disa
   }
 }
 
-select.input-sm, .form-horizontal .form-group-sm select.form-control {
+select.input-sm,
+.form-horizontal .form-group-sm select.form-control {
   height: 30px;
   line-height: 30px;
 }
 
 .input-group-sm > {
   select {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: 30px;
       line-height: 30px;
     }
@@ -2533,13 +2826,15 @@ select.input-sm, .form-horizontal .form-group-sm select.form-control {
   }
 }
 
-textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control {
+textarea.input-sm,
+.form-horizontal .form-group-sm textarea.form-control {
   height: auto;
 }
 
 .input-group-sm > {
   textarea {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: auto;
     }
   }
@@ -2549,13 +2844,15 @@ textarea.input-sm, .form-horizontal .form-group-sm textarea.form-control {
   }
 }
 
-select[multiple].input-sm, .form-horizontal .form-group-sm select[multiple].form-control {
+select[multiple].input-sm,
+.form-horizontal .form-group-sm select[multiple].form-control {
   height: auto;
 }
 
 .input-group-sm > {
   select[multiple] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: auto;
     }
   }
@@ -2565,7 +2862,8 @@ select[multiple].input-sm, .form-horizontal .form-group-sm select[multiple].form
   }
 }
 
-.input-lg, .form-horizontal .form-group-lg .form-control {
+.input-lg,
+.form-horizontal .form-group-lg .form-control {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
@@ -2574,7 +2872,9 @@ select[multiple].input-sm, .form-horizontal .form-group-sm select[multiple].form
 }
 
 .input-group-lg > {
-  .form-control, .input-group-addon, .input-group-btn > .btn {
+  .form-control,
+  .input-group-addon,
+  .input-group-btn > .btn {
     height: 46px;
     padding: 10px 16px;
     font-size: 18px;
@@ -2583,14 +2883,16 @@ select[multiple].input-sm, .form-horizontal .form-group-sm select[multiple].form
   }
 }
 
-select.input-lg, .form-horizontal .form-group-lg select.form-control {
+select.input-lg,
+.form-horizontal .form-group-lg select.form-control {
   height: 46px;
   line-height: 46px;
 }
 
 .input-group-lg > {
   select {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: 46px;
       line-height: 46px;
     }
@@ -2602,13 +2904,15 @@ select.input-lg, .form-horizontal .form-group-lg select.form-control {
   }
 }
 
-textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control {
+textarea.input-lg,
+.form-horizontal .form-group-lg textarea.form-control {
   height: auto;
 }
 
 .input-group-lg > {
   textarea {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: auto;
     }
   }
@@ -2618,13 +2922,15 @@ textarea.input-lg, .form-horizontal .form-group-lg textarea.form-control {
   }
 }
 
-select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form-control {
+select[multiple].input-lg,
+.form-horizontal .form-group-lg select[multiple].form-control {
   height: auto;
 }
 
 .input-group-lg > {
   select[multiple] {
-    &.form-control, &.input-group-addon {
+    &.form-control,
+    &.input-group-addon {
       height: auto;
     }
   }
@@ -2654,28 +2960,34 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
   text-align: center;
 }
 
-.input-lg + .form-control-feedback, .form-horizontal .form-group-lg .form-control + .form-control-feedback {
+.input-lg + .form-control-feedback,
+.form-horizontal .form-group-lg .form-control + .form-control-feedback {
   width: 46px;
   height: 46px;
   line-height: 46px;
 }
 
 .input-group-lg > {
-  .form-control + .form-control-feedback, .input-group-addon + .form-control-feedback, .input-group-btn > .btn + .form-control-feedback {
+  .form-control + .form-control-feedback,
+  .input-group-addon + .form-control-feedback,
+  .input-group-btn > .btn + .form-control-feedback {
     width: 46px;
     height: 46px;
     line-height: 46px;
   }
 }
 
-.input-sm + .form-control-feedback, .form-horizontal .form-group-sm .form-control + .form-control-feedback {
+.input-sm + .form-control-feedback,
+.form-horizontal .form-group-sm .form-control + .form-control-feedback {
   width: 30px;
   height: 30px;
   line-height: 30px;
 }
 
 .input-group-sm > {
-  .form-control + .form-control-feedback, .input-group-addon + .form-control-feedback, .input-group-btn > .btn + .form-control-feedback {
+  .form-control + .form-control-feedback,
+  .input-group-addon + .form-control-feedback,
+  .input-group-btn > .btn + .form-control-feedback {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -2683,7 +2995,12 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
 }
 
 .has-success {
-  .help-block, .control-label, .radio, .checkbox, .radio-inline, .checkbox-inline {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
     color: #3c763d;
   }
 
@@ -2711,7 +3028,12 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
 }
 
 .has-warning {
-  .help-block, .control-label, .radio, .checkbox, .radio-inline, .checkbox-inline {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
     color: #8a6d3b;
   }
 
@@ -2739,7 +3061,12 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
 }
 
 .has-error {
-  .help-block, .control-label, .radio, .checkbox, .radio-inline, .checkbox-inline {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
     color: #a94442;
   }
 
@@ -2778,65 +3105,89 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
 }
 
 @media (min-width: 768px) {
-  .form-inline .form-group, .navbar-form .form-group {
+  .form-inline .form-group,
+  .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
     vertical-align: middle;
   }
 
-  .form-inline .form-control, .navbar-form .form-control {
+  .form-inline .form-control,
+  .navbar-form .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
 
-  .form-inline .input-group, .navbar-form .input-group {
+  .form-inline .input-group,
+  .navbar-form .input-group {
     display: inline-table;
     vertical-align: middle;
   }
 
-  .form-inline .input-group .input-group-addon, .navbar-form .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .navbar-form .input-group .input-group-btn, .form-inline .input-group .form-control, .navbar-form .input-group .form-control {
+  .form-inline .input-group .input-group-addon,
+  .navbar-form .input-group .input-group-addon,
+  .form-inline .input-group .input-group-btn,
+  .navbar-form .input-group .input-group-btn,
+  .form-inline .input-group .form-control,
+  .navbar-form .input-group .form-control {
     width: auto;
   }
 
-  .form-inline .input-group > .form-control, .navbar-form .input-group > .form-control {
+  .form-inline .input-group > .form-control,
+  .navbar-form .input-group > .form-control {
     width: 100%;
   }
 
-  .form-inline .control-label, .navbar-form .control-label {
+  .form-inline .control-label,
+  .navbar-form .control-label {
     margin-bottom: 0;
     vertical-align: middle;
   }
 
-  .form-inline .radio, .navbar-form .radio, .form-inline .checkbox, .navbar-form .checkbox {
+  .form-inline .radio,
+  .navbar-form .radio,
+  .form-inline .checkbox,
+  .navbar-form .checkbox {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
   }
 
-  .form-inline .radio label, .navbar-form .radio label, .form-inline .checkbox label, .navbar-form .checkbox label {
+  .form-inline .radio label,
+  .navbar-form .radio label,
+  .form-inline .checkbox label,
+  .navbar-form .checkbox label {
     padding-left: 0;
   }
 
-  .form-inline .radio input[type="radio"], .navbar-form .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"], .navbar-form .checkbox input[type="checkbox"] {
+  .form-inline .radio input[type="radio"],
+  .navbar-form .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"],
+  .navbar-form .checkbox input[type="checkbox"] {
     position: relative;
     margin-left: 0;
   }
 
-  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback {
+  .form-inline .has-feedback .form-control-feedback,
+  .navbar-form .has-feedback .form-control-feedback {
     top: 0;
   }
 }
 
 .form-horizontal {
-  .radio, .checkbox, .radio-inline, .checkbox-inline {
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 7px;
   }
 
-  .radio, .checkbox {
+  .radio,
+  .checkbox {
     min-height: 27px;
   }
 
@@ -2901,25 +3252,30 @@ select[multiple].input-lg, .form-horizontal .form-group-lg select[multiple].form
   -ms-user-select: none;
   user-select: none;
 
-  &:focus, &:active:focus, &.active:focus {
+  &:focus,
+  &:active:focus,
+  &.active:focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #333;
     text-decoration: none;
   }
 
-  &:active, &.active {
+  &:active,
+  &.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   }
 
-  &.disabled, &[disabled] {
+  &.disabled,
+  &[disabled] {
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.65;
@@ -2943,7 +3299,10 @@ fieldset[disabled] .btn {
   background-color: #fff;
   border-color: #ccc;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
@@ -2957,7 +3316,8 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -2971,7 +3331,10 @@ fieldset[disabled] .btn {
     background-color: #fff;
     border-color: #ccc;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #fff;
       border-color: #ccc;
     }
@@ -2981,7 +3344,10 @@ fieldset[disabled] .btn {
     background-color: #fff;
     border-color: #ccc;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #fff;
       border-color: #ccc;
     }
@@ -2992,7 +3358,10 @@ fieldset[disabled] .btn-default {
   background-color: #fff;
   border-color: #ccc;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #fff;
     border-color: #ccc;
   }
@@ -3008,7 +3377,10 @@ fieldset[disabled] .btn-default {
   background-color: #428bca;
   border-color: #357ebd;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #fff;
     background-color: #3071a9;
     border-color: #285e8e;
@@ -3022,7 +3394,8 @@ fieldset[disabled] .btn-default {
 }
 
 .btn-primary {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -3036,7 +3409,10 @@ fieldset[disabled] .btn-default {
     background-color: #428bca;
     border-color: #357ebd;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #428bca;
       border-color: #357ebd;
     }
@@ -3046,7 +3422,10 @@ fieldset[disabled] .btn-default {
     background-color: #428bca;
     border-color: #357ebd;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #428bca;
       border-color: #357ebd;
     }
@@ -3057,7 +3436,10 @@ fieldset[disabled] .btn-primary {
   background-color: #428bca;
   border-color: #357ebd;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #428bca;
     border-color: #357ebd;
   }
@@ -3073,7 +3455,10 @@ fieldset[disabled] .btn-primary {
   background-color: #5cb85c;
   border-color: #4cae4c;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #fff;
     background-color: #449d44;
     border-color: #398439;
@@ -3087,7 +3472,8 @@ fieldset[disabled] .btn-primary {
 }
 
 .btn-success {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -3101,7 +3487,10 @@ fieldset[disabled] .btn-primary {
     background-color: #5cb85c;
     border-color: #4cae4c;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #5cb85c;
       border-color: #4cae4c;
     }
@@ -3111,7 +3500,10 @@ fieldset[disabled] .btn-primary {
     background-color: #5cb85c;
     border-color: #4cae4c;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #5cb85c;
       border-color: #4cae4c;
     }
@@ -3122,7 +3514,10 @@ fieldset[disabled] .btn-success {
   background-color: #5cb85c;
   border-color: #4cae4c;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #5cb85c;
     border-color: #4cae4c;
   }
@@ -3138,7 +3533,10 @@ fieldset[disabled] .btn-success {
   background-color: #5bc0de;
   border-color: #46b8da;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #fff;
     background-color: #31b0d5;
     border-color: #269abc;
@@ -3152,7 +3550,8 @@ fieldset[disabled] .btn-success {
 }
 
 .btn-info {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -3166,7 +3565,10 @@ fieldset[disabled] .btn-success {
     background-color: #5bc0de;
     border-color: #46b8da;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #5bc0de;
       border-color: #46b8da;
     }
@@ -3176,7 +3578,10 @@ fieldset[disabled] .btn-success {
     background-color: #5bc0de;
     border-color: #46b8da;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #5bc0de;
       border-color: #46b8da;
     }
@@ -3187,7 +3592,10 @@ fieldset[disabled] .btn-info {
   background-color: #5bc0de;
   border-color: #46b8da;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #5bc0de;
     border-color: #46b8da;
   }
@@ -3203,7 +3611,10 @@ fieldset[disabled] .btn-info {
   background-color: #f0ad4e;
   border-color: #eea236;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #fff;
     background-color: #ec971f;
     border-color: #d58512;
@@ -3217,7 +3628,8 @@ fieldset[disabled] .btn-info {
 }
 
 .btn-warning {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -3231,7 +3643,10 @@ fieldset[disabled] .btn-info {
     background-color: #f0ad4e;
     border-color: #eea236;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #f0ad4e;
       border-color: #eea236;
     }
@@ -3241,7 +3656,10 @@ fieldset[disabled] .btn-info {
     background-color: #f0ad4e;
     border-color: #eea236;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #f0ad4e;
       border-color: #eea236;
     }
@@ -3252,7 +3670,10 @@ fieldset[disabled] .btn-warning {
   background-color: #f0ad4e;
   border-color: #eea236;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #f0ad4e;
     border-color: #eea236;
   }
@@ -3268,7 +3689,10 @@ fieldset[disabled] .btn-warning {
   background-color: #d9534f;
   border-color: #d43f3a;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     color: #fff;
     background-color: #c9302c;
     border-color: #ac2925;
@@ -3282,7 +3706,8 @@ fieldset[disabled] .btn-warning {
 }
 
 .btn-danger {
-  &:active, &.active {
+  &:active,
+  &.active {
     background-image: none;
   }
 }
@@ -3296,7 +3721,10 @@ fieldset[disabled] .btn-warning {
     background-color: #d9534f;
     border-color: #d43f3a;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #d9534f;
       border-color: #d43f3a;
     }
@@ -3306,7 +3734,10 @@ fieldset[disabled] .btn-warning {
     background-color: #d9534f;
     border-color: #d43f3a;
 
-    &:hover, &:focus, &:active, &.active {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
       background-color: #d9534f;
       border-color: #d43f3a;
     }
@@ -3317,7 +3748,10 @@ fieldset[disabled] .btn-danger {
   background-color: #d9534f;
   border-color: #d43f3a;
 
-  &:hover, &:focus, &:active, &.active {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     background-color: #d9534f;
     border-color: #d43f3a;
   }
@@ -3337,7 +3771,8 @@ fieldset[disabled] .btn-danger {
   -webkit-box-shadow: none;
   box-shadow: none;
 
-  &:active, &[disabled] {
+  &:active,
+  &[disabled] {
     background-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -3353,18 +3788,22 @@ fieldset[disabled] .btn-link {
 .btn-link {
   border-color: transparent;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: transparent;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #2a6496;
     text-decoration: underline;
     background-color: transparent;
   }
 
   &[disabled] {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: #777777;
       text-decoration: none;
     }
@@ -3372,27 +3811,31 @@ fieldset[disabled] .btn-link {
 }
 
 fieldset[disabled] .btn-link {
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #777777;
     text-decoration: none;
   }
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg,
+.btn-group-lg > .btn {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm,
+.btn-group-sm > .btn {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
 
-.btn-xs, .btn-group-xs > .btn {
+.btn-xs,
+.btn-group-xs > .btn {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
@@ -3409,7 +3852,9 @@ fieldset[disabled] .btn-link {
 }
 
 input {
-  &[type="submit"].btn-block, &[type="reset"].btn-block, &[type="button"].btn-block {
+  &[type="submit"].btn-block,
+  &[type="reset"].btn-block,
+  &[type="button"].btn-block {
     width: 100%;
   }
 }

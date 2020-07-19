@@ -1,668 +1,616 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>News</title>
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
-  <base href=""/>
-  <meta name="viewport"
-     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <base href="" />
+  <meta name="viewport" content="width=device-width">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="">
-  <meta property="og:title" content=""/>
-  <meta property="og:description" content=""/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content=""/>
-  <meta property="og:image" content=""/>
-  <meta property="og:site_name" content=""/>
-  <link rel="dns-prefetch" href="http://code.jquery.com"/>
-  <link rel="dns-prefetch" href="http://fonts.googleapis.com"/>
-  <link rel="dns-prefetch" href="http://www.google-analytics.com"/>
-  <link rel="icon" href="src/images/themegovrnmnt-favicon.ico" type="image/x-icon"/>
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <link rel="dns-prefetch" href="http://code.jquery.com" />
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+  <link rel="icon" href="src/images/themegovrnmnt-favicon.ico" type="image/x-icon" />
 
 </head>
 
 <body id="body">
-<div>
-  <%= require("fs").readFileSync("src/html/header.html") %>
-  <section class="fw-news">
-    <div class="d-flex flex-column align-items-center fw-news__inner">
-      <div class="line-abt">
-        <a href="#" class="tag label-default">
-          <div class="lbl-default__lns">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <span>Travel</span>
-          <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-             x="0px" y="0px" width="17.145px" height="30px"
-             viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
-       <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
-      </svg>
-          <svg version="1.1" class="label-default__arr label-default__arr-lefts"
-             xmlns="http://www.w3.org/2000/svg"
-             x="0px" y="0px" width="17.145px" height="30px"
-             viewBox="0 0 17.145 30" enable-background="new 0 0 17.145 30" xml:space="preserve">
-       <path fill="#002266" d="M7.145,30L0,15.002L7.145,0h10v30H7.145z"/>
-      </svg>
-        </a>
-        <time class="tag label-time" datetime="2008-02-14">
-          <svg version="1.1" class="label-default__arr label-default__arr-left"
-             xmlns="http://www.w3.org/2000/svg"
-             x="0px" y="0px" width="17.146px" height="30px"
-             viewBox="0 0 17.146 30" enable-background="new 0 0 17.146 30" xml:space="preserve">
-       <path fill="#e9e8dc" d="M17.146,30H0l7.145-14.998L0,0h17.146V30z"></path>
-      </svg>
-          15 September 2014 <span>08:27</span>
-          <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
-             x="0px" y="0px" width="17.145px" height="30px"
-             viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30" xml:space="preserve">
-       <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
-      </svg>
-        </time>
+  <div>
+    <%= require("fs").readFileSync("src/html/header.html") %>
+    <section class="fw-news">
+      <div class="d-flex flex-column align-items-center fw-news__inner">
+        <div class="line-abt">
+          <a href="#" class="tag label-default">
+            <div class="lbl-default__lns">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span>Travel</span>
+            <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+              xml:space="preserve">
+              <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
+            </svg>
+            <svg version="1.1" class="label-default__arr label-default__arr-lefts" xmlns="http://www.w3.org/2000/svg"
+              x="0px" y="0px" width="17.145px" height="30px" viewBox="0 0 17.145 30"
+              enable-background="new 0 0 17.145 30" xml:space="preserve">
+              <path fill="#002266" d="M7.145,30L0,15.002L7.145,0h10v30H7.145z" />
+            </svg>
+          </a>
+          <time class="tag label-time" datetime="2008-02-14">
+            <svg version="1.1" class="label-default__arr label-default__arr-left" xmlns="http://www.w3.org/2000/svg"
+              x="0px" y="0px" width="17.146px" height="30px" viewBox="0 0 17.146 30"
+              enable-background="new 0 0 17.146 30" xml:space="preserve">
+              <path fill="#e9e8dc" d="M17.146,30H0l7.145-14.998L0,0h17.146V30z"></path>
+            </svg>
+            15 September 2014 <span>08:27</span>
+            <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg" x="0px"
+              y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+              xml:space="preserve">
+              <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"></path>
+            </svg>
+          </time>
+        </div>
+        <h1><a href="#">Rio de Janeiro City, city of God</a></h1>
+        <p>At once both a cinematic cityscape and a grimy urban front line, Rio de Janeiro, known as the cidade
+          maravilhosa (marvelous city), is nothing if not exhilarating.
+        </p>
+        <div>
+          <a href="" class="btn-read">
+            <span class="text-white">Read</span>
+            <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+              <path id="read_arrow__cust" class="btn-read__arr-path" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
-      <h1><a href="#">Rio de Janeiro City, city of God</a></h1>
-      <p>At once both a cinematic cityscape and a grimy urban front line, Rio de Janeiro, known as the cidade
-        maravilhosa (marvelous city), is nothing if not exhilarating. 
-      </p>
-      <div>
-        <a href="" class="btn-read">
-          <span class="text-white">Read</span>
-          <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-             x="0px" y="0px" viewBox="0 0 7 13"
-             enable-background="new 0 0 7 13" xml:space="preserve">
-       <path id="read_arrow__cust" class="btn-read__arr-path" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"></path>
-      </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-  <div class="main">
-    <div class="news all-news bg-col">
-      <div class="container">
-        <div class="row">
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_04.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Politics</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+    </section>
+    <div class="main">
+      <div class="news all-news bg-col">
+        <div class="container">
+          <div class="row">
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_04.jpg" alt="">
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">White House and House Republicans Clash on president new Immigration Plan </a>
-            </h3>
-            <p class="news-item__p">The Republicans, at a hearing, accused the administration of trying to
-              do an end
-              run around Congress.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_02.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Travel</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Politics</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">White House and House Republicans Clash on president new Immigration Plan </a>
+              </h3>
+              <p class="news-item__p">The Republicans, at a hearing, accused the administration of trying to
+                do an end
+                run around Congress.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">The Prince Islands — place to visit</a></h3>
-            <p class="news-item__p">During the summer months the Princes’ Islands are popular destinations
-              for day
-              trips from Istanbul. As there is no traffic on the Islands, the only transport being horse
-              and cart,
-              they are incredibly peaceful compared with the city of Istanbul.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_07.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Culture</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_02.jpg" alt="">
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">Inside the our blog. A new look for Culture</a></h3>
-            <p class="news-item__p">Today we are unveiling the new look on our Culture sites too. This
-              thread is the
-              place to discuss these changes with members of the project team.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-md-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
-            <a href="#" class="news-item__image-nobg">
-              <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" width="1520px" height="855px"
-                 viewBox="0 0 1520 855" enable-background="new 0 0 1520 855" xml:space="preserve">
-        </svg>
-              <span class="no-photo"></span>
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Society</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Travel</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">The Prince Islands — place to visit</a></h3>
+              <p class="news-item__p">During the summer months the Princes’ Islands are popular destinations
+                for day
+                trips from Istanbul. As there is no traffic on the Islands, the only transport being horse
+                and cart,
+                they are incredibly peaceful compared with the city of Istanbul.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">Winter statement: the regions need active government not devolution</a></h3>
-            <p class="news-item__p">Of course Murray will allow councils more freedom to raise money and
-              coordinate
-              services, but this is no substitute for an active state working to deliver fairness.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <div class="clearfix d-none d-lg-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_01.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Projects</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_07.jpg" alt="">
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">The biggest business you've never heard of</a></h3>
-            <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
-              render
-              things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
-              limited
-              understanding of how creatures</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
-            <a href="#" class="news-item__image-nobg">
-              <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" width="1520px" height="855px"
-                 viewBox="0 0 1520 855" enable-background="new 0 0 1520 855" xml:space="preserve">
-        </svg>
-              <span class="no-photo"></span>
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Society</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Culture</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">Inside the our blog. A new look for Culture</a></h3>
+              <p class="news-item__p">Today we are unveiling the new look on our Culture sites too. This
+                thread is the
+                place to discuss these changes with members of the project team.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">Winter statement: the regions need active government not devolution</a></h3>
-            <p class="news-item__p">Of course Murray will allow councils more freedom to raise money and
-              coordinate
-              services, but this is no substitute for an active state working to deliver fairness.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <div class="clearfix d-none d-md-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_04.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Politics</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+            </article>
+            <div class="clearfix d-none d-md-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
+              <a href="#" class="news-item__image-nobg">
+                <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="1520px" height="855px" viewBox="0 0 1520 855" enable-background="new 0 0 1520 855"
+                  xml:space="preserve">
+                </svg>
+                <span class="no-photo"></span>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">White House and House Republicans Clash on president new Immigration Plan </a>
-            </h3>
-            <p class="news-item__p">The Republicans, at a hearing, accused the administration of trying to
-              do an end
-              run around Congress.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_02.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Travel</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Society</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">Winter statement: the regions need active government not devolution</a></h3>
+              <p class="news-item__p">Of course Murray will allow councils more freedom to raise money and
+                coordinate
+                services, but this is no substitute for an active state working to deliver fairness.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">The Prince Islands — place to visit</a></h3>
-            <p class="news-item__p">During the summer months the Princes’ Islands are popular destinations
-              for day
-              trips from Istanbul. As there is no traffic on the Islands, the only transport being horse
-              and cart,
-              they are incredibly peaceful compared with the city of Istanbul.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <div class="clearfix d-none d-lg-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_07.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Culture</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <div class="clearfix d-none d-lg-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_01.jpg" alt="">
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">Inside the our blog. A new look for Culture</a></h3>
-            <p class="news-item__p">Today we are unveiling the new look on our Culture sites too. This
-              thread is the
-              place to discuss these changes with members of the project team.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-md-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_01.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Projects</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Projects</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">The biggest business you've never heard of</a></h3>
+              <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
+                render
+                things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
+                limited
+                understanding of how creatures</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">The biggest business you've never heard of</a></h3>
-            <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
-              render
-              things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
-              limited
-              understanding of how creatures</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
-            <a href="#" class="news-item__image-wrap">
-              <img class="news-item__image" src="images/news/themeGovernment-News_06.jpg" alt="">
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Projects</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
+              <a href="#" class="news-item__image-nobg">
+                <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="1520px" height="855px" viewBox="0 0 1520 855" enable-background="new 0 0 1520 855"
+                  xml:space="preserve">
+                </svg>
+                <span class="no-photo"></span>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
-            </div>
-            <h3><a href="#">Exepting challanges of Kenya</a></h3>
-            <p class="news-item__p">Kenya officially the Republic of Kenya, is a country in the African
-              Great Lakes
-              region of East Africa. Its capital and largest city is Nairobi.</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
-            <a href="#" class="news-item__image-nobg">
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Society</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">Winter statement: the regions need active government not devolution</a></h3>
+              <p class="news-item__p">Of course Murray will allow councils more freedom to raise money and
+                coordinate
+                services, but this is no substitute for an active state working to deliver fairness.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <div class="clearfix d-none d-md-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_04.jpg" alt="">
+              </a>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Politics</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">White House and House Republicans Clash on president new Immigration Plan </a>
+              </h3>
+              <p class="news-item__p">The Republicans, at a hearing, accused the administration of trying to
+                do an end
+                run around Congress.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_02.jpg" alt="">
+              </a>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Travel</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">The Prince Islands — place to visit</a></h3>
+              <p class="news-item__p">During the summer months the Princes’ Islands are popular destinations
+                for day
+                trips from Istanbul. As there is no traffic on the Islands, the only transport being horse
+                and cart,
+                they are incredibly peaceful compared with the city of Istanbul.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <div class="clearfix d-none d-lg-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_07.jpg" alt="">
+              </a>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Culture</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">Inside the our blog. A new look for Culture</a></h3>
+              <p class="news-item__p">Today we are unveiling the new look on our Culture sites too. This
+                thread is the
+                place to discuss these changes with members of the project team.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <div class="clearfix d-none d-md-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_01.jpg" alt="">
+              </a>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Projects</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">The biggest business you've never heard of</a></h3>
+              <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
+                render
+                things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
+                limited
+                understanding of how creatures</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2l">
+              <a href="#" class="news-item__image-wrap">
+                <img class="news-item__image" src="images/news/themeGovernment-News_06.jpg" alt="">
+              </a>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Projects</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">Exepting challanges of Kenya</a></h3>
+              <p class="news-item__p">Kenya officially the Republic of Kenya, is a country in the African
+                Great Lakes
+                region of East Africa. Its capital and largest city is Nairobi.</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <article class="col-md-6 col-lg-4 col-xl-3 news-item news-item-2r">
+              <a href="#" class="news-item__image-nobg">
 
-              <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" width="1520px" height="855px"
-                 viewBox="0 0 1520 855" enable-background="new 0 0 1520 855" xml:space="preserve">
-        </svg>
-              <span class="no-photo"></span>
-            </a>
-            <div class="line-abt">
-              <a href="#" class="tag label-default label-sm">
-                <div class="lbl-default__lns">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span>Projects</span>
-                <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
+                <svg version="1.1" class="news-item__image-nobg-img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  width="1520px" height="855px" viewBox="0 0 1520 855" enable-background="new 0 0 1520 855"
+                  xml:space="preserve">
+                </svg>
+                <span class="no-photo"></span>
               </a>
-              <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
-                September 2014
-                <span>08:27</span>
-                <svg version="1.1" class="label-default__arr label-time__arrow"
-                   xmlns="http://www.w3.org/2000/svg"
-                   x="0px" y="0px" width="17.145px" height="30px"
-                   viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-         </svg>
-              </time>
+              <div class="line-abt">
+                <a href="#" class="tag label-default label-sm">
+                  <div class="lbl-default__lns">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>Projects</span>
+                  <svg version="1.1" class="label-default__arr" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    width="17.145px" height="30px" viewBox="-10 0 17.145 30" enable-background="new -10 0 17.145 30"
+                    xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </a>
+                <time class="tag label-time label-time-sm label-time__nbg" datetime="2008-02-14">15
+                  September 2014
+                  <span>08:27</span>
+                  <svg version="1.1" class="label-default__arr label-time__arrow" xmlns="http://www.w3.org/2000/svg"
+                    x="0px" y="0px" width="17.145px" height="30px" viewBox="-10 0 17.145 30"
+                    enable-background="new -10 0 17.145 30" xml:space="preserve">
+                    <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z" />
+                  </svg>
+                </time>
+              </div>
+              <h3><a href="#">The biggest business you've never heard of</a></h3>
+              <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
+                render
+                things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
+                limited
+                understanding of how creatures</p>
+              <a href="" class="btn-read"><span>Read</span>
+                <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                  viewBox="0 0 7 13" enable-background="new 0 0 7 13" xml:space="preserve">
+                  <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z" />
+                </svg>
+              </a>
+            </article>
+            <div class="clearfix d-none d-sm-block"></div>
+            <div class="clearfix d-none d-md-block"></div>
+            <div class="clearfix d-none d-lg-block"></div>
+            <div class="tw-follow mx-auto">
+              <a href="#" class="btn btn-default tw-item__follow">More news</a>
             </div>
-            <h3><a href="#">The biggest business you've never heard of</a></h3>
-            <p class="news-item__p">Inspired by the octopus, we’re on the road to creating materials that
-              render
-              things almost invisible. Yet as Philip Ball points out, the history of camouflage and our
-              limited
-              understanding of how creatures</p>
-            <a href="" class="btn-read"><span>Read</span>
-              <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                 x="0px" y="0px" viewBox="0 0 7 13"
-                 enable-background="new 0 0 7 13" xml:space="preserve">
-         <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"/>
-        </svg>
-            </a>
-          </article>
-          <div class="clearfix d-none d-sm-block"></div>
-          <div class="clearfix d-none d-md-block"></div>
-          <div class="clearfix d-none d-lg-block"></div>
-          <div class="tw-follow mx-auto">
-            <a href="#" class="btn btn-default tw-item__follow">More news</a>
           </div>
         </div>
       </div>
     </div>
+    <%= require("fs").readFileSync("src/html/footer.html") %>
   </div>
-  <%= require("fs").readFileSync("src/html/footer.html") %>
-</div>
 </body>
 
 </html>

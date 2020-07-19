@@ -26,12 +26,14 @@
   }
 
   a {
-    &[href^="javascript:"]:after, &[href^="#"]:after {
+    &[href^="javascript:"]:after,
+    &[href^="#"]:after {
       content: "";
     }
   }
 
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -49,12 +51,15 @@
     max-width: 100% !important;
   }
 
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
 
@@ -67,12 +72,14 @@
   }
 
   .table {
-    td, th {
+    td,
+    th {
       background-color: #fff !important;
     }
   }
 
-  .btn > .caret, .dropup > .btn > .caret {
+  .btn > .caret,
+  .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
 
@@ -85,7 +92,8 @@
   }
 
   .table-bordered {
-    th, td {
+    th,
+    td {
       border: 1px solid #ddd !important;
     }
   }

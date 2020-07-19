@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.15.0] - 2020-07-19
+### Changed
+- Reformat all page files.
+
+### Removed
+- Unnecessary webpack plugins.
+
+### Fixed
+- Check and fix all pages with html validator.
+- Check and fix all stylesheets with css validator.
+- Some broken things.
+
 ## [2.14.0] - 2020-07-19
 ### Fixed
 - Minor problems on most pages.
