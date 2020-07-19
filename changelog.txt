@@ -1,11 +1,128 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [2.15.0] - 2020-07-19
+### Changed
+- Reformat all page files.
+
+### Removed
+- Unnecessary webpack plugins.
+
+### Fixed
+- Check and fix all pages with html validator.
+- Check and fix all stylesheets with css validator.
+- Some broken things.
+
+## [2.14.0] - 2020-07-19
+### Fixed
+- Minor problems on most pages.
+- Header adaptive mode.
+- Final pages recheck.
+
+## [2.13.0] - 2020-07-19
+### Fixed
+- Pie charts with red-chart and about-chart classes.
+- Order of support block.
+
+## [2.12.0] - 2020-07-18
+## Added
+- Image compressing plugin.
+
+### Changed
+- Rewrite color css to scss.
+- Update all jQuery plugins except for bg-stretcher.js and topEventsAnimate.js.
+
+## [2.11.0] - 2020-07-19
+### Fixed
+- Header working.
+- Event cards.
+
+## [2.10.0] - 2020-07-18
+### Added
+- Header and footer in a separate folder, which are inserted in the pages with the use of the template engine.
+
+### Changed
+- Type of web pages' files for further use of the template engine.
+- Reformating all files.
+
+### Fixed
+- Loading image by image.js file.
+
+## [2.9.0] - 2020-07-17
+### Changed
+- Refactoring index.js and init.js.
+- App scripts' files structure.
+
+### Removed
+- IE support.
+
+### Fixed
+- Title on all pages.
+
+## [2.8.0] - 2020-07-17
+### Changed
+- Fix using Google Map develop api.
+- Partial fixes of index page.
+- Multiple page fixes.
+
+## [2.7.0] - 2020-07-17
+### Removed
+- Unnecessary index pages.
+
+## [2.7.0] - 2020-07-17
+### Added
+- Pictures to all pages.
+- Default color stylesheets to all pages.
+
+## [2.6.0] - 2020-07-17
+### Changed
+- Slick slider on index pages now works fine.
+- Fix load fonts and images.
+
+## [2.5.0] - 2020-07-16
+### Added
+- jQuery plugins.
+
+### Changed
+- Moving slick font to slick's folder.
+
+### Removed
+- Unused scripts import in html files.
+
+## [2.4.0] - 2020-07-16
+### Changed
+- Fix favicon.
+- Page layout is now correspond to Boostrap 4.
+- Loading images on the pages using Webpack.
+- Finally fix favicon displaying.
+
+## [2.3.0] - 2020-07-16
+### Added
+- Targeting styles depending on the target pages.
+- Color stylesheets.
+
+## [2.2.0] - 2020-07-16
+### Changed
+- Reformatting by splitting scss files.
+
+### Removed
+- Old unused scss files.
+
+## [2.1.0] - 2020-07-16
+### Added
+- humans.txt.
+
+### Changed
+- Fixing favicon.
+- Continuing migration from Bootstrap 3 to Bootstrap 4.
+- Reformating scss files.
+- New loader in webpack config.
+
 ## [2.0.0] - 2020-07-16
 ### Changed
-- Starting migrate from Grunt to Webpack.
+- Starting migration from Grunt to Webpack.
 - Files stucture.
-- Starting migrate from Bootstrap 3 to Bootstrap 4.
+- Starting migration from Bootstrap 3 to Bootstrap 4.
 - New jQuery version.
 - New normalize.css version.
 - New .gitignore.

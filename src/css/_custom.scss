@@ -2,124 +2,27 @@
 [Table of contents]
 
 1. Fonts
-2. Normalize / #normalize
-3. Print / #print
-4. Glyphicons / #glyphicons
-5. Bootstrap core components / #Bootstrap-core-components
-6. Javascript components / #javascript-component
-7. Utility classes / #utility-classes
-8. Font awesome / #font-awesome
-9. Custom controls / #custom-controls
-10. Custom styles / #custom-styles
-
-
-Some Bootstrap .scss files are muted, beacuse this functions (modals, jumbotron etc.) are not used in the themeGovernment.
+2. Normalize.css
+3. Print
+4. Glyphicons
+5. Utility
+6. Bootstrap 4
+7. Javascript components
+8. Utility classes
+9. Font awesome
+10. Custom controls
+11. Custom styles 
 
 -------------------------------------------------------------------*/
 
-
-// Custom variables
-@import "custom-variables";
-
-// Core variables and mixins
-@import "variables";
-@import "mixins";
-
-
-/*
- * Normalize / #normalize
-****************************/
+@import "fonts";
 @import "~normalize.css";
-
-/*
- * Print / #print
-****************************/
 @import "print";
-
-/*
- * Glyphicons / #glyphicons
-****************************/
-//@import "glyphicons";
-
-/*
- * Glyphicons / #glyphicons
-****************************/
-//@import "scaffolding";
-//@import "type";
-//@import "code";
-//@import "grid";
-//@import "tables";
-//@import "forms";
-//@import "buttons";
-
-/*
- * Bootstrap core components / #Bootstrap-core-components
-****************************/
+@import "glyphicons";
+@import "utility";
 @import "~bootstrap/scss/bootstrap";
-//@import "component-animations";
-//@import "dropdowns";
-//@import "button-groups";
-//@import "input-groups";
-//@import "navs";
-//@import "navbar";
-////@import "bootstrap/breadcrumbs";
-//@import "pagination";
-//@import "pager";
-//@import "labels";
-////@import "bootstrap/badges";
-////@import "bootstrap/jumbotron";
-////@import "bootstrap/thumbnails";
-////@import "bootstrap/alerts";
-////@import "bootstrap/progress-bars";
-////@import "bootstrap/media";
-//@import "list-group";
-////@import "bootstrap/panels";
-//@import "responsive-embed";
-//@import "wells";
-//@import "close";
-
-
-/*
- * Javascript components / #javascript-component
-****************************/
-//@import "bootstrap/modals";
-//@import "tooltip";
-//@import "popovers";
-//@import "bootstrap/carousel";
-
-
-/*
- * Utility classes / #utility-classes
-****************************/
-@import "utilities";
-//@import "responsive-utilities";
-
-
-
-
-//Custom theme styles
-
-/*
- * Font awesome / #font-awesome
-****************************/
-//@import "font-awesome/font-awesome.scss";
-
-/*
- * Custom controls / #custom-controls
-****************************/
-//@import "custom-controls";
-
-/*
- * Custom styles / #custom-styles
-****************************/
-//@import "bootstrap/custom.scss";
-
-//@import "~bootstrap/scss/bootstrap";
-//@import "~normalize.css";
-////@import "custom-variables";
-//@import "print";
-////@import "glyphicons";
-////@import "scaffolding"; _image.scss
-//@import "mixins";
-////@import "variables";
-////@import "type";
+@import "javascript-components";
+@import "utility-classes";
+@import "font-awesome";
+@import "custom-controls";
+@import "custom-styles";

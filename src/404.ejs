@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>404</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <base href="" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <link rel="dns-prefetch" href="http://code.jquery.com" />
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+
+</head>
+
+<body id="body">
+  <div>
+    <%= require("fs").readFileSync("src/html/header.html") %>
+    <div class="ff">
+      <div class="ff__inner">
+        <div class="ff__title">404</div>
+        <div class="ff__descr">
+          Use <b>main menu</b> or <a href="#" class="ff__link">move to homepage</a>
+        </div>
+      </div>
+    </div>
+    <%= require("fs").readFileSync("src/html/footer.html") %>
+  </div>
+</body>
+
+</html>

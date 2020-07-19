@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Events view</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <base href="" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <link rel="dns-prefetch" href="http://code.jquery.com" />
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="http://www.google-analytics.com" />
+
+</head>
+
+<body id="body">
+  <div>
+    <div id="sticky" class="sticky">
+      <div class="container-fluid">
+        <div class="row">
+          <a href="index.html" class="sticky__brand">
+            <img src="images/logo.png" alt="">
+          </a>
+          <div class="sticky__event-time">
+            <div class="sticky__event-time-lft">
+              <time datetime="2014-09-14T12:00">14-09-2014 12:00</time>
+            </div>
+            <div class="sticky__event-time-rt">
+              <i class="fa fa-clock-o"></i>
+            </div>
+          </div>
+          <div class="sticky__title sticky__title-diagr">Prince Islands ferry trip</div>
+          <div class="socials ml-auto">
+            <a href="#" class="socials__item socials__item-fb"><i class="fa fa-facebook"></i><span>Share</span></a>
+            <a href="#" class="socials__item socials__item-tw"><i class="fa fa-twitter"></i><span>Tweet</span></a>
+            <a href="#" class="socials__item socials__item-more"><i class="fa fa-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= require("fs").readFileSync("src/html/header.html") %>
+    <div class="events-view">
+      <section class="fw-news events-view__item">
+        <!-- <img src="images/news/tonyabbott.jpg" alt="" class="fw-news__image"> -->
+        <div class="fw-image-parallax" data-parallax-url="images/events/themeGovernment-Events_03.jpg"></div>
+        <div class="fw-news__pattern"></div>
+        <div class="fw-news__inner">
+          <div class="img-circle">
+            <img src="images/event-view/Article/logo-ar.jpg" alt="">
+          </div>
+          <h1>Prince Islands ferry tour</h1>
+        </div>
+      </section>
+      <div id="content" class="mapper">
+        <div class="container">
+          <div class="d-flex flex-column-reverse flex-md-row">
+            <div class="col-md-4 mapper__desrc">
+              <div class="mapper__desrc-inner d-flex flex-row flex-md-column">
+                <div class="mapper__desrc-item">
+                  <div class="mapper__desrc-d">Monday</div>
+                  <div class="mapper__desrc-dt">14 Sep 2014</div>
+                  <div class="mapper__desrc-pl">10:00</div>
+                </div>
+                <div class="mapper__desrc-item">
+                  <div class="mapper__desrc-d">Destination</div>
+                  <div class="mapper__desrc-pl">Kabataş</div>
+                </div>
+                <div class="mapper__desrc-item">
+                  <div class="mapper__desrc-d">for</div>
+                  <div class="mapper__desrc-pl">$5</div>
+                </div>
+              </div>
+            </div>
+            <div id="map-canvas-event1" class="col-md-8 mapper__map">
+              <div id="event_canvas" class="mapper__map-inner" data-latitude="41.033658" data-longitude="28.993832"
+                data-map-name="Kabataş, Istanbul">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="event-organizers">
+        <div class="container">
+          <h2 class="coll-hdr">
+            Event <b>Organizers</b>
+          </h2>
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="col-12 col-lg-8 event-organizers__ppl">
+              <div class="row event-organizers__ppl-inner">
+                <article class="col-md-6 event-organizers__item">
+                  <div class="event-organizers__item-lft">
+                    <img src="images/stuff/account-manager.jpg" alt="" class="event-organizers__item-img img-circle">
+                  </div>
+                  <div class="event-organizers__item-rt">
+                    <h3>Program and work with the tourists</h3>
+                    <h4>Nina Belousova</h4>
+                    <ul class="event-organizers__item-lst">
+                      <li>
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="#" class="project-stuff__quote-link">Nina.Belousova@mail.com</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-skype"></i>
+                        <a href="#" class="project-stuff__quote-link">nina.belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-facebook"></i>
+                        <a href="#" class="project-stuff__quote-link">facebook.com/belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-twitter"></i>
+                        <a href="#" class="project-stuff__quote-link">twitter.com/NinaBelous</a>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <div class="br-t clearfix visible-xs"></div>
+                <article class="col-md-6 event-organizers__item">
+                  <div class="event-organizers__item-lft">
+                    <img src="images/stuff/manager.jpg" alt="" class="event-organizers__item-img img-circle">
+                  </div>
+                  <div class="event-organizers__item-rt">
+                    <h3>Working with VIP Members</h3>
+                    <h4>Peter Tong</h4>
+                    <ul class="event-organizers__item-lst">
+                      <li>
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="#" class="project-stuff__quote-link">peter.tong@mail.com</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone"></i>
+                        <a href="#" class="project-stuff__quote-link">+38 (004) 57-45-47</a>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <div class="br-t clearfix visible-xs"></div>
+              </div>
+              <div class="br-t clearfix visible-sm visible-lg visible-md"></div>
+              <div class="row event-organizers__ppl-inner">
+                <article class="col-md-6 event-organizers__item">
+                  <div class="event-organizers__item-lft">
+                    <img src="images/stuff/manager3.jpg" alt="" class="event-organizers__item-img img-circle">
+                  </div>
+                  <div class="event-organizers__item-rt">
+                    <h3>Manager</h3>
+                    <h4>John Black</h4>
+                    <ul class="event-organizers__item-lst">
+                      <li>
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="#" class="project-stuff__quote-link">Nina.Belousova@mail.com</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-skype"></i>
+                        <a href="#" class="project-stuff__quote-link">nina.belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-facebook"></i>
+                        <a href="#" class="project-stuff__quote-link">facebook.com/belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-twitter"></i>
+                        <a href="#" class="project-stuff__quote-link">twitter.com/NinaBelous</a>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+                <div class="br-t clearfix visible-xs"></div>
+                <article class="col-md-6 event-organizers__item">
+                  <div class="event-organizers__item-lft">
+                    <img src="images/stuff/manager4.jpg" alt="" class="event-organizers__item-img img-circle">
+                  </div>
+                  <div class="event-organizers__item-rt">
+                    <h3>Director</h3>
+                    <h4>Anita Billboard</h4>
+                    <ul class="event-organizers__item-lst">
+                      <li>
+                        <i class="fa fa-envelope-o"></i>
+                        <a href="#" class="project-stuff__quote-link">Nina.Belousova@mail.com</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-skype"></i>
+                        <a href="#" class="project-stuff__quote-link">nina.belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-facebook"></i>
+                        <a href="#" class="project-stuff__quote-link">facebook.com/belousova</a>
+                      </li>
+                      <li>
+                        <i class="fa fa-twitter"></i>
+                        <a href="#" class="project-stuff__quote-link">twitter.com/NinaBelous</a>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 project-news__subscribe-wrap event-organizers__subscribe-wrap">
+              <div class="project-news__subscribe-left-t"></div>
+              <div class="project-news__subscribe-left-b"></div>
+              <div class="project-news__subscribe-right-t"></div>
+              <div class="project-news__subscribe-right-b"></div>
+              <div class="project-news__subscribe">
+                <div class="project-news__subscribe-title">Booking</div>
+                <p>You can ask or book a ticket</p>
+                <form action="#" class="form-validate" method="post" novalidate="novalidate">
+                  <div class="form-group">
+                    <input type="email" id="subscribe-email" name="subscribe-email" class="form-control"
+                      placeholder="email:" required>
+                    <!-- <label for="subscribe-email"></label> -->
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="subscribe-name" name="subscribe-name" class="form-control"
+                      placeholder="your name:" required>
+                    <!-- <label for="subscribe-name"></label> -->
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" id="subscribe-textarea" name="subscribe-textarea" rows="4"
+                      placeholder="Additional info:" required></textarea>
+                  </div>
+                  <button class="btn btn-darkened" value="Send" type="submit">Send</button>
+                  <!-- <input type="submit" class="btn btn-darkened" value="Send"> -->
+                  <div class="form-loader hidden">
+                    <div id="loader" class="loader">
+
+                    </div>
+                  </div>
+                </form>
+                <div class="success-message hidden">
+                  <div class="suc-title"><i class="fa fa-check"></i>Thank you!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="event-details">
+        <div class="container">
+          <h2 class="coll-hdr br-t">Event <b>Details</b></h2>
+          <div class="project-details__inner content__text">
+            <hr class="first">
+            <p>Istanbul is surrounded and divided by water. Because of this you’ll see a bustling activity of
+              floating
+              devices on the Bosphorus, the Sea of Marmara and in the Golden Horn. A whole array of
+              water-borne craft,
+              ranging from privately owned (fishing) boats, over regular ferries (vapur) to a fleet of
+              high-speed
+              catamaran sea buses (deniz otobüsü).</p>
+            <p>İDO, Istanbul’s Fast Ferry and Sea Bus Company, is the market leader and offers visitors and
+              locals alike
+              probably the most relaxing and quickest way of transportation available in Istanbul. Whether you
+              want to
+              go up and/or down the Bosphorus, travel between the European and Asian shores, or make a short
+              trip to the
+              Princes’ Islands, they have a suitable and cheap solution for all of this.</p>
+            <hr>
+            <p>On the Asian side, the main piers are located in Kadıköy (to Beşiktaş, Eminönü, Karaköy and the
+              Princes’
+              Islands) and in Üsküdar (towards Beşiktaş, Eminönü and Kabataş).</p>
+            <figure class="d-flex flex-column flex-md-row full-figure-aside">
+              <div class="col-12 col-md-8">
+                <img src="images/events/kabatas_uskudar_ferry_station.jpg" alt="" title="American C-130 planes">
+              </div>
+              <div class="col-12 col-md-4">
+                <hr>
+                <span class="f__caption">High-speed ferry or sea bus.</span>
+              </div>
+            </figure>
+            <p>The interior of the high-speed catamaran ferries or sea buses resemble aircraft cabins, with long
+              rows of
+              comfortable seats and air-conditioning. The main docks are Bostancı and Kadıköy on the Asian
+              side, and
+              Kabataş, Yenikapı and Bakırköy on the European side. As a tourist, chances are you’ll only use
+              this ferry
+              type to reach the Princes’ Islands from the Kabataş pier.</p>
+          </div>
+        </div>
+      </section>
+      <section class="event-details">
+        <div class="container">
+          <h2 class="coll-hdr br-t">Event <b>Chronogram</b></h2>
+          <div class="project-details__inner content__text">
+            <hr class="first">
+            <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
+              <div class="event-details__item-lft">
+                <time datetime="2004-07-24T09:00"><b>9:00</b> — 10:00</time>
+              </div>
+              <div class="event-details__item-rt">
+                <div class="event-details__item-ttl">
+                  <div class="event-details__item-ttl-lft">
+                    <img src="images/stuff/manager4.jpg" alt="" class="img-circle">
+                  </div>
+                  <div class="event-details__item-ttl-rt">
+                    <h3>Anita Billboard</h3>
+                    <h4>Director</h4>
+                  </div>
+                </div>
+                <div class="event-details__item-descr content__text">
+                  <h5>Meeting the arrived guests</h5>
+                  <p>First impressions make a significant impact on how others perceive you. Therefore,
+                    the introduction
+                    that you or another person gives about you is extremely important. You should give
+                    careful thought
+                    to these words when you write a speech introducing yourself. The information you
+                    give can either
+                    uphold or harm your credibility.</p>
+                </div>
+              </div>
+            </div>
+            <hr class="first clearfix">
+            <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
+              <div class="event-details__item-lft">
+                <time datetime="2004-07-24T09:00"><b>10:00</b> — 10:45</time>
+              </div>
+              <div class="event-details__item-rt">
+                <div class="event-details__item-ttl">
+                  <div class="event-details__item-ttl-lft">
+                    <img src="images/stuff/manager.jpg" alt="" class="img-circle">
+                  </div>
+                  <div class="event-details__item-ttl-rt">
+                    <h3>Peter Tong</h3>
+                    <h4>Guide</h4>
+                  </div>
+                </div>
+                <div class="event-details__item-descr content__text">
+                  <h5>Ferry trip begin</h5>
+                  <p>Most of the typical tourist destinations are reachable by both type of boats. It’s up
+                    to you to
+                    decide which craft to use, based on your personal preference. Let me list the pros
+                    and consof the
+                    two ferry types.</p>
+                </div>
+              </div>
+            </div>
+            <hr class="first clearfix">
+            <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
+              <div class="event-details__item-lft">
+                <time datetime="2004-07-24T09:00"><b>10:45</b> — 12:00</time>
+              </div>
+              <div class="event-details__item-rt">
+                <h3 class="crs">Free time at the islands</h3>
+              </div>
+            </div>
+            <hr class="first clearfix">
+            <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
+              <div class="event-details__item-lft">
+                <time datetime="2004-07-24T09:00"><b>12:00</b> — 12:45</time>
+              </div>
+              <div class="event-details__item-rt">
+                <div class="event-details__item-ttl">
+                  <div class="event-details__item-ttl-lft">
+                    <img src="images/stuff/manager2.jpg" alt="" class="img-circle">
+                  </div>
+                  <div class="event-details__item-ttl-rt">
+                    <h3>Nina Belousova</h3>
+                    <h4>Island guide</h4>
+                  </div>
+                </div>
+                <div class="event-details__item-descr content__text">
+                  <h5>Bisycle trip around the last island</h5>
+                  <p>Typically, we begin in Charlottetown with professional outfitting, a short tour of
+                    the Island's
+                    capital and accommodations in our capitol city. You will then cycle to our quiet
+                    eastern coast
+                    visiting Montague's waterfront and picturesque Panmure Island. From there you have a
+                    choice of
+                    cycling to Souris and the "singing sands" of Basin Head or to St Peters and the
+                    unique sand dunes of
+                    our National Park before returning to Charlottetown. Or, if you prefer, you can
+                    visit both Souris
+                    and St Peters enjoying both destinations. You'll return to Charlottetown by cycling
+                    the
+                    Confederation Trail, encountering quaint fishing villages, lighthouses, farmland,
+                    beaches, friendly
+                    people and the peace and serenity that Prince Edward Island offers..</p>
+                </div>
+              </div>
+            </div>
+            <hr class="first clearfix">
+            <div class="d-flex flex-column align-items-start justify-content-center d-md-block event-details__item">
+              <div class="event-details__item-lft">
+                <time datetime="2004-07-24T09:00"><b>13:00</b> — 13:45</time>
+              </div>
+              <div class="event-details__item-rt">
+                <div class="event-details__item-ttl">
+                  <div class="event-details__item-ttl-lft">
+                    <img src="images/stuff/manager3.jpg" alt="" class="img-circle">
+                  </div>
+                  <div class="event-details__item-ttl-rt">
+                    <h3>John Black</h3>
+                    <h4>Manager</h4>
+                  </div>
+                </div>
+                <div class="event-details__item-descr content__text">
+                  <h5>Finish</h5>
+                  <p>Closing credits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="event-partners">
+        <div class="container">
+          <h2 class="coll-hdr br-t">Event <b>Partners</b></h2>
+          <div id="event-partners__slider" class="event-partners__slider">
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner1.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner2.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner3.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner4.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner5.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner6.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner7.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner8.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner4.jpg" alt="">
+              </a>
+            </div>
+            <div class="event-partners__slider-item">
+              <a href="#" title="Bubble gum" class="event-partners__slider-circle img-circle">
+                <img src="images/events-partners/partner5.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <%= require("fs").readFileSync("src/html/footer.html") %>
+  </div>
+</body>
+
+</html>

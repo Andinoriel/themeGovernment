@@ -1,11 +1,7 @@
-## Заранее извиняюсь за отсутствие нормальной подсветки синтаксиса в этом примере и далее.
-## Хоть "ini" и содержится в списке форматов поддерживаемых Хабром, код красивым не становится.
-## Если кто знает, как это починить - пожалуйста напишите в личку.
-#
-# Корневой файл EditorConfig
+# is root .editorconfig
 root = true
 
-# Для всех файлов используем unix-совместимые переносы строк
+# unix-compatible
 [*]
 indent_style = space
 indent_size = 2
@@ -19,6 +15,13 @@ indent_size = 2
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# EJS
+[*.ejs]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
 
 # HTML
 [*.html]
@@ -49,7 +52,7 @@ indent_size = 2
 charset = utf-8
 trim_trailing_whitespace = true
 
-# Только для файлов package.json
+# package.json like
 [{package.json,.travis.yml}]
 indent_style = space
 indent_size = 2

@@ -1,49 +1,57 @@
 {
   "name": "theme-government",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.15.0",
+  "description": "not provided",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
-    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
   },
   "keywords": [
     "js",
-    "javascript",
-    "webpack"
+    "bootstrap",
+    "jquery",
+    "webpack",
+    "html",
+    "css",
+    "scss",
+    "sass"
   ],
   "repository": {
     "type": "git",
-    "url": "git@git.makebecool.com:themeGovernment"
+    "url": "git@github.com:Andinoriel/themeGovernment.git"
   },
-  "author": "",
+  "author": "community",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.8.5",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "imagemin-webpack": "^5.1.1",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
     "sass-loader": "^9.0.2",
-    "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^3.0.6",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "bootstrap-select": "^1.13.18",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "script-loader": "^0.7.2"
   }
 }
