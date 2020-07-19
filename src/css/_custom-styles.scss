@@ -2102,7 +2102,7 @@ figure {
       margin-bottom: 30px;
     }
 
-    figcaption {
+    .f__caption {
       font-family: "pt_sansregular", Arial, sans-serif;
       font-size: 14px;
       line-height: 22px;
@@ -2125,7 +2125,7 @@ figure {
       margin-bottom: 45px;
     }
 
-    figcaption {
+    .f__caption {
       font-family: "pt_sansregular", Arial, sans-serif;
       font-size: 14px;
       line-height: 22px;
@@ -10775,7 +10775,7 @@ figure {
 
 @media (min-width: 1200px) {
   .hw20025{
-    width: 200px; 
+    width: 200px;
     height: 25px;
   }
   .hw__wrapper li:last-child{
@@ -10820,7 +10820,7 @@ ul.nav-tabs li.active{
       height: 40px;
       width: 25px;
   }
-  
+
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px){
