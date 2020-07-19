@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 ## [2.15.0] - 2020-07-19
 ### Fixed
 - Check and fix all pages with html validator.
+- Check and fix all stylesheets with css validator.
+
+### Changed
+- Reformat all page files.
 
 ## [2.13.0] - 2020-07-19
 ### Fixed

@@ -340,7 +340,6 @@ nav > .nav.navbar-nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     &:last-child {
-      border-bottom-image: none;
       border-bottom: 0;
     }
 
@@ -462,7 +461,6 @@ nav > .nav.navbar-nav > li.colors .dt-back > a {
   position: absolute;
   top: 0;
   min-height: auto;
-  max-height: auto;
   z-index: 10;
 }
 
@@ -8193,7 +8191,6 @@ figure {
     min-height: inherit;
     max-height: inherit;
     min-width: auto;
-    max-width: auto;
     z-index: 10;
   }
 
@@ -10774,69 +10771,69 @@ figure {
 }
 
 @media (min-width: 1200px) {
-  .hw20025{
+  .hw20025 {
     width: 200px;
     height: 25px;
   }
-  .hw__wrapper li:last-child{
+  .hw__wrapper li:last-child {
     margin-bottom: 20px;
   }
-  .hw__wrapper li a{
+  .hw__wrapper li a {
     border-bottom: 0px !important;
   }
 }
 
-a.tablist__item{
+a.tablist__item {
   background-color: transparent !important;
 }
 
-ul.nav-tabs li:nth-child(-n+5){
+ul.nav-tabs li:nth-child(-n+5) {
   background-color: #bdbbac;
   border-left: 1px solid rgba(233, 232, 220, 0.9);
   border-bottom: 1px solid rgba(233, 232, 220, 0.9);
 }
 
-ul.nav-tabs li:hover:nth-child(-n+5){
+ul.nav-tabs li:hover:nth-child(-n+5) {
   background-color: transparent !important;
 }
 
-ul.nav-tabs li.active{
+ul.nav-tabs li.active {
   background-color: transparent !important;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .tablist__all-arr {
-      top: 20px;
-      right: -85px;
-      height: 40px;
-      width: 25px;
+    top: 20px;
+    right: -85px;
+    height: 40px;
+    width: 25px;
   }
 }
 
-@media screen and (max-width: 1199px) and (min-width: 992px){
+@media screen and (max-width: 1199px) and (min-width: 992px) {
   .tablist__all-arr {
-      top: 20px;
-      right: -100px;
-      height: 40px;
-      width: 25px;
+    top: 20px;
+    right: -100px;
+    height: 40px;
+    width: 25px;
   }
 
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px){
+@media screen and (max-width: 991px) and (min-width: 768px) {
   .tablist__all-arr {
-      top: 20px;
-      right: -90px;
-      height: 40px;
-      width: 25px;
+    top: 20px;
+    right: -90px;
+    height: 40px;
+    width: 25px;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .tablist__all-arr {
-      top: 13px;
-      right: -95px;
-      height: 40px;
-      width: 25px;
+    top: 13px;
+    right: -95px;
+    height: 40px;
+    width: 25px;
   }
 }

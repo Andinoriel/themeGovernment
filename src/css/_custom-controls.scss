@@ -18,7 +18,6 @@ textarea {
   padding: 15px 40px;
   outline: none;
   border: none;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 
   &:after {
@@ -41,7 +40,6 @@ textarea {
     color: #fff;
     margin-right: 4px;
     text-transform: uppercase;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
@@ -52,7 +50,6 @@ textarea {
   width: 10px;
   height: 17px;
   margin-top: 4px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -67,7 +64,6 @@ textarea {
 
   &:hover {
     background-color: #000;
-    -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 
     &:active:after {
@@ -78,14 +74,12 @@ textarea {
     span {
       float: right;
       margin-right: 0;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
 
     .btn-read-primary__arr {
       float: left;
       margin-right: 4px;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -105,7 +99,6 @@ textarea {
 
 .btn-read-primary__inverse {
   background-color: #000;
-  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 
   span {
@@ -122,26 +115,22 @@ textarea {
       height: 17px;
       background: url("../images/themegovrnmnt-more_arrow-white.svg") left top no-repeat;
       background-size: 10px 17px;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
 
   &:hover {
     background-color: #002266;
-    -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 
     span {
       margin-right: 0;
       margin-left: 15px;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
 
       &:after {
         right: auto;
         left: -14px;
-        -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
       }
     }
@@ -165,14 +154,12 @@ textarea {
   color: #990000;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
   span {
     display: block;
     float: left;
     margin-right: 3px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
@@ -184,7 +171,6 @@ textarea {
   width: 8px;
   height: 11px;
   margin-top: 4px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -204,20 +190,17 @@ textarea {
   &:hover {
     text-decoration: none;
     color: #990000;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     span {
       float: right;
       margin-right: 0;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
 
     .btn-read__arr {
       float: left;
       margin-right: 4px;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -237,7 +220,6 @@ textarea {
   width: 12px;
   height: 20px;
   margin-bottom: 1px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -245,12 +227,10 @@ textarea {
   &:hover {
     color: #990000;
     text-decoration: none;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     .btn-read-more__arr {
       opacity: 1;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -261,14 +241,13 @@ textarea {
 }
 
 .label {
-  border-radius: none;
+  border-radius: 0;
 }
 
 .label-default {
   &[href] {
     &:focus, &:hover {
       background-color: #000;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -279,7 +258,6 @@ textarea {
   z-index: 8;
   padding: 7px 10px;
   background-color: #002266;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -289,12 +267,10 @@ textarea {
   right: -10px;
   top: 0px;
   height: 28px;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
   path {
     fill: #002266;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
@@ -305,7 +281,6 @@ textarea {
 
   path {
     fill: #e9e8dc;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
@@ -365,12 +340,10 @@ textarea {
 
   &:hover {
     background-color: #000;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     .label-default__arr path {
       fill: #000;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -412,7 +385,6 @@ textarea {
   &.label-default .label-default__arr {
     height: 21px;
     right: -12px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -479,20 +451,18 @@ textarea {
 .btn {
   border: none;
   padding: 15px 45px;
-  border-radius: none;
-  -webkit-box-shadow: none;
+  border-radius: 0;
   box-shadow: none;
   margin-bottom: 2px;
   margin-top: 0;
 
   &.active, &:active {
-    -webkit-box-shadow: none;
     box-shadow: none;
-    outline-color: none;
+    outline-color: unset;
   }
 
   &.active:focus, &:active:focus, &:focus {
-    outline-color: none;
+    outline-color: unset;
     outline: none;
   }
 
@@ -736,13 +706,11 @@ fieldset[disabled] {
     z-index: 5;
     top: 0;
     left: 8px;
-    -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
     cursor: pointer;
 
     &:active {
       left: 4px;
-      -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease;
     }
   }
@@ -751,14 +719,12 @@ fieldset[disabled] {
     z-index: 4;
     top: 0;
     left: 13px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
   &:hover .arrow-lg-left__shad {
     height: 119px;
     top: 16px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }
@@ -768,7 +734,6 @@ fieldset[disabled] {
     z-index: 5;
     top: 0;
     right: 8px;
-    -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
     cursor: pointer;
   }
@@ -777,20 +742,17 @@ fieldset[disabled] {
     z-index: 4;
     top: 0;
     right: 13px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
   &:hover .arrow-lg-right__shad {
     height: 119px;
     top: 16px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
   .arrow-lg-right__white:active {
     right: 4px;
-    -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
   }
 }
@@ -821,7 +783,6 @@ fieldset[disabled] {
     width: 36px;
     height: 100px;
     background: url("../images/themegovrnmnt-staff_arrow_White_left.svg") left top no-repeat;
-    -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
   }
 
@@ -835,7 +796,6 @@ fieldset[disabled] {
     width: 36px;
     height: 100px;
     background: url("../images/themegovrnmnt-staff_arrow_Shadow_left.svg") left top no-repeat;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-size: contain;
   }
@@ -857,7 +817,6 @@ fieldset[disabled] {
     width: 36px;
     height: 100px;
     background: url("../images/themegovrnmnt-staff_arrow_White.svg") left top no-repeat;
-    -webkit-transition: all 0.1s ease;
     transition: all 0.1s ease;
   }
 
@@ -871,7 +830,6 @@ fieldset[disabled] {
     width: 36px;
     height: 100px;
     background: url("../images/themegovrnmnt-staff_arrow_Shadow.svg") left top no-repeat;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-size: contain;
   }
@@ -884,13 +842,11 @@ fieldset[disabled] {
 
 .arrow-sm-left:active:before {
   left: 5px;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
 .arrow-sm-right:active:before {
   right: 5px;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 
@@ -925,7 +881,6 @@ fieldset[disabled] {
   top: 0;
   z-index: 5;
   background: url("../images/themegovrnmnt-staff_arrow_White_left.svg") left top no-repeat;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background-size: contain;
 }
@@ -937,7 +892,6 @@ fieldset[disabled] {
   top: 0;
   z-index: 4;
   background: url("../images/themegovrnmnt-staff_arrow_Shadow_left.svg") left top no-repeat;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-size: contain;
 }
@@ -949,7 +903,6 @@ fieldset[disabled] {
   top: 0;
   z-index: 5;
   background: url("../images/themegovrnmnt-staff_arrow_White.svg") left top no-repeat;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background-size: contain;
 }
@@ -961,7 +914,6 @@ fieldset[disabled] {
   top: 0;
   z-index: 4;
   background: url("../images/themegovrnmnt-staff_arrow_Shadow.svg") left top no-repeat;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-size: contain;
 }
@@ -981,7 +933,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 5;
       background: url("../images/themegovrnmnt-staff_arrow_White_left.svg") left top no-repeat;
-      -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease;
       background-size: contain;
     }
@@ -993,7 +944,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 4;
       background: url("../images/themegovrnmnt-staff_arrow_Shadow_left.svg") left top no-repeat;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       background-size: contain;
     }
@@ -1007,7 +957,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 5;
       background: url("../images/themegovrnmnt-staff_arrow_White.svg") left top no-repeat;
-      -webkit-transition: all 0.1s ease;
       transition: all 0.1s ease;
       background-size: contain;
     }
@@ -1019,7 +968,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 4;
       background: url("../images/themegovrnmnt-staff_arrow_Shadow.svg") left top no-repeat;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       background-size: contain;
     }
@@ -1045,7 +993,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 4;
       background: url("../images/themegovrnmnt-staff_arrow_Shadow_left.svg") left top no-repeat;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       background-size: contain;
     }
@@ -1063,7 +1010,6 @@ fieldset[disabled] {
       top: 0;
       z-index: 4;
       background: url("../images/themegovrnmnt-staff_arrow_Shadow.svg") left top no-repeat;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       background-size: contain;
     }
@@ -1086,7 +1032,6 @@ ul.nav.nav-tabs {
       border-radius: 0;
       text-align: center;
       background-color: #bdbbac;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
 
@@ -1098,7 +1043,6 @@ ul.nav.nav-tabs {
 
 .tablist__all-arr path {
   fill: #002266;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1130,7 +1074,6 @@ ul.nav.nav-tabs > li {
         > {
           .tablist__title, .tablist__descr {
             color: #000;
-            -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
           }
         }
@@ -1183,13 +1126,11 @@ ul.nav.nav-tabs > li {
 
   > a:hover {
     background-color: transparent;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 
     > {
       .tablist__title, .tablist__descr {
         color: #002266;
-        -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
       }
     }
@@ -1206,8 +1147,6 @@ ul.nav.nav-tabs > li {
     width: 36px;
     height: 15px;
     margin-left: -18px;
-    // background: transparent url("../images/themegovrnmnt-event_arrow.svg") left top no-repeat;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -1215,7 +1154,6 @@ ul.nav.nav-tabs > li {
     &:before {
       opacity: 1;
       bottom: -14px;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
 
@@ -1341,7 +1279,6 @@ input[type=radio] {
 
     &:hover:after {
       opacity: 1;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -1356,7 +1293,6 @@ input[type=radio] {
     line-height: 21px;
     opacity: .6;
     text-align: center;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -1368,7 +1304,6 @@ input[type=radio] {
 
     &:after {
       opacity: .2;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -1428,7 +1363,6 @@ input[type=checkbox] {
 
     &:hover:after {
       opacity: 1;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -1442,7 +1376,6 @@ input[type=checkbox] {
     bottom: 1px;
     background: url("../images/themegovrnmnt-checkBox.svg") left top no-repeat;
     opacity: .6;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -1454,7 +1387,6 @@ input[type=checkbox] {
 
     &:after {
       opacity: .2;
-      -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
   }
@@ -1483,7 +1415,6 @@ input[type=checkbox] {
   &:focus {
     border-color: #bdbbac;
     outline: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -1569,7 +1500,6 @@ input {
 
   .form-control:focus {
     outline: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -1603,7 +1533,6 @@ footer .form-group.has-error label.control-label {
   .dropdown-menu {
     border-radius: 0;
     border: none;
-    -webkit-box-shadow: none;
     box-shadow: none;
   }
 
@@ -2067,7 +1996,6 @@ nav > .nav.navbar-nav > li.colors {
         border: 0;
         border-radius: 0;
         background-color: #fff;
-        -webkit-box-shadow: none;
         box-shadow: none;
       }
 
@@ -2077,7 +2005,6 @@ nav > .nav.navbar-nav > li.colors {
         padding: 0;
         margin: 0;
         border-radius: 0;
-        -webkit-box-shadow: none;
         box-shadow: none;
       }
     }
@@ -2099,7 +2026,6 @@ nav > .nav.navbar-nav > li.colors {
       border-right: 0;
       margin-bottom: 0;
       text-transform: none;
-      -webkit-box-shadow: none;
       box-shadow: none;
 
       .caret {
