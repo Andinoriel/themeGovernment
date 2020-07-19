@@ -30,7 +30,7 @@
 <div>
   <%= require("fs").readFileSync("src/html/header.html") %>
   <section class="fw-news fw-news-nimg">
-    <div class="fw-news__inner">
+    <div class="d-flex flex-column align-items-center fw-news__inner">
       <div class="line-abt">
         <a href="#" class="tag label-default">
           <div class="lbl-default__lns">
@@ -69,15 +69,18 @@
       </div>
       <h1><a href="#">Rio de Janeiro City, city of God</a></h1>
       <p>At once both a cinematic cityscape and a grimy urban front line, Rio de Janeiro, known as the cidade
-        maravilhosa (marvelous city), is nothing if not exhilarating. <a href=""
-                                         class="btn-read"><span>Read</span>
+        maravilhosa (marvelous city), is nothing if not exhilarating. 
+      </p>
+      <div>
+        <a href="" class="btn-read">
+          <span class="text-white">Read</span>
           <svg class="btn-read__arr" version="1.1" xmlns="http://www.w3.org/2000/svg"
              x="0px" y="0px" viewBox="0 0 7 13"
              enable-background="new 0 0 7 13" xml:space="preserve">
-       <path class="btn-read__arr-path" fill="#990000" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"></path>
+       <path id="read_arrow__cust" class="btn-read__arr-path" d="M0,13l7-6.5L0,0l3.62,6.5L0,13z"></path>
       </svg>
         </a>
-      </p>
+      </div>
     </div>
   </section>
   <div class="main">

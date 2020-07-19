@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Minor problems on most pages.
 - Header adaptive mode.
+- Final pages recheck.
 
 ## [2.13.0] - 2020-07-19
 ### Fixed
