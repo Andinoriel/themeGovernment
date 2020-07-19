@@ -325,7 +325,23 @@ ul.nav.nav-tabs > li.tablist__all > a, .soc-arr__arr, .soc-arr__arr-flag path {
 -------------------------------*/
 
 @media screen and (min-width: 1200px) {
-  .stuff__item-act:hover .stuff__item-ttl, .project-stuff__quote-link:hover {
+  .stuff__item-act:hover .stuff__item-ttl {
     color: #01478e;
   }
+
+  .project-stuff__quote-link:hover {
+    color: #01478e;
+  }
+}
+
+li.tablist__all {
+  background-color: #01478e;
+
+  &:hover {
+    background-color: #242424;
+  }
+}
+
+ul.nav.nav-tabs > li.tablist__all:hover .tablist__all-arr path {
+  fill: #232323;
 }

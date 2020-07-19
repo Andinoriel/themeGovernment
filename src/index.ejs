@@ -711,8 +711,8 @@
   </section>
   <section class="soc bg-col">
     <div class="container">
-      <div class="row">
-        <div id="twitter" class="col-md-5 col-lg-4 tw">
+      <div class="d-flex flex-column flex-lg-row">
+        <div id="twitter" class="col-md-12 col-lg-4 tw">
           <h2 class="section-hdr section-hdr__icon section-hdr__icon-tw br-t">Last tweets</h2>
 
           <div class="row tw-item">
@@ -756,66 +756,74 @@
               </p>
             </div>
           </div>
-          <div class="row tw-follow">
-            <a href="#" class="btn btn-secondary tw-item__follow">Follow</a>
+          <div class="row mx-auto tw-follow">
+            <a href="#" class="btn btn-default tw-item__follow">Follow</a>
           </div>
         </div>
-        <div id="event-tabs" class="col-md-7 col-lg-8 tab-bl">
+        <div id="event-tabs" class="col-md-12 col-lg-7 offset-lg-1 tab-bl">
           <h2 class="section-hdr">Events</h2>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
             <li class="active">
               <a class="tablist__item" href="#sep30" role="tab" data-toggle="tab">
-                <span class="tablist__title">30</span>
-                <span class="tablist__descr">sep</span>
+                <div class="pt-4 p-xl-0">
+                  <span class="tablist__title">30</span>
+                  <span class="tablist__descr">sep</span> 
+                </div>
               </a>
             </li>
             <li>
               <a class="tablist__item" href="#oct1" role="tab" data-toggle="tab">
-                <span class="tablist__title">1</span>
-                <span class="tablist__descr">oct</span>
+                <div class="pt-4 p-xl-0">
+                  <span class="tablist__title">1</span>
+                  <span class="tablist__descr">oct</span> 
+                </div>
               </a>
             </li>
             <li>
               <a class="tablist__item" href="#oct2" role="tab" data-toggle="tab">
-                <span class="tablist__title">2</span>
-                <span class="tablist__descr">oct</span>
+                <div class="pt-4 p-xl-0">
+                  <span class="tablist__title">2</span>
+                  <span class="tablist__descr">oct</span> 
+                </div>
               </a>
             </li>
             <li>
               <a class="tablist__item" href="#oct3" role="tab" data-toggle="tab">
-                <span class="tablist__title">3</span>
-                <span class="tablist__descr">oct</span>
+                <div class="pt-4 p-xl-0">
+                  <span class="tablist__title">3</span>
+                  <span class="tablist__descr">oct</span> 
+                </div>
               </a>
             </li>
             <li>
               <a class="tablist__item" href="#oct4" role="tab" data-toggle="tab">
-                <span class="tablist__title">4</span>
-                <span class="tablist__descr">oct</span>
+                <div class="pt-4 p-xl-0">
+                  <span class="tablist__title">4</span>
+                  <span class="tablist__descr">oct</span> 
+                </div>
               </a>
             </li>
             <li class="tablist__all">
               <a class="tablist__item" href="">
-                <div>SEE</div>
-                <div>ALL</div>
-                <!-- <svg version="1.1" class="tablist__all-arr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="7.145px" height="30px" viewBox="0 0 7.145 30" enable-background="new 0 0 7.145 30" xml:space="preserve"></svg> -->
-                <path fill-rule="evenodd" clip-rule="evenodd" fill="#002266"
-                    d="M0,0l7.145,15.002L0,30V0z"/>
-                <svg version="1.1" class="tablist__all-arr" xmlns="http://www.w3.org/2000/svg" x="0px"
+                <div class="pt-4">
+                  <div class="mb-1">SEE</div>
+                  <div>ALL</div>  
+                </div>
+               <svg version="1.1" class="tablist__all-arr" xmlns="http://www.w3.org/2000/svg" x="0px"
                    y="0px"
                    width="17.145px" height="30px" viewBox="-10 0 17.145 30"
                    enable-background="new -10 0 17.145 30"
-                   xml:space="preserve">
-  <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/>
-   </svg>
+                   xml:space="preserve"> 
+          <path fill="#002266" d="M-10,30V0H0l7.145,15.002L0,30H-10z"/> 
+         </svg>
               </a>
             </li>
           </ul>
           <div class="clearfix"></div>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="sep30">
+            <div class="tab-pane fadeIn active" id="sep30">
               <!-- <div class=""> -->
               <article class="event-bl tab-item">
                 <img src="images/events/themeGovernment-Events_01.jpg" alt="" class="event-bl__img">
