@@ -2382,3 +2382,8 @@ nav > .nav.navbar-nav > li.colors {
 .slick-arrow {
   font-size: 0;
 }
+
+.form-group textarea::placeholder {
+  text-align: center !important;
+  text-transform: uppercase;
+}
